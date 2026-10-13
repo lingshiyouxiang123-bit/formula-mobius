@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "reviewDate": "2026-10-13",
+  "coverage": [
+    { "file": "research/text-generation/rp/2026-10-10/dynamic-voice-templates-1.json", "socialCount": 41, "reviewedCount": 41 },
+    { "file": "research/text-generation/rp/2026-10-10/dynamic-voice-templates-2.json", "socialCount": 67, "reviewedCount": 67 },
+    { "file": "research/text-generation/rp/2026-10-10/dynamic-voice-templates-3.json", "socialCount": 80, "reviewedCount": 80 },
+    { "file": "research/text-generation/rp/2026-10-10/dynamic-voice-templates-4.json", "socialCount": 42, "reviewedCount": 42 },
+    { "file": "research/text-generation/rp/2026-10-10/dynamic-voice-templates-5.json", "socialCount": 74, "reviewedCount": 74 },
+    { "file": "research/text-generation/rp/2026-10-10/g1-fragments.json", "socialCount": 76, "reviewedCount": 76, "downloadedProvenanceCount": 25 },
+    { "file": "research/text-generation/rp/2026-10-10/collision-fragments.json", "socialCount": 35, "reviewedCount": 35 },
+    { "file": "research/text-generation/rp/2026-10-10/g2-paddock-fragments.json", "socialCount": 72, "reviewedCount": 60, "additionalReviewedCount": 12, "note": "2026-10-13 addendum: 12 old team_staff texts revised/reviewed and 12 new team_staff fragments reviewed by Luna. The original 60 coverage plus 12 additions covers the current pool; this is not a claim that all 72 were reread this round." },
+    { "file": "research/text-generation/rp/2026-10-13/drs-fragments.json", "fragmentCount": 19, "socialCount": 11, "reviewedCount": 11, "note": "2026-10-13 batch: all 19 fragments read; coverage counts the 11 social items, alongside 8 commentary items." },
+    { "file": "research/text-generation/rp/2026-10-11/g2-loose-fragments.json", "socialCount": 72, "reviewedCount": 72 },
+    { "file": "research/text-generation/rp/2026-10-10/downloaded-runtime-binding.json (active expressions only)", "socialCount": 21, "reviewedCount": 21, "note": "Reviewed bound sourceIds and source text; three are also represented among G1 downloaded-provenance fragments." }
+  ],
+  "excludedIds": [
+    "c5.control.vsc.reply",
+    "c5.dnf.technical"
+  ],
+  "downloadedExcludedSourceIds": [
+    "comment-207cfad735652bbf"
+  ],
+  "changedIds": [
+    "c2.control.red",
+    "c3.podium.reply",
+    "c3.loss.reply2",
+    "c3.flags.red",
+    "collision-18",
+    "collision-24",
+    "g2-paddock-16",
+    "g2-loose-42",
+    "g2-loose-51",
+    "g2-loose-63",
+    "g1-rp-061",
+    "g1-rp-063",
+    "g1-rp-075",
+    "g1-rp-078",
+    "g1-soc-yellow-02",
+    "g1-soc-control-neutral-03",
+    "g2-paddock-01",
+    "g2-paddock-02",
+    "g2-paddock-03",
+    "g2-paddock-04",
+    "g2-paddock-05",
+    "g2-paddock-06",
+    "g2-paddock-07",
+    "g2-paddock-08",
+    "g2-paddock-09",
+    "g2-paddock-10",
+    "g2-paddock-11",
+    "g2-paddock-12"
+  ],
+  "rewrittenIds": [
+    "c3.podium.reply",
+    "c3.loss.reply2",
+    "collision-18",
+    "collision-24",
+    "g2-paddock-16",
+    "g2-loose-42",
+    "g2-loose-51",
+    "g2-loose-63",
+    "g1-rp-061",
+    "g1-rp-063",
+    "g1-rp-075",
+    "g1-rp-078",
+    "g1-soc-yellow-02",
+    "g1-soc-control-neutral-03",
+    "g2-paddock-01",
+    "g2-paddock-02",
+    "g2-paddock-03",
+    "g2-paddock-04",
+    "g2-paddock-05",
+    "g2-paddock-06",
+    "g2-paddock-07",
+    "g2-paddock-08",
+    "g2-paddock-09",
+    "g2-paddock-10",
+    "g2-paddock-11",
+    "g2-paddock-12"
+  ],
+  "batchNotes": [
+    "2026-10-13 social corpus pass: rewrote only g2-paddock-01 through g2-paddock-12 and added 12 new team_staff entries. The other g2 fragments were not reread in this batch.",
+    "2026-10-13 DRS corpus pass: added six duel-close lines and reviewed the complete 19-fragment DRS packet; 11 social and 8 commentary fragments."
+  ],
+  "actualPublicationReview": [
+    {
+      "date": "2026-10-13",
+      "userAccepted": false,
+      "changedIds": ["g2-paddock-03"],
+      "samples": [
+        {
+          "id": "g2-paddock-02",
+          "observed": "试跑对手1、试跑对手2，辛苦了。两台都回来了。",
+          "decision": "保留。双车正常分类时语气合适，也没有把名次塞进固定文案。"
+        },
+        {
+          "id": "g2-paddock-03",
+          "observed": "今天两边差得挺多。先把各自的情况弄清楚。",
+          "revised": "一台退赛，另一台完赛。今天心情挺复杂。",
+          "decision": "混合分类条件对应一台退赛、一台完赛；改成明确比赛事实和简短情绪，去掉工作报告式复盘口吻，不固定名次或退赛原因。"
+        },
+        {
+          "id": "g2-paddock-09",
+          "observed": "有积分。谢谢今天守着看的大家。",
+          "decision": "保留。符合本游戏单车退赛仍可能获得积分的规则，没有把积分和完赛绑定。"
+        }
+      ]
+    }
+  ],
+  "findings": [
+    "The broad social corpus is generally compact and varied enough to retain; fan celebration, irritation, jokes, technical comments, and short live reactions coexist. The two standalone '红旗了。' roots are intentionally retained as independent updates, while their actual reply lines stay replies.",
+    "A small number of generated lines sounded like moderator/assistant corrections or tidy summaries. Revised only clear cases, including a paddock pit-entry question and a handful of overly explanatory replies; tags, conditions, IDs, slots, and reply links remain intact.",
+    "Two dynamic replies were excluded rather than stretched: one redundantly corrects a VSC parent that already states the control type, and one merely says the speaker has not seen a retirement cause while duplicating an existing cause question.",
+    "The active downloaded expression '你可以无惧失败' is an out-of-place life-coach imperative under a retirement post and is disabled by sourceId only. Downloaded source text was not edited; other short affective expressions were retained.",
+    "A targeted G1 follow-up removed clear player-instruction or mechanical-correction lines: yellow-flag safety advice, generic wait/don't-blame reminders, and a stale-read directive. Ordinary concern, cautious opinions, and data-oriented observations were retained. No broad rewrite was warranted; short reactions and technical remarks were not treated as defective by default. No clear real-person/organization references or fixed-result fabrication required bulk exclusion."
+  ],
+  "summary": "Reviewed all 547 social template/fragment entries across the nine requested files (including 25 G1 downloaded-provenance fragments), plus the 21 distinct downloaded expressions used by runtime bindings. Edited 14 texts and two metadata-only placement annotations; excluded two weak generated dynamic replies and one unsuitable bound downloaded expression."
+}

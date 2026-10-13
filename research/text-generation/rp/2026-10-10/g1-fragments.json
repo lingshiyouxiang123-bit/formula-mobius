@@ -1,0 +1,3555 @@
+{
+  "version": 1,
+  "fragments": [
+    {
+      "id": "g1-dl-085711311415a9e4",
+      "role": "reaction",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "concern",
+      "stance": "critical",
+      "requires": [],
+      "personas": [
+        "ordinary_viewer",
+        "fan"
+      ],
+      "text": "太气了",
+      "family": "incident-frustration",
+      "provenance": "downloaded",
+      "sourceId": "comment-085711311415a9e4"
+    },
+    {
+      "id": "g1-dl-0fb7d3a6308acf88",
+      "role": "reaction",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "concern",
+      "stance": "critical",
+      "requires": [],
+      "personas": [
+        "ordinary_viewer",
+        "fan"
+      ],
+      "text": "太无语了",
+      "family": "incident-frustration",
+      "provenance": "downloaded",
+      "sourceId": "comment-0fb7d3a6308acf88"
+    },
+    {
+      "id": "g1-dl-2cf7160caf32ceff",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [],
+      "personas": [
+        "ordinary_viewer",
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "wait",
+        "concern"
+      ],
+      "text": "情况如何",
+      "family": "ask-status",
+      "provenance": "downloaded",
+      "sourceId": "comment-2cf7160caf32ceff"
+    },
+    {
+      "id": "g1-dl-25ddc8035e524171",
+      "role": "reaction",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "wait",
+      "stance": "neutral",
+      "requires": [],
+      "personas": [
+        "ordinary_viewer",
+        "fan"
+      ],
+      "text": "静观其变吧😊",
+      "family": "await-uncertain",
+      "provenance": "downloaded",
+      "sourceId": "comment-25ddc8035e524171"
+    },
+    {
+      "id": "g1-dl-3c77d02c2b2ce070",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [],
+      "personas": [
+        "ordinary_viewer",
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "wait"
+      ],
+      "text": "先确认下",
+      "family": "verify-first",
+      "provenance": "downloaded",
+      "sourceId": "comment-3c77d02c2b2ce070"
+    },
+    {
+      "id": "g1-dl-4ccacf431dbceb58",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "disagree",
+      "stance": "critical",
+      "requires": [],
+      "personas": [
+        "ordinary_viewer",
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "opportunity",
+        "challenge"
+      ],
+      "text": "所以先别下结论😂",
+      "family": "hold-conclusion",
+      "provenance": "downloaded",
+      "sourceId": "comment-4ccacf431dbceb58"
+    },
+    {
+      "id": "g1-dl-4e5d5b9b8807a700",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [],
+      "personas": [
+        "ordinary_viewer",
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "wait"
+      ],
+      "text": "这是怎么发现的?",
+      "family": "ask-evidence",
+      "provenance": "downloaded",
+      "sourceId": "comment-4e5d5b9b8807a700"
+    },
+    {
+      "id": "g1-dl-83e9b96436fe5bb8",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [],
+      "personas": [
+        "ordinary_viewer",
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "opportunity",
+        "praise",
+        "wait"
+      ],
+      "text": "我没看错吧😱",
+      "family": "surprised-disbelief",
+      "provenance": "downloaded",
+      "sourceId": "comment-83e9b96436fe5bb8"
+    },
+    {
+      "id": "g1-dl-acc2263012e162bc",
+      "role": "reaction",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "concern",
+      "stance": "support",
+      "requires": [],
+      "personas": [
+        "ordinary_viewer",
+        "fan"
+      ],
+      "text": "希望人都没事",
+      "family": "incident-safety-wish",
+      "provenance": "downloaded",
+      "sourceId": "comment-acc2263012e162bc"
+    },
+    {
+      "id": "g1-dl-b5e5c6385c030821",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [],
+      "personas": [
+        "ordinary_viewer",
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "ask"
+      ],
+      "text": "希望好好查查吧",
+      "family": "incident-investigation",
+      "provenance": "downloaded",
+      "sourceId": "comment-b5e5c6385c030821"
+    },
+    {
+      "id": "g1-dl-b73fb26aded7b0ef",
+      "role": "reaction",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "wait",
+      "stance": "neutral",
+      "requires": [],
+      "personas": [
+        "ordinary_viewer",
+        "fan"
+      ],
+      "text": "坐等",
+      "family": "await-uncertain",
+      "provenance": "downloaded",
+      "sourceId": "comment-b73fb26aded7b0ef"
+    },
+    {
+      "id": "g1-dl-be29e962382138e7",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [],
+      "personas": [
+        "ordinary_viewer",
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "ask"
+      ],
+      "text": "到底是什么情况呢🤔️🤔️🤔️",
+      "family": "request-situation",
+      "provenance": "downloaded",
+      "sourceId": "comment-be29e962382138e7"
+    },
+    {
+      "id": "g1-dl-c4e5f13ca0c73349",
+      "role": "reaction",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "concern",
+      "stance": "support",
+      "requires": [],
+      "personas": [
+        "ordinary_viewer",
+        "fan"
+      ],
+      "text": "小命要紧啊",
+      "family": "safety-over-risk",
+      "provenance": "downloaded",
+      "sourceId": "comment-c4e5f13ca0c73349"
+    },
+    {
+      "id": "g1-dl-cb296f63909f2187",
+      "role": "reaction",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "concern",
+      "stance": "support",
+      "requires": [],
+      "personas": [
+        "ordinary_viewer",
+        "fan"
+      ],
+      "text": "注意安全",
+      "family": "incident-safety",
+      "provenance": "downloaded",
+      "sourceId": "comment-cb296f63909f2187"
+    },
+    {
+      "id": "g1-dl-cf0b970c727fa116",
+      "role": "reaction",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+    "act": "concern",
+      "stance": "concern",
+      "requires": [],
+      "personas": [
+        "ordinary_viewer",
+        "fan"
+      ],
+      "text": "吓人",
+      "family": "incident-alarm",
+      "provenance": "downloaded",
+      "sourceId": "comment-cf0b970c727fa116"
+    },
+    {
+      "id": "g1-dl-c7fe6db3eb0db64f",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "disagree",
+      "stance": "critical",
+      "requires": [],
+      "personas": [
+        "ordinary_viewer",
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "opportunity"
+      ],
+      "text": "坐等结果不行吗",
+      "family": "await-outcome-reply",
+      "provenance": "downloaded",
+      "sourceId": "comment-c7fe6db3eb0db64f"
+    },
+    {
+      "id": "g1-dl-cfb4cc5eed93fd8d",
+      "role": "reaction",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "concern",
+      "stance": "support",
+      "requires": [],
+      "personas": [
+        "ordinary_viewer",
+        "fan"
+      ],
+      "text": "太可惜了",
+      "family": "bad-outcome-sympathy",
+      "provenance": "downloaded",
+      "sourceId": "comment-cfb4cc5eed93fd8d"
+    },
+    {
+      "id": "g1-dl-1b919bb47883c5cf",
+      "role": "reply",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [],
+      "personas": [
+        "ordinary_viewer",
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "concern",
+        "ask"
+      ],
+      "text": "为什么",
+      "family": "brief-question",
+      "provenance": "downloaded",
+      "sourceId": "comment-1b919bb47883c5cf"
+    },
+    {
+      "id": "g1-dl-5b50105996892616",
+      "role": "reply",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "disagree",
+      "stance": "critical",
+      "requires": [],
+      "personas": [
+        "ordinary_viewer",
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "praise",
+        "opportunity",
+        "concern"
+      ],
+      "text": "不认同🐶🐶🐶",
+      "family": "concise-disagreement",
+      "provenance": "downloaded",
+      "sourceId": "comment-5b50105996892616"
+    },
+    {
+      "id": "g1-dl-8cffe9157b43280e",
+      "role": "reply",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "agree",
+      "stance": "support",
+      "requires": [],
+      "personas": [
+        "ordinary_viewer",
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "warn",
+        "concern"
+      ],
+      "text": "你说的对",
+      "family": "plain-agreement",
+      "provenance": "downloaded",
+      "sourceId": "comment-8cffe9157b43280e"
+    },
+    {
+      "id": "g1-dl-9be8a7ec0416a34c",
+      "role": "reply",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "disagree",
+      "stance": "critical",
+      "requires": [],
+      "personas": [
+        "ordinary_viewer",
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "opportunity",
+        "wait"
+      ],
+      "text": "我有点不大相信",
+      "family": "express-disbelief",
+      "provenance": "downloaded",
+      "sourceId": "comment-9be8a7ec0416a34c"
+    },
+    {
+      "id": "g1-dl-167f248fa861db36",
+      "role": "reaction",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "neutral",
+      "requires": [],
+      "personas": [
+        "ordinary_viewer",
+        "fan"
+      ],
+      "text": "看跟谁比",
+      "family": "compare-subject",
+      "provenance": "downloaded",
+      "sourceId": "comment-167f248fa861db36"
+    },
+    {
+      "id": "g1-dl-3d7b3cbc11d3236b",
+      "role": "reply",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [],
+      "personas": [
+        "ordinary_viewer",
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "wait"
+      ],
+      "text": "这个咋算",
+      "family": "ask-calculation",
+      "provenance": "downloaded",
+      "sourceId": "comment-3d7b3cbc11d3236b"
+    },
+    {
+      "id": "g1-dl-42a6708947657406",
+      "role": "reaction",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "wait",
+      "stance": "neutral",
+      "requires": [],
+      "personas": [
+        "ordinary_viewer",
+        "fan"
+      ],
+      "text": "还能咋办😊",
+      "family": "resigned-acceptance",
+      "provenance": "downloaded",
+      "sourceId": "comment-42a6708947657406"
+    },
+    {
+    "id": "g1-dl-4f3dbe3ac251caaf",
+      "role": "reaction",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+    "act": "concern",
+      "stance": "support",
+      "requires": [],
+      "personas": [
+        "ordinary_viewer",
+        "fan"
+      ],
+      "text": "心疼😢😢😢",
+      "family": "empathize-setback",
+      "provenance": "downloaded",
+      "sourceId": "comment-4f3dbe3ac251caaf"
+    },
+    {
+      "id": "g1-rp-001",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "commentary"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "overtake"
+      ],
+      "text": "{driver}已经超过{otherDriver}。",
+      "family": "duel-overtake",
+      "provenance": "luna_rp",
+      "personas": [
+        "commentator"
+      ]
+    },
+    {
+      "id": "g1-rp-002",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "commentary"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "overtake"
+      ],
+      "text": "完成超越，{driver}到了前面。",
+      "family": "duel-pass",
+      "provenance": "luna_rp",
+      "personas": [
+        "commentator"
+      ]
+    },
+    {
+      "id": "g1-rp-003",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "commentary"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "defended"
+      ],
+      "text": "{driver}守住了位置。",
+      "family": "duel-defended",
+      "provenance": "luna_rp",
+      "personas": [
+        "commentator"
+      ]
+    },
+    {
+      "id": "g1-rp-004",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "commentary"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "defended"
+      ],
+      "text": "这次防守成功，{otherDriver}还在后面。",
+      "family": "duel-held",
+      "provenance": "luna_rp",
+      "personas": [
+        "commentator"
+      ]
+    },
+    {
+      "id": "g1-rp-005",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "commentary"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "duel_close"
+      ],
+      "text": "两车现在只差{gap}格。",
+      "family": "gap-close",
+      "provenance": "luna_rp",
+      "personas": [
+        "commentator"
+      ]
+    },
+    {
+      "id": "g1-rp-006",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "commentary"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "duel_close"
+      ],
+      "text": "{driver}和{otherDriver}之间还有{gap}格。",
+      "family": "gap-reading",
+      "provenance": "luna_rp",
+      "personas": [
+        "commentator"
+      ]
+    },
+    {
+      "id": "g1-rp-007",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "commentary"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "duel_close"
+      ],
+      "text": "目前间距是{gap}格。",
+      "family": "gap-tightening",
+      "provenance": "luna_rp",
+      "personas": [
+        "commentator"
+      ]
+    },
+    {
+      "id": "g1-rp-008",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "commentary"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "duel_close"
+      ],
+      "text": "已经进到{gap}格的范围。",
+      "family": "gap-range",
+      "provenance": "luna_rp",
+      "personas": [
+        "commentator"
+      ]
+    },
+    {
+      "id": "g1-rp-009",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "duel_close",
+        "intel_wear_high"
+      ],
+      "text": "看{driver}的{intelSource}，胎耗可能偏高。",
+      "family": "opponent-wear-high",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ]
+    },
+    {
+      "id": "g1-rp-010",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "duel_close",
+        "intel_wear_high"
+      ],
+      "text": "从{intelSource}看，{driver}的轮胎似乎开始吃力。",
+      "family": "opponent-wear-degrading",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ]
+    },
+    {
+      "id": "g1-rp-011",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "duel_close",
+        "intel_wear_low"
+      ],
+      "text": "从{intelSource}估计，{driver}的胎况目前还稳。",
+      "family": "opponent-wear-low",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ]
+    },
+    {
+      "id": "g1-rp-012",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "duel_close",
+        "intel_wear_low"
+      ],
+      "text": "从{intelSource}看，{driver}的胎况可能还算稳。",
+      "family": "opponent-wear-stable",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ]
+    },
+    {
+      "id": "g1-rp-013",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "duel_close",
+        "intel_ers_low"
+      ],
+      "text": "从{intelSource}估计，{driver}的能量余量不多。",
+      "family": "opponent-ers-low",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ]
+    },
+    {
+      "id": "g1-rp-014",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "duel_close",
+        "intel_ers_low"
+      ],
+      "text": "结合{intelSource}，{driver}可能已经用掉不少能量。",
+      "family": "opponent-ers-low-alt",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ]
+    },
+    {
+      "id": "g1-rp-015",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "duel_close",
+        "intel_ers_high"
+      ],
+      "text": "从{intelSource}看，{driver}似乎还留有一些能量。",
+      "family": "opponent-ers-high",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ]
+    },
+    {
+      "id": "g1-rp-016",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "duel_close",
+        "intel_ers_high"
+      ],
+      "text": "从{intelSource}推，{driver}之后可能还有部署空间。",
+      "family": "opponent-ers-available",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ]
+    },
+    {
+      "id": "g1-rp-017",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "duel_close",
+        "intel_defense_low"
+      ],
+      "text": "从{intelSource}估计，{driver}的防守余量可能偏低。",
+      "family": "opponent-defense-low",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ]
+    },
+    {
+      "id": "g1-rp-018",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "duel_close",
+        "intel_defense_low"
+      ],
+      "text": "从{intelSource}估计，{driver}的防守余量可能不多。",
+      "family": "opponent-defense-low-alt",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ]
+    },
+    {
+      "id": "g1-rp-019",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "duel_close"
+      ],
+      "text": "目前还不确定{driver}会不会继续守。",
+      "family": "opponent-defense-uncertain",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ]
+    },
+    {
+      "id": "g1-rp-020",
+      "role": "stall",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "wait",
+      "stance": "neutral",
+      "requires": [
+        "intel_pending"
+      ],
+      "text": "这条对手信息还在采样，稍后再确认。",
+      "family": "intel-pending",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ]
+    },
+    {
+      "id": "g1-rp-021",
+      "role": "stall",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "wait",
+      "stance": "neutral",
+      "requires": [
+        "intel_delayed"
+      ],
+      "text": "这次读数有点滞后，我再看一圈。",
+      "family": "intel-delayed",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ]
+    },
+    {
+      "id": "g1-rp-022",
+      "role": "reply",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [
+        "query_wear"
+      ],
+      "text": "这套胎现在磨耗到哪一档了？",
+      "family": "ask-own-wear",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ],
+      "replyToActs": [
+        "ask"
+      ]
+    },
+    {
+      "id": "g1-rp-023",
+      "role": "reply",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [
+        "query_ers"
+      ],
+      "text": "车上电量还剩哪一档？",
+      "family": "ask-own-ers",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ],
+      "replyToActs": [
+        "ask"
+      ]
+    },
+    {
+      "id": "g1-rp-024",
+      "role": "reply",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [
+        "query_defense"
+      ],
+      "text": "防守余量现在够不够？",
+      "family": "ask-own-defense",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ],
+      "replyToActs": [
+        "ask"
+      ]
+    },
+    {
+      "id": "g1-rp-025",
+      "role": "reply",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [
+        "query_gap"
+      ],
+      "text": "和前车还差几格？",
+      "family": "ask-gap",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ],
+      "replyToActs": [
+        "ask"
+      ]
+    },
+    {
+      "id": "g1-rp-026",
+      "role": "reply",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [
+        "query_wear"
+      ],
+      "text": "轮胎还撑得住吗？",
+      "family": "ask-tire-condition",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ],
+      "replyToActs": [
+        "ask"
+      ]
+    },
+    {
+      "id": "g1-rp-027",
+      "role": "reply",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [
+        "query_ers"
+      ],
+      "text": "能量状态有更新吗？",
+      "family": "ask-ers-update",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ],
+      "replyToActs": [
+        "ask"
+      ]
+    },
+    {
+      "id": "g1-rp-028",
+      "role": "reply",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [
+        "query_defense"
+      ],
+      "text": "对手的防守余量有新读数吗？",
+      "family": "ask-opponent-defense",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ],
+      "replyToActs": [
+        "ask"
+      ]
+    },
+    {
+      "id": "g1-rp-029",
+      "role": "reply",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [
+        "query_wear"
+      ],
+      "text": "这组胎的磨耗读数，报一下。",
+      "family": "ask-wear-brief",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ],
+      "replyToActs": [
+        "ask"
+      ]
+    },
+    {
+      "id": "g1-rp-030",
+      "role": "reply",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [
+        "query_gap"
+      ],
+      "text": "前后车距再确认一次。",
+      "family": "ask-gap-confirm",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ],
+      "replyToActs": [
+        "ask"
+      ]
+    },
+    {
+      "id": "g1-rp-031",
+      "role": "suggestion",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "opportunity",
+      "stance": "support",
+      "requires": [
+        "intel_wear_high",
+        "duel_close"
+      ],
+      "text": "可以试着给{driver}一点压力。",
+      "family": "pressure-worn-rival",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ]
+    },
+    {
+      "id": "g1-rp-032",
+      "role": "suggestion",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "opportunity",
+      "stance": "support",
+      "requires": [
+        "intel_wear_high",
+        "duel_close"
+      ],
+      "text": "前车胎耗偏高的话，找机会贴上去。",
+      "family": "pressure-if-worn",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ]
+    },
+    {
+      "id": "g1-rp-033",
+      "role": "claim",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "commentary"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "tire_worn"
+      ],
+      "text": "{driver}这套胎已经有明显磨耗。",
+      "family": "tire-worn-report",
+      "provenance": "luna_rp",
+      "personas": [
+        "commentator"
+      ]
+    },
+    {
+      "id": "g1-rp-034",
+      "role": "claim",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "commentary"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "tire_worn"
+      ],
+      "text": "这组胎的状态开始变旧了。",
+      "family": "tire-aging",
+      "provenance": "luna_rp",
+      "personas": [
+        "commentator"
+      ]
+    },
+    {
+      "id": "g1-rp-035",
+      "role": "claim",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "commentary"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "tire_fresh"
+      ],
+      "text": "{driver}刚换上的胎还很新。",
+      "family": "tire-fresh-report",
+      "provenance": "luna_rp",
+      "personas": [
+        "commentator"
+      ]
+    },
+    {
+      "id": "g1-rp-036",
+      "role": "claim",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "commentary"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "tire_fresh"
+      ],
+      "text": "新胎还没跑开，抓地应该比较直接。",
+      "family": "fresh-tire-feel",
+      "provenance": "luna_rp",
+      "personas": [
+        "commentator"
+      ]
+    },
+    {
+      "id": "g1-rp-037",
+      "role": "claim",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "concern",
+      "stance": "critical",
+      "requires": [
+        "own_tire_danger"
+      ],
+      "text": "我们这套胎快到危险区了。",
+      "family": "own-tire-danger",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ]
+    },
+    {
+      "id": "g1-rp-038",
+      "role": "claim",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "concern",
+      "stance": "critical",
+      "requires": [
+        "own_tire_danger"
+      ],
+      "text": "胎面状态不太安全，得留意。",
+      "family": "own-tire-risk",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ]
+    },
+    {
+      "id": "g1-rp-039",
+      "role": "claim",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "concern",
+      "stance": "critical",
+      "requires": [
+        "own_tire_danger"
+      ],
+      "text": "这组胎已经有点撑不住。",
+      "family": "own-tire-limit",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ]
+    },
+    {
+      "id": "g1-rp-040",
+      "role": "claim",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "concern",
+      "stance": "critical",
+      "requires": [
+        "own_tire_danger"
+      ],
+      "text": "再推下去轮胎风险会很高。",
+      "family": "own-tire-warning",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ]
+    },
+    {
+      "id": "g1-rp-041",
+      "role": "claim",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "concern",
+      "stance": "critical",
+      "requires": [
+        "own_heat_high"
+      ],
+      "text": "我们这边胎温有点高。",
+      "family": "own-heat-high",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ]
+    },
+    {
+      "id": "g1-rp-042",
+      "role": "claim",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "concern",
+      "stance": "critical",
+      "requires": [
+        "own_heat_high"
+      ],
+      "text": "热量起来了，轮胎得照顾一下。",
+      "family": "own-heat-care",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ]
+    },
+    {
+      "id": "g1-rp-043",
+      "role": "claim",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "concern",
+      "stance": "critical",
+      "requires": [
+        "own_heat_high"
+      ],
+      "text": "胎温还压不下来。",
+      "family": "own-heat-still-high",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ]
+    },
+    {
+      "id": "g1-rp-044",
+      "role": "claim",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "concern",
+      "stance": "critical",
+      "requires": [
+        "own_heat_high"
+      ],
+      "text": "现在热得有点快。",
+      "family": "own-heat-rising",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ]
+    },
+    {
+      "id": "g1-rp-045",
+      "role": "suggestion",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "opportunity",
+      "stance": "neutral",
+      "requires": [
+        "tire_worn"
+      ],
+      "text": "接下来少一点滑移，先把胎保住。",
+      "family": "save-worn-tires",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ]
+    },
+    {
+      "id": "g1-rp-046",
+      "role": "suggestion",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "opportunity",
+      "stance": "neutral",
+      "requires": [
+        "tire_fresh"
+      ],
+      "text": "新胎先带起来，别第一段就过推。",
+      "family": "warm-fresh-tires",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ]
+    },
+    {
+      "id": "g1-rp-047",
+      "role": "claim",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "commentary"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "pit_entry"
+      ],
+      "text": "{driver}进站了，开始服务。",
+      "family": "pit-entry-report",
+      "provenance": "luna_rp",
+      "personas": [
+        "commentator"
+      ]
+    },
+    {
+      "id": "g1-rp-048",
+      "role": "claim",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "commentary"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "pit_entry"
+      ],
+      "text": "{driver}已经驶入维修区。",
+      "family": "pit-entry-alt",
+      "provenance": "luna_rp",
+      "personas": [
+        "commentator"
+      ]
+    },
+    {
+      "id": "g1-rp-049",
+      "role": "claim",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "commentary"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "pit_exit"
+      ],
+      "text": "{driver}离开维修区，回到赛道。",
+      "family": "pit-exit-report",
+      "provenance": "luna_rp",
+      "personas": [
+        "commentator"
+      ]
+    },
+    {
+      "id": "g1-rp-050",
+      "role": "claim",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "commentary"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "pit_exit"
+      ],
+      "text": "完成离站，{driver}重新并入比赛。",
+      "family": "pit-exit-alt",
+      "provenance": "luna_rp",
+      "personas": [
+        "commentator"
+      ]
+    },
+    {
+      "id": "g1-rp-051",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "commentary"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "yellow"
+      ],
+      "text": "赛道出现黄旗，注意减速。",
+      "family": "yellow-flag-report",
+      "provenance": "luna_rp",
+      "personas": [
+        "commentator"
+      ]
+    },
+    {
+      "id": "g1-rp-052",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "commentary"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "yellow"
+      ],
+      "text": "黄旗区还没解除。",
+      "family": "yellow-flag-active",
+      "provenance": "luna_rp",
+      "personas": [
+        "commentator"
+      ]
+    },
+    {
+      "id": "g1-rp-053",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "commentary"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "control_stop"
+      ],
+      "text": "{control}出来了，车队先稳住节奏。",
+      "family": "control-stop-report",
+      "provenance": "luna_rp",
+      "personas": [
+        "commentator"
+      ]
+    },
+    {
+      "id": "g1-rp-054",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "commentary"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "control_stop"
+      ],
+      "text": "比赛暂时进入{control}状态。",
+      "family": "control-stop-status",
+      "provenance": "luna_rp",
+      "personas": [
+        "commentator"
+      ]
+    },
+    {
+      "id": "g1-rp-055",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "commentary"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "control_green"
+      ],
+      "text": "{control}，比赛恢复进行。",
+      "family": "control-green-report",
+      "provenance": "luna_rp",
+      "personas": [
+        "commentator"
+      ]
+    },
+    {
+      "id": "g1-rp-056",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "commentary"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "control_green"
+      ],
+      "text": "赛道转绿，重新开始推进。",
+      "family": "green-track-report",
+      "provenance": "luna_rp",
+      "personas": [
+        "commentator"
+      ]
+    },
+    {
+      "id": "g1-rp-057",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "commentary"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "control_neutral"
+      ],
+      "text": "目前是{control}，先别急着做判断。",
+      "family": "control-neutral-report",
+      "provenance": "luna_rp",
+      "personas": [
+        "commentator"
+      ]
+    },
+    {
+      "id": "g1-rp-058",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "commentary"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "retired"
+      ],
+      "text": "{driver}已经退赛。",
+      "family": "retirement-report",
+      "provenance": "luna_rp",
+      "personas": [
+        "commentator"
+      ]
+    },
+    {
+      "id": "g1-rp-059",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "commentary"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "retired"
+      ],
+      "text": "这辆车没能继续跑下去。",
+      "family": "retirement-alt",
+      "provenance": "luna_rp",
+      "personas": [
+        "commentator"
+      ]
+    },
+    {
+      "id": "g1-rp-060",
+      "role": "reaction",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "concern",
+      "stance": "support",
+      "requires": [
+        "retired"
+      ],
+      "text": "先确认人没事。",
+      "family": "retirement-concern",
+      "provenance": "luna_rp",
+      "personas": [
+        "ordinary_viewer"
+      ]
+    },
+    {
+      "id": "g1-rp-061",
+      "role": "reaction",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "concern",
+      "stance": "support",
+      "requires": [
+        "yellow"
+      ],
+      "text": "黄旗一出来，我就开始紧张了。",
+      "family": "yellow-flag-concern",
+      "provenance": "luna_rp",
+      "personas": [
+        "fan"
+      ]
+    },
+    {
+      "id": "g1-rp-062",
+      "role": "reaction",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "wait",
+      "stance": "neutral",
+      "requires": [
+        "control_neutral"
+      ],
+      "text": "等赛会进一步更新吧。",
+      "family": "neutral-control-wait",
+      "provenance": "luna_rp",
+      "personas": [
+        "ordinary_viewer"
+      ]
+    },
+    {
+      "id": "g1-rp-063",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "disagree",
+      "stance": "critical",
+      "requires": [
+        "control_neutral"
+      ],
+      "text": "还没出结论呢，我也不敢猜。",
+      "family": "uncertain-ruling-reply",
+      "provenance": "luna_rp",
+      "personas": [
+        "technical_fan"
+      ],
+      "replyToActs": [
+        "challenge",
+        "report",
+        "ask"
+      ]
+    },
+    {
+      "id": "g1-rp-064",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "concern",
+      "stance": "support",
+      "requires": [
+        "retired"
+      ],
+      "text": "希望车手没事，结果之后再说。",
+      "family": "retirement-safety-reply",
+      "provenance": "luna_rp",
+      "personas": [
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "concern",
+        "ask"
+      ]
+    },
+    {
+      "id": "g1-rp-065",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "commentary"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "published_intel"
+      ],
+      "text": "刚播出的信息显示，对手状态并不轻松。",
+      "family": "published-intel-report",
+      "provenance": "luna_rp",
+      "personas": [
+        "commentator"
+      ]
+    },
+    {
+      "id": "g1-rp-066",
+      "role": "reaction",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "curious",
+      "requires": [
+        "published_intel"
+      ],
+      "text": "这个情报是刚刚公开的吗？",
+      "family": "ask-public-intel",
+      "provenance": "luna_rp",
+      "personas": [
+        "technical_fan"
+      ]
+    },
+    {
+      "id": "g1-rp-067",
+      "role": "stall",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "wait",
+      "stance": "neutral",
+      "requires": [
+        "intel_pending"
+      ],
+      "text": "对手这边还没读到，等下一次采样。",
+      "family": "opponent-intel-pending",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ]
+    },
+    {
+      "id": "g1-rp-068",
+      "role": "stall",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "wait",
+      "stance": "neutral",
+      "requires": [
+        "intel_delayed"
+      ],
+      "text": "这份情报慢了一拍，先不据此行动。",
+      "family": "intel-delay-caution",
+      "provenance": "luna_rp",
+      "personas": [
+        "engineer"
+      ]
+    },
+    {
+      "id": "g1-rp-069",
+      "role": "reply",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "agree",
+      "stance": "support",
+      "requires": [],
+      "text": "这次超车时机抓得不错。",
+      "family": "overtake-praise-reply",
+      "provenance": "luna_rp",
+      "personas": [
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "opportunity",
+        "praise"
+      ]
+    },
+    {
+      "id": "g1-rp-070",
+      "role": "reply",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "disagree",
+      "stance": "critical",
+      "requires": [],
+      "text": "看着像超了，位置还得确认。",
+      "family": "pass-caution-reply",
+      "provenance": "luna_rp",
+      "personas": [
+        "technical_fan"
+      ],
+      "replyToActs": [
+        "report",
+        "challenge"
+      ]
+    },
+    {
+      "id": "g1-rp-071",
+      "role": "reply",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "agree",
+      "stance": "support",
+      "requires": [],
+      "text": "防住这一轮挺关键。",
+      "family": "defense-praise-reply",
+      "provenance": "luna_rp",
+      "personas": [
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "warn"
+      ]
+    },
+    {
+      "id": "g1-rp-072",
+      "role": "reply",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "curious",
+      "requires": [],
+      "text": "这算守住了，还是还在并排？",
+      "family": "defense-status-reply",
+      "provenance": "luna_rp",
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "replyToActs": [
+        "ask"
+      ]
+    },
+    {
+      "id": "g1-rp-073",
+      "role": "reply",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "concern",
+      "stance": "support",
+      "requires": [],
+      "text": "这胎看起来快到极限了。",
+      "family": "tire-concern-reply",
+      "provenance": "luna_rp",
+      "personas": [
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "concern"
+      ]
+    },
+    {
+      "id": "g1-rp-074",
+      "role": "reply",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "disagree",
+      "stance": "critical",
+      "requires": [],
+      "text": "刚换胎不代表立刻就有优势。",
+      "family": "tire-advantage-challenge",
+      "provenance": "luna_rp",
+      "personas": [
+        "technical_fan"
+      ],
+      "replyToActs": [
+        "opportunity",
+        "praise",
+        "report"
+      ]
+    },
+    {
+      "id": "g1-rp-075",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "agree",
+      "stance": "support",
+      "requires": [],
+      "text": "这会儿怪谁都早了点吧。",
+      "family": "await-confirmation-reply",
+      "provenance": "luna_rp",
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "replyToActs": [
+        "challenge",
+        "concern",
+        "report"
+      ]
+    },
+    {
+      "id": "g1-rp-076",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [],
+      "text": "有后续通报了吗？",
+      "family": "incident-followup-reply",
+      "provenance": "luna_rp",
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "replyToActs": [
+        "wait",
+        "report",
+        "concern"
+      ]
+    },
+    {
+      "id": "g1-rp-077",
+      "role": "reply",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "curious",
+      "requires": [],
+      "text": "这个距离是几格，还是估出来的？",
+      "family": "gap-unit-question",
+      "provenance": "luna_rp",
+      "personas": [
+        "technical_fan"
+      ],
+      "replyToActs": [
+        "report",
+        "claim"
+      ]
+    },
+    {
+      "id": "g1-rp-078",
+      "role": "reply",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [],
+      "text": "这读数是不是还没刷新？",
+      "family": "stale-read-reply",
+      "provenance": "luna_rp",
+      "personas": [
+        "technical_fan"
+      ],
+      "replyToActs": [
+        "report",
+        "challenge"
+      ]
+    },
+    {
+      "id": "g1-rp-079",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "disagree",
+      "stance": "critical",
+      "requires": [],
+      "text": "黄旗不等于事故责任已经判了。",
+      "family": "flag-ruling-distinction",
+      "provenance": "luna_rp",
+      "personas": [
+        "technical_fan"
+      ],
+      "replyToActs": [
+        "report",
+        "challenge"
+      ]
+    },
+    {
+      "id": "g1-rp-080",
+      "role": "reply",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "agree",
+      "stance": "support",
+      "requires": [],
+      "text": "这波守得住，至少这一段。",
+      "family": "defense-brief-reply",
+      "provenance": "luna_rp",
+      "personas": [
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "praise"
+      ]
+    },
+    {
+      "id": "g1-soc-overtake-01",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "overtake"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "刚才{driver}从{otherDriver}旁边过去了。",
+      "family": "social-overtake-pass",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-soc-overtake-02",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "overtake"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "前后位置换了，{driver}在前面。",
+      "family": "social-overtake-order",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-soc-overtake-03",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "overtake"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "这一超，{otherDriver}掉到后面了。",
+      "family": "social-overtake-drop",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-soc-defended-01",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "defended"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "{driver}把位置守住了。",
+      "family": "social-defense-hold",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-soc-defended-02",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "defended"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "{otherDriver}这次没挤过去。",
+      "family": "social-defense-no-pass",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-soc-pit-entry-01",
+      "role": "claim",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "pit_entry"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "{driver}进维修区了。",
+      "family": "social-pit-entry",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-soc-pit-entry-02",
+      "role": "claim",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "pit_entry"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "看到{driver}进站，开始做服务了。",
+      "family": "social-pit-service-start",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-soc-pit-exit-01",
+      "role": "claim",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "pit_exit"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "{driver}已经离开维修区。",
+      "family": "social-pit-exit",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-soc-pit-exit-02",
+      "role": "claim",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "pit_exit"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "{driver}回到赛道上了。",
+      "family": "social-back-on-track",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-soc-retired-01",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "retired"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "{driver}这边退赛了。",
+      "family": "social-retirement",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-soc-retired-02",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "retired"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "{driver}没能继续跑。",
+      "family": "social-retirement-short",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-soc-retired-03",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "retired"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "{driver}这场退赛了，后面没继续跑。",
+      "family": "social-retirement-stopped",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-soc-yellow-01",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "yellow"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "这段出了黄旗。",
+      "family": "social-yellow-flag",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-soc-yellow-02",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "yellow"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "黄旗还挂着，气氛一下紧了。",
+      "family": "social-yellow-active",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-soc-yellow-03",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "yellow"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "黄旗区，比赛节奏先收下来了。",
+      "family": "social-yellow-caution",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-soc-control-stop-01",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "control_stop"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "{control}出来了。",
+      "family": "social-neutralization",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-soc-control-stop-02",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "control_stop"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "比赛进入{control}状态，节奏收住了。",
+      "family": "social-control-stop",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-soc-control-green-01",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "control_green"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "{control}了，比赛继续。",
+      "family": "social-control-green",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-soc-control-green-02",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "control_green"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "赛道转绿，重新跑起来。",
+      "family": "social-green-track",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-soc-control-neutral-01",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "control_neutral"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "现在是{control}状态。",
+      "family": "social-control-neutral",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-soc-control-neutral-02",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "control_neutral"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "比赛节奏收住了，当前{control}。",
+      "family": "social-neutral-state",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-soc-control-neutral-03",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "control_neutral"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "现在是{control}，场上节奏收住了。",
+      "family": "social-follow-control",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-soc-tire-worn-01",
+      "role": "claim",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "tire_worn"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "{driver}这套胎看着磨得有点多。",
+      "family": "social-worn-tire",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-soc-tire-worn-02",
+      "role": "claim",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "tire_worn"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "这组旧胎开始掉状态了。",
+      "family": "social-tire-fading",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-soc-tire-worn-03",
+      "role": "claim",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "tire_worn"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "{driver}的胎况看着不太新了。",
+      "family": "social-tire-old",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-commentary-intel-wear-high",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "commentary"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "intel_wear_high"
+      ],
+      "personas": [
+        "commentator"
+      ],
+      "text": "根据{intelSource}，{driver}的胎耗可能偏高。",
+      "family": "commentary-rumor-wear-high",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-commentary-intel-wear-low",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "commentary"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "intel_wear_low"
+      ],
+      "personas": [
+        "commentator"
+      ],
+      "text": "从{intelSource}看，{driver}的胎况暂时还算稳。",
+      "family": "commentary-rumor-wear-low",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-commentary-intel-defense-low",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "commentary"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "intel_defense_low"
+      ],
+      "personas": [
+        "commentator"
+      ],
+      "text": "从{intelSource}估计，{driver}的防守余量可能偏紧。",
+      "family": "commentary-rumor-defense-low",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-social-intel-wear-high",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "published_intel",
+        "intel_wear_high"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "按{intelSource}判断，{driver}的胎耗可能偏高。",
+      "family": "social-published-wear-high",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-social-intel-wear-low",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "published_intel",
+        "intel_wear_low"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "按{intelSource}看，{driver}的胎况暂时还算稳。",
+      "family": "social-published-wear-low",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-social-intel-defense-low",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "published_intel",
+        "intel_defense_low"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "从{intelSource}判断，{driver}防守余量可能不多。",
+      "family": "social-published-defense-low",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-social-intel-wear-high-alt",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "published_intel",
+        "intel_wear_high"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "结合{intelSource}，{driver}这组胎好像挺吃力。",
+      "family": "social-published-wear-high-alt",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-social-intel-wear-low-alt",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "published_intel",
+        "intel_wear_low"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "按{intelSource}看，{driver}胎况暂时还算稳。",
+      "family": "social-published-wear-low-alt",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-social-intel-defense-low-alt",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "published_intel",
+        "intel_defense_low"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "按{intelSource}看，{driver}的防守资源可能偏紧。",
+      "family": "social-published-defense-low-alt",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-social-duel-close-01",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "duel_close"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "两车距离不远，下一步还不好说。",
+      "family": "social-close-battle",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-social-duel-close-02",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "duel_close"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "近距离缠斗还在继续。",
+      "family": "social-close-duel-continues",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-engineer-yellow-warn",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "warn",
+      "stance": "neutral",
+      "requires": [
+        "yellow"
+      ],
+      "personas": [
+        "engineer"
+      ],
+      "text": "黄旗区还在，先稳住车速。",
+      "family": "engineer-yellow-caution",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-engineer-stop-warn",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "warn",
+      "stance": "neutral",
+      "requires": [
+        "control_stop"
+      ],
+      "personas": [
+        "engineer"
+      ],
+      "text": "{control}状态下先别急，留意赛会信息。",
+      "family": "engineer-control-stop-caution",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-engineer-neutral-warn",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "warn",
+      "stance": "neutral",
+      "requires": [
+        "control_neutral"
+      ],
+      "personas": [
+        "engineer"
+      ],
+      "text": "跟住{control}节奏，注意留出间距。",
+      "family": "engineer-control-neutral-caution",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-engineer-green-warn",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "warn",
+      "stance": "neutral",
+      "requires": [
+        "control_green"
+      ],
+      "personas": [
+        "engineer"
+      ],
+      "text": "赛道转{control}了，注意前车动向。",
+      "family": "engineer-green-caution",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-engineer-retired-warn",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "warn",
+      "stance": "neutral",
+      "requires": [
+        "retired"
+      ],
+      "personas": [
+        "engineer"
+      ],
+      "text": "这边确认退赛了，按当前状态处理。",
+      "family": "engineer-retirement-status",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-engineer-defense-available-01",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "duel_close",
+        "intel_defense_available"
+      ],
+      "personas": [
+        "engineer"
+      ],
+      "text": "从{intelSource}看，{driver}可能还留有防守余量。",
+      "family": "opponent-defense-available",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-engineer-defense-available-02",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "duel_close",
+        "intel_defense_available"
+      ],
+      "personas": [
+        "engineer"
+      ],
+      "text": "结合{intelSource}估计，{driver}还留有防守余量。",
+      "family": "opponent-defense-available-alt",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-engineer-query-gap-01",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "query_gap"
+      ],
+      "personas": [
+        "engineer"
+      ],
+      "text": "和{driver}相差{gap}格。",
+      "family": "engineer-query-gap",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-engineer-query-gap-02",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "query_gap"
+      ],
+      "personas": [
+        "engineer"
+      ],
+      "text": "当前间距{gap}格，目标是{driver}。",
+      "family": "engineer-query-gap-status",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-engineer-query-gap-03",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "query_gap"
+      ],
+      "personas": [
+        "engineer"
+      ],
+      "text": "到{driver}还有{gap}格。",
+      "family": "engineer-query-gap-distance",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-npc-radio-own-wear-01",
+      "role": "claim",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "warn",
+      "stance": "neutral",
+      "requires": [
+        "own_tire_danger"
+      ],
+      "personas": [
+        "engineer"
+      ],
+      "text": "胎面危险，别连续硬推。",
+      "family": "npc-radio-tire-danger",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-npc-radio-own-wear-02",
+      "role": "claim",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "warn",
+      "stance": "neutral",
+      "requires": [
+        "own_tire_danger"
+      ],
+      "personas": [
+        "engineer"
+      ],
+      "text": "这组胎到风险区了，稍微收一点。",
+      "family": "npc-radio-tire-risk",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-npc-radio-own-heat-01",
+      "role": "claim",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "warn",
+      "stance": "neutral",
+      "requires": [
+        "own_heat_high"
+      ],
+      "personas": [
+        "engineer"
+      ],
+      "text": "胎温危险，别再连续拉。",
+      "family": "npc-radio-heat-danger",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-npc-radio-own-heat-02",
+      "role": "claim",
+      "topics": [
+        "tires"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "warn",
+      "stance": "neutral",
+      "requires": [
+        "own_heat_high"
+      ],
+      "personas": [
+        "engineer"
+      ],
+      "text": "热量太高了，先回收一点。",
+      "family": "npc-radio-heat-high",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-npc-radio-own-ers-01",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "warn",
+      "stance": "neutral",
+      "requires": [
+        "own_ers_low"
+      ],
+      "personas": [
+        "engineer"
+      ],
+      "text": "电量不多了，先回收。",
+      "family": "npc-radio-ers-low",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-npc-radio-own-ers-02",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "warn",
+      "stance": "neutral",
+      "requires": [
+        "own_ers_low"
+      ],
+      "personas": [
+        "engineer"
+      ],
+      "text": "可用能量偏低，别连续部署。",
+      "family": "npc-radio-ers-low-alt",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-npc-radio-own-defense-01",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "warn",
+      "stance": "neutral",
+      "requires": [
+        "own_defense_low"
+      ],
+      "personas": [
+        "engineer"
+      ],
+      "text": "防守资源快用完了。",
+      "family": "npc-radio-defense-low",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-npc-radio-own-defense-02",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "warn",
+      "stance": "neutral",
+      "requires": [
+        "own_defense_low"
+      ],
+      "personas": [
+        "engineer"
+      ],
+      "text": "剩余防守不多，留意后车动作。",
+      "family": "npc-radio-defense-low-alt",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-engineer-team-telemetry-wear",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "team_telemetry",
+        "query_wear"
+      ],
+      "personas": [
+        "engineer"
+      ],
+      "text": "本队遥测更新：{driver}胎耗{wear}。",
+      "family": "team-telemetry-wear",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-engineer-team-telemetry-ers",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "team_telemetry",
+        "query_ers"
+      ],
+      "personas": [
+        "engineer"
+      ],
+      "text": "{driver}车上的电量读数是{ers}。",
+      "family": "team-telemetry-ers",
+      "provenance": "luna_rp"
+    },
+    {
+      "id": "g1-engineer-team-telemetry-defense",
+      "role": "claim",
+      "topics": [
+        "duel"
+      ],
+      "channels": [
+        "engineer"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "team_telemetry",
+        "query_defense"
+      ],
+      "personas": [
+        "engineer"
+      ],
+      "text": "本队数据显示，{driver}防守余量{defense}。",
+      "family": "team-telemetry-defense",
+      "provenance": "luna_rp"
+    }
+  ]
+}

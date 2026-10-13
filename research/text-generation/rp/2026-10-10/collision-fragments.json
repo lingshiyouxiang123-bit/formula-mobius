@@ -1,0 +1,1037 @@
+{
+  "fragments": [
+    {
+      "id": "collision-01",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "commentary"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "commentator"
+      ],
+      "text": "{driver}和{otherDriver}碰上了！",
+      "family": "contact-shout",
+      "provenance": "luna_rp",
+      "expresses": [
+        "contact_report"
+      ]
+    },
+    {
+      "id": "collision-02",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "support",
+      "stance": "support",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "不是，{driver}凭啥让？",
+      "family": "claim-the-space",
+      "provenance": "luna_rp",
+      "expresses": [
+        "claim_space"
+      ]
+    },
+    {
+      "id": "collision-03",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "你看比赛了吗？都挤成那样了。",
+      "family": "push-back-on-space",
+      "provenance": "luna_rp",
+      "expresses": [
+        "cramped"
+      ],
+      "replyToActs": [
+        "support"
+      ],
+      "replyToTags": [
+        "claim_space"
+      ]
+    },
+    {
+      "id": "collision-04",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "行，又是{driver}全责。",
+      "family": "accuse-bias",
+      "provenance": "luna_rp",
+      "expresses": [
+        "accuse_bias"
+      ],
+      "replyToActs": [
+        "challenge"
+      ],
+      "replyToTags": [
+        "cramped"
+      ]
+    },
+    {
+      "id": "collision-05",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "都贴成这样了还往里挤？",
+      "family": "criticize-inside-move",
+      "provenance": "luna_rp",
+      "expresses": [
+        "cramped"
+      ]
+    },
+    {
+      "id": "collision-06",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "人家都到那儿了，还要怎么让？",
+      "family": "defend-move",
+      "provenance": "luna_rp",
+      "expresses": [
+        "defend_driver",
+        "claim_space"
+      ],
+      "replyToActs": [
+        "challenge"
+      ],
+      "replyToTags": [
+        "cramped"
+      ]
+    },
+    {
+      "id": "collision-07",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "这也洗？",
+      "family": "accuse-deflection",
+      "provenance": "luna_rp",
+      "expresses": [
+        "accuse_bias"
+      ],
+      "replyToActs": [
+        "challenge"
+      ],
+      "replyToTags": [
+        "defend_driver"
+      ]
+    },
+    {
+      "id": "collision-08",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "你这叫留空间？",
+      "family": "argue-space",
+      "provenance": "luna_rp",
+      "expresses": [
+        "cramped"
+      ],
+      "replyToActs": [
+        "challenge"
+      ],
+      "replyToTags": [
+        "defend_driver"
+      ]
+    },
+    {
+      "id": "collision-09",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "support",
+      "stance": "support",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "又怪{otherDriver}？他也在争位置啊。",
+      "family": "defend-other-driver",
+      "provenance": "luna_rp",
+      "expresses": [
+        "defend_driver",
+        "claim_space"
+      ]
+    },
+    {
+      "id": "collision-10",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "争位置就能往人身上靠？",
+      "family": "challenge-defense",
+      "provenance": "luna_rp",
+      "expresses": [
+        "cramped"
+      ],
+      "replyToActs": [
+        "support"
+      ],
+      "replyToTags": [
+        "defend_driver"
+      ]
+    },
+    {
+      "id": "collision-11",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "那另一边不用管？",
+      "family": "counter-question",
+      "provenance": "luna_rp",
+      "expresses": [
+        "defend_driver"
+      ],
+      "replyToActs": [
+        "challenge"
+      ],
+      "replyToTags": [
+        "cramped"
+      ]
+    },
+    {
+      "id": "collision-12",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "你们只要看到{otherDriver}就开护是吧。",
+      "family": "call-out-bias",
+      "provenance": "luna_rp",
+      "expresses": [
+        "accuse_bias"
+      ],
+      "replyToActs": [
+        "challenge"
+      ],
+      "replyToTags": [
+        "defend_driver"
+      ]
+    },
+    {
+      "id": "collision-13",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "两个人都不收，这不就碰上了。",
+      "family": "both-committed",
+      "provenance": "luna_rp",
+      "expresses": [
+        "both_committed"
+      ]
+    },
+    {
+      "id": "collision-14",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "又开始五五开了，真会和稀泥。",
+      "family": "reject-false-balance",
+      "provenance": "luna_rp",
+      "expresses": [
+        "equal_blame"
+      ],
+      "replyToActs": [
+        "challenge"
+      ],
+      "replyToTags": [
+        "both_committed",
+        "equal_blame"
+      ]
+    },
+    {
+      "id": "collision-15",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "接触是双方的，责任又不一定一人一半。",
+      "family": "separate-contact-blame",
+      "provenance": "luna_rp",
+      "expresses": [
+        "equal_blame"
+      ],
+      "replyToActs": [
+        "challenge"
+      ],
+      "replyToTags": [
+        "equal_blame"
+      ]
+    },
+    {
+      "id": "collision-16",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "agree",
+      "stance": "support",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "对，我说的是两边都没收，不是五五责。",
+      "family": "clarify-both-committed",
+      "provenance": "luna_rp",
+      "expresses": [
+        "both_committed"
+      ],
+      "replyToActs": [
+        "challenge"
+      ],
+      "replyToTags": [
+        "equal_blame"
+      ]
+    },
+    {
+      "id": "collision-17",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "这一下凭啥要罚{driver}？",
+      "family": "question-penalty",
+      "provenance": "luna_rp",
+      "expresses": [
+        "penalty_talk"
+      ]
+    },
+    {
+      "id": "collision-18",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "这一下该不该罚，我真说不好。",
+      "family": "wait-for-review",
+      "provenance": "luna_rp",
+      "expresses": [
+        "penalty_talk"
+      ],
+      "replyToActs": [
+        "challenge"
+      ],
+      "replyToTags": [
+        "penalty_talk"
+      ]
+    },
+    {
+      "id": "collision-19",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "没罚就是没事？你这逻辑也行。",
+      "family": "challenge-penalty-logic",
+      "provenance": "luna_rp",
+      "expresses": [
+        "penalty_talk"
+      ],
+      "replyToActs": [
+        "challenge"
+      ],
+      "replyToTags": [
+        "penalty_talk"
+      ]
+    },
+    {
+      "id": "collision-20",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "有人看到赛会消息了吗？",
+      "family": "ask-official-update",
+      "provenance": "luna_rp",
+      "expresses": [
+        "penalty_talk"
+      ],
+      "replyToActs": [
+        "challenge",
+        "ask"
+      ],
+      "replyToTags": [
+        "penalty_talk"
+      ]
+    },
+    {
+      "id": "collision-21",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "车都碰上了还说没事？",
+      "family": "downplay-argument",
+      "provenance": "luna_rp",
+      "expresses": [
+        "severity_talk"
+      ]
+    },
+    {
+      "id": "collision-22",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "接触归接触，严重不严重另说。",
+      "family": "severity-argument",
+      "provenance": "luna_rp",
+      "expresses": [
+        "severity_talk"
+      ],
+      "replyToActs": [
+        "challenge"
+      ],
+      "replyToTags": [
+        "severity_talk"
+      ]
+    },
+    {
+      "id": "collision-23",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "换成你不喜欢的车手，你还这么说吗？",
+      "family": "test-for-bias",
+      "provenance": "luna_rp",
+      "expresses": [
+        "accuse_bias"
+      ],
+      "replyToActs": [
+        "challenge"
+      ],
+      "replyToTags": [
+        "severity_talk"
+      ]
+    },
+    {
+      "id": "collision-24",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "agree",
+      "stance": "support",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "影响大不大先不说，谁的锅还真不好分。",
+      "family": "separate-impact-and-blame",
+      "provenance": "luna_rp",
+      "expresses": [
+        "severity_talk"
+      ],
+      "replyToActs": [
+        "challenge"
+      ],
+      "replyToTags": [
+        "severity_talk"
+      ]
+    },
+    {
+      "id": "collision-25",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "support",
+      "stance": "support",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "{driver}总不能每次都自己消失吧。",
+      "family": "defend-aggression",
+      "provenance": "luna_rp",
+      "expresses": [
+        "defend_driver",
+        "claim_space"
+      ]
+    },
+    {
+      "id": "collision-26",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "没人让他消失，留点空间而已。",
+      "family": "counter-space",
+      "provenance": "luna_rp",
+      "expresses": [
+        "cramped"
+      ],
+      "replyToActs": [
+        "support"
+      ],
+      "replyToTags": [
+        "defend_driver",
+        "claim_space"
+      ]
+    },
+    {
+      "id": "collision-27",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "行，别人不动就叫没空间。",
+      "family": "sarcastic-counter",
+      "provenance": "luna_rp",
+      "expresses": [
+        "cramped"
+      ],
+      "replyToActs": [
+        "challenge"
+      ],
+      "replyToTags": [
+        "cramped"
+      ]
+    },
+    {
+      "id": "collision-28",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "空间到底够不够，俩粉丝各说各话。",
+      "family": "space-debate-stalemate",
+      "provenance": "luna_rp",
+      "expresses": [
+        "cramped",
+        "accuse_bias"
+      ],
+      "replyToActs": [
+        "support",
+        "challenge"
+      ],
+      "replyToTags": [
+        "claim_space",
+        "cramped"
+      ]
+    },
+    {
+      "id": "collision-29",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "concern",
+      "stance": "neutral",
+      "requires": [
+        "contact",
+        "same_team"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "队友都碰上了，这下队里怎么聊。",
+      "family": "same-team-concern",
+      "provenance": "luna_rp",
+      "expresses": [
+        "concern",
+        "teammate_risk"
+      ]
+    },
+    {
+      "id": "collision-30",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "contact",
+        "same_team"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "队友也不能把位置白送吧。",
+      "family": "same-team-position",
+      "provenance": "luna_rp",
+      "expresses": [
+        "claim_space"
+      ],
+      "replyToActs": [
+        "concern"
+      ],
+      "replyToTags": [
+        "concern",
+        "teammate_risk"
+      ]
+    },
+    {
+      "id": "collision-31",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "contact",
+        "same_team"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "是队友才更不该这么挤啊。",
+      "family": "same-team-risk",
+      "provenance": "luna_rp",
+      "expresses": [
+        "teammate_risk",
+        "cramped"
+      ],
+      "replyToActs": [
+        "support",
+        "challenge"
+      ],
+      "replyToTags": [
+        "claim_space"
+      ]
+    },
+    {
+      "id": "collision-32",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "contact",
+        "same_team"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "怎么，队友就得一直让？",
+      "family": "same-team-counter",
+      "provenance": "luna_rp",
+      "expresses": [
+        "claim_space"
+      ],
+      "replyToActs": [
+        "challenge"
+      ],
+      "replyToTags": [
+        "teammate_risk"
+      ]
+    },
+    {
+      "id": "collision-33",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "有没有别的角度？这下我没看清。",
+      "family": "ask-for-angle",
+      "provenance": "luna_rp",
+      "expresses": [
+        "unknown_angle"
+      ]
+    },
+    {
+      "id": "collision-34",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "一个角度就够你们定责了？",
+      "family": "challenge-evidence",
+      "provenance": "luna_rp",
+      "expresses": [
+        "unknown_angle",
+        "accuse_bias"
+      ],
+      "replyToActs": [
+        "ask"
+      ],
+      "replyToTags": [
+        "unknown_angle"
+      ]
+    },
+    {
+      "id": "collision-35",
+      "role": "claim",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "concern",
+      "stance": "neutral",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "希望两边都没受影响，吵归吵。",
+      "family": "concern-both-cars",
+      "provenance": "luna_rp",
+      "expresses": [
+        "concern"
+      ]
+    },
+    {
+      "id": "collision-36",
+      "role": "reply",
+      "topics": [
+        "incident"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "contact"
+      ],
+      "personas": [
+        "troll"
+      ],
+      "text": "刚才还在互骂，现在突然都关心上了。",
+      "family": "tease-fan-switch",
+      "provenance": "luna_rp",
+      "expresses": [
+        "accuse_bias"
+      ],
+      "replyToActs": [
+        "concern",
+        "support"
+      ],
+      "replyToTags": [
+        "concern"
+      ]
+    }
+  ]
+}

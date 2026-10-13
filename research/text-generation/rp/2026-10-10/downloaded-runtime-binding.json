@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "entries": [
+    { "sourceId": "comment-03867cc4b3fc352f", "trigger": "classification", "persona": "fan", "when": [{ "field": "isWinner", "op": "eq", "value": true }], "replyTo": null, "requiredValues": ["isWinner"] },
+    { "sourceId": "comment-a9e754cdd5b99f2c", "trigger": "overtake", "persona": "fan", "when": [{ "field": "driver", "op": "present" }, { "field": "otherDriver", "op": "present" }], "replyTo": "overtake.pass.commentary", "requiredValues": ["driver", "otherDriver"] },
+    { "sourceId": "comment-b853083cf470c3f8", "trigger": "classification", "persona": "fan", "when": [{ "field": "isWinner", "op": "eq", "value": true }], "replyTo": "class.winner.fan", "requiredValues": ["isWinner"] },
+    { "sourceId": "comment-d2b70268a654c56c", "trigger": "classification", "persona": "fan", "when": [{ "field": "positionsGained", "op": "gt", "value": 0 }, { "field": "isDnf", "op": "eq", "value": false }, { "field": "pitLaneStart", "op": "eq", "value": false }], "replyTo": null, "requiredValues": ["positionsGained", "isDnf", "pitLaneStart"] },
+    { "sourceId": "comment-e0a7a6b2ea927a31", "trigger": "classification", "persona": "ordinary_viewer", "when": [{ "field": "isPodium", "op": "eq", "value": true }], "replyTo": "class.podium.viewer", "requiredValues": ["isPodium"] },
+    { "sourceId": "comment-e33bfdc3bbc1e913", "trigger": "overtake", "persona": "fan", "when": [{ "field": "driver", "op": "present" }, { "field": "otherDriver", "op": "present" }], "replyTo": "overtake.pass.viewer", "requiredValues": ["driver", "otherDriver"] },
+    { "sourceId": "comment-9cce1149cdf87ce4", "trigger": "classification", "persona": "fan", "when": [{ "field": "isPodium", "op": "eq", "value": true }], "replyTo": "class.podium.viewer", "requiredValues": ["isPodium"] },
+    { "sourceId": "comment-207cfad735652bbf", "trigger": "classification", "persona": "fan", "when": [{ "field": "isDnf", "op": "eq", "value": true }], "replyTo": "retire.viewer", "requiredValues": ["isDnf"] },
+    { "sourceId": "comment-4f3dbe3ac251caaf", "trigger": "classification", "persona": "fan", "when": [{ "field": "isDnf", "op": "eq", "value": true }], "replyTo": "retire.fan", "requiredValues": ["isDnf"] },
+    { "sourceId": "comment-aa24657b3226dbd5", "trigger": "classification", "persona": "fan", "when": [{ "field": "isDnf", "op": "eq", "value": true }], "replyTo": "retire.fan", "requiredValues": ["isDnf"] },
+    { "sourceId": "comment-ad859a730a0f576e", "trigger": "classification", "persona": "ordinary_viewer", "when": [{ "field": "isDnf", "op": "eq", "value": true }], "replyTo": "retire.viewer", "requiredValues": ["isDnf"] },
+    { "sourceId": "comment-bdab60d7f955637c", "trigger": "classification", "persona": "fan", "when": [{ "field": "isDnf", "op": "eq", "value": true }], "replyTo": "retire.fan", "requiredValues": ["isDnf"] },
+    { "sourceId": "comment-cfb4cc5eed93fd8d", "trigger": "classification", "persona": "fan", "when": [{ "field": "positionsGained", "op": "lt", "value": 0 }, { "field": "isDnf", "op": "eq", "value": false }, { "field": "pitLaneStart", "op": "eq", "value": false }], "replyTo": "class.loss.fan", "requiredValues": ["positionsGained", "isDnf", "pitLaneStart"] },
+    { "sourceId": "comment-d21f41648b9e8be6", "trigger": "classification", "persona": "ordinary_viewer", "when": [{ "field": "isDnf", "op": "eq", "value": true }], "replyTo": "retire.viewer", "requiredValues": ["isDnf"] },
+    { "sourceId": "comment-a8b8dc885aaff4db", "trigger": "classification", "persona": "fan", "when": [{ "field": "positionsGained", "op": "gt", "value": 0 }, { "field": "isDnf", "op": "eq", "value": false }, { "field": "pitLaneStart", "op": "eq", "value": false }], "replyTo": null, "requiredValues": ["positionsGained", "isDnf", "pitLaneStart"] },
+    { "sourceId": "comment-2cf7160caf32ceff", "trigger": "control", "persona": "ordinary_viewer", "when": [{ "field": "control", "op": "present" }], "replyTo": "control.sc.viewer", "requiredValues": ["control"] },
+    { "sourceId": "comment-7592714698f3db64", "trigger": "overtake", "persona": "fan", "actOverride": "echo", "when": [{ "field": "driver", "op": "present" }], "replyTo": "overtake.pass.fan", "requiredValues": ["driver"] },
+    { "sourceId": "comment-7bb3decc300173b0", "trigger": "control", "persona": "ordinary_viewer", "when": [{ "field": "control", "op": "present" }], "replyTo": "control.sc.viewer", "requiredValues": ["control"] },
+    { "sourceId": "comment-0e5bfd5e71a24d92", "trigger": "classification", "persona": "fan", "when": [{ "field": "isDnf", "op": "eq", "value": true }], "replyTo": "retire.viewer", "requiredValues": ["isDnf"] },
+    { "sourceId": "comment-1884c7317fda2f22", "trigger": "control", "persona": "ordinary_viewer", "when": [{ "field": "control", "op": "present" }], "replyTo": "control.vsc.fan", "requiredValues": ["control"] },
+    { "sourceId": "comment-6ab0570406f2936b", "trigger": "control", "persona": "ordinary_viewer", "when": [{ "field": "control", "op": "eq", "value": "VSC" }], "replyTo": "control.vsc.fan", "requiredValues": ["control"] }
+  ]
+}

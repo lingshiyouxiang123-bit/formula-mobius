@@ -1,0 +1,4844 @@
+{
+  "version": 2,
+  "expressions": [
+    {
+      "id": "comment-0072590521c527a4",
+      "text": "我不要你觉得",
+      "act": "rebut",
+      "tone": "heated",
+      "parentIntents": [
+        "analysis",
+        "praise",
+        "boast",
+        "complaint"
+      ],
+      "responseIntent": "disagree",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "performance",
+        "strategy"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "reject-opinion"
+    },
+    {
+      "id": "comment-03867cc4b3fc352f",
+      "text": "太强了👍",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "praise",
+        "boast"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "performance",
+        "pace"
+      ],
+      "requires": [
+        "good_result"
+      ],
+      "forbids": [],
+      "family": "brief-praise"
+    },
+    {
+      "id": "comment-061b4896c2a27406",
+      "text": "怎么离谱了",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "complaint",
+        "analysis",
+        "taunt"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "fanwar",
+        "performance"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "challenge-claim"
+    },
+    {
+      "id": "comment-085711311415a9e4",
+      "text": "太气了",
+      "act": "cope",
+      "tone": "heated",
+      "parentIntents": [
+        "complaint",
+        "analysis"
+      ],
+      "responseIntent": "complaint",
+      "claimMode": "none",
+      "topics": [
+        "incident",
+        "performance"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "brief-frustration"
+    },
+    {
+      "id": "comment-0bdbc8395720e98e",
+      "text": "笑 死",
+      "act": "joke",
+      "tone": "casual",
+      "parentIntents": [
+        "taunt",
+        "joke",
+        "analysis"
+      ],
+      "responseIntent": "joke",
+      "claimMode": "none",
+      "topics": [
+        "fanwar",
+        "performance"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "brief-laughter"
+    },
+    {
+      "id": "comment-0c3db1c19b8b37d7",
+      "text": "是说哪里😉",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "question",
+        "uncertainty"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "strategy",
+        "performance"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "clarify-vague-claim"
+    },
+    {
+      "id": "comment-0e48d37bceea3c14",
+      "text": "太拿自己当回事了😏",
+      "act": "sarcasm",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "boast",
+        "taunt",
+        "analysis"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar",
+        "performance"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "expertise-mockery"
+    },
+    {
+      "id": "comment-0f600f798dbc68d5",
+      "text": "支持👍👍",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "praise",
+        "analysis",
+        "uncertainty"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "performance",
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "brief-approval"
+    },
+    {
+      "id": "comment-0fb7d3a6308acf88",
+      "text": "太无语了",
+      "act": "cope",
+      "tone": "heated",
+      "parentIntents": [
+        "complaint",
+        "analysis"
+      ],
+      "responseIntent": "complaint",
+      "claimMode": "none",
+      "topics": [
+        "incident",
+        "performance"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "brief-frustration"
+    },
+    {
+      "id": "comment-0fcd465ae22fe043",
+      "text": "呵呵😏",
+      "act": "sarcasm",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "boast",
+        "taunt",
+        "analysis"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar",
+        "performance"
+      ],
+      "requires": [
+        "parent_taunt"
+      ],
+      "forbids": [],
+      "family": "dismissive-laughter"
+    },
+    {
+      "id": "comment-0fb3a7c2874ce89b",
+      "text": "卵 然 并 卵",
+      "act": "joke",
+      "tone": "casual",
+      "parentIntents": [
+        "boast",
+        "praise",
+        "analysis"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "strategy",
+        "development"
+      ],
+      "requires": [
+        "no_action"
+      ],
+      "forbids": [],
+      "family": "ultimately-useless"
+    },
+    {
+      "id": "comment-1098cfcb97ba3c09",
+      "text": "没办法",
+      "act": "cope",
+      "tone": "casual",
+      "parentIntents": [
+        "complaint",
+        "uncertainty",
+        "analysis"
+      ],
+      "responseIntent": "cope",
+      "claimMode": "none",
+      "topics": [
+        "strategy",
+        "performance"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "resigned-acceptance"
+    },
+    {
+      "id": "comment-11eb356c53b3edaa",
+      "text": "真玻璃心",
+      "act": "troll",
+      "tone": "heated",
+      "parentIntents": [
+        "complaint",
+        "taunt"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_taunt"
+      ],
+      "forbids": [],
+      "family": "personal-mockery"
+    },
+    {
+      "id": "comment-1262b7b87d026830",
+      "text": "你 你 咋 知道",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "boast",
+        "correction"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "fanwar",
+        "performance"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "challenge-knowledge"
+    },
+    {
+      "id": "comment-12bd129ba00e39a9",
+      "text": "你真傻",
+      "act": "troll",
+      "tone": "heated",
+      "parentIntents": [
+        "taunt",
+        "boast",
+        "analysis"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_taunt"
+      ],
+      "forbids": [],
+      "family": "personal-mockery"
+    },
+    {
+      "id": "comment-13d2ceb7c5d8c92a",
+      "text": "没 毛病",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "correction",
+        "praise"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "strategy",
+        "performance"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "brief-approval"
+    },
+    {
+      "id": "comment-1484da1c12dc1934",
+      "text": "说啥呢",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "taunt",
+        "question"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "challenge-claim"
+    },
+    {
+      "id": "comment-14a98b3a93b996c0",
+      "text": "我怕你学会",
+      "act": "troll",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "taunt",
+        "boast",
+        "complaint"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_taunt"
+      ],
+      "forbids": [],
+      "family": "mocking-warning"
+    },
+    {
+      "id": "comment-155d8311cf44874c",
+      "text": "你们随意😛",
+      "act": "exit",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "taunt",
+        "complaint",
+        "analysis"
+      ],
+      "responseIntent": "exit",
+      "claimMode": "none",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_taunt"
+      ],
+      "forbids": [],
+      "family": "dismissive-exit"
+    },
+    {
+      "id": "comment-175bcbd76e2b4d3d",
+      "text": "没 没 毛病",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "correction",
+        "praise"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "strategy",
+        "performance"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "brief-approval"
+    },
+    {
+      "id": "comment-18969048a1f28e9c",
+      "text": "尽说大实话",
+      "act": "sarcasm",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "correction",
+        "analysis"
+      ],
+      "responseIntent": "joke",
+      "claimMode": "echo_parent",
+      "topics": [
+        "performance",
+        "strategy"
+      ],
+      "requires": [
+        "parent_has_evidence"
+      ],
+      "forbids": [],
+      "family": "truth-acknowledgement-joke"
+    },
+    {
+      "id": "comment-19194137eb95ca85",
+      "text": "没有作用啊",
+      "act": "rebut",
+      "tone": "casual",
+      "parentIntents": [
+        "praise",
+        "boast",
+        "analysis"
+      ],
+      "responseIntent": "disagree",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "strategy",
+        "development"
+      ],
+      "requires": [
+        "no_action"
+      ],
+      "forbids": [],
+      "family": "no-effect-claim"
+    },
+    {
+      "id": "comment-194fa959fdbbc2d6",
+      "text": "脑 回路 啊 清奇",
+      "act": "sarcasm",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "taunt",
+        "boast",
+        "analysis"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_taunt"
+      ],
+      "forbids": [],
+      "family": "personal-mockery"
+    },
+    {
+      "id": "comment-1b919bb47883c5cf",
+      "text": "为什么",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "complaint",
+        "question"
+      ],
+      "responseIntent": "question",
+      "claimMode": "question_parent",
+      "topics": [
+        "strategy",
+        "performance"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "brief-question"
+    },
+    {
+      "id": "comment-1bdc3baacffd5d61",
+      "text": "谢谢你们",
+      "act": "support",
+      "tone": "calm",
+      "parentIntents": [
+        "praise",
+        "analysis",
+        "complaint"
+      ],
+      "responseIntent": "praise",
+      "claimMode": "none",
+      "topics": [
+        "performance",
+        "development"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "gratitude"
+    },
+    {
+      "id": "comment-1ce5ac46a2b78d54",
+      "text": "你 很 ” 聪明 “",
+      "act": "sarcasm",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "boast",
+        "taunt",
+        "analysis"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "expertise-mockery"
+    },
+    {
+      "id": "comment-1d41baed582e7aeb",
+      "text": "我是要你举例子😓",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "boast",
+        "correction"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "performance",
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "request-examples"
+    },
+    {
+      "id": "comment-1eeb49156b782e01",
+      "text": "很 难评",
+      "act": "cope",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "complaint",
+        "question"
+      ],
+      "responseIntent": "uncertainty",
+      "claimMode": "none",
+      "topics": [
+        "performance",
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "hard-to-judge"
+    },
+    {
+      "id": "comment-1f837d09eb6901a1",
+      "text": "这就说不过去了",
+      "act": "correct",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "correction",
+        "boast"
+      ],
+      "responseIntent": "disagree",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "strategy",
+        "performance"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "logic-challenge"
+    },
+    {
+      "id": "comment-232f933eddfc512b",
+      "text": "别 急呀 急呀",
+      "act": "sarcasm",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "complaint",
+        "taunt",
+        "question"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar",
+        "performance"
+      ],
+      "requires": [
+        "parent_taunt"
+      ],
+      "forbids": [],
+      "family": "mocking-impatience"
+    },
+    {
+      "id": "comment-27c55d1ae9ca318b",
+      "text": "是这样的😏",
+      "act": "sarcasm",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "analysis",
+        "correction",
+        "boast"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "echo_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_taunt"
+      ],
+      "forbids": [],
+      "family": "sarcastic-agreement"
+    },
+    {
+      "id": "comment-2c86aaaae9db8ed4",
+      "text": "有人不服很正常",
+      "act": "cope",
+      "tone": "casual",
+      "parentIntents": [
+        "disagree",
+        "taunt",
+        "analysis"
+      ],
+      "responseIntent": "cope",
+      "claimMode": "none",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "normalize-disagreement"
+    },
+    {
+      "id": "comment-2cf7160caf32ceff",
+      "text": "情况如何",
+      "act": "ask",
+      "tone": "calm",
+      "parentIntents": [
+        "analysis",
+        "uncertainty",
+        "complaint"
+      ],
+      "responseIntent": "question",
+      "claimMode": "question_parent",
+      "topics": [
+        "incident"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "ask-status"
+    },
+    {
+      "id": "comment-35f37db063c81759",
+      "text": "就说不过去了",
+      "act": "rebut",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "correction",
+        "complaint"
+      ],
+      "responseIntent": "disagree",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "strategy"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "call-out-unreasonableness"
+    },
+    {
+      "id": "comment-e2b4a9e91eddba97",
+      "text": "我 笑 死 了",
+      "act": "joke",
+      "tone": "casual",
+      "parentIntents": [
+        "joke",
+        "taunt",
+        "boast",
+        "analysis"
+      ],
+      "responseIntent": "joke",
+      "claimMode": "none",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "笑到不行"
+    },
+    {
+      "id": "comment-e32bd388da67a49c",
+      "text": "没啥好说的了",
+      "act": "exit",
+      "tone": "calm",
+      "parentIntents": [
+        "analysis",
+        "complaint",
+        "taunt",
+        "disagree"
+      ],
+      "responseIntent": "exit",
+      "claimMode": "none",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "表示无意继续争论"
+    },
+    {
+      "id": "comment-e69aea483a585bbd",
+      "text": "不知道你这结论怎么来的🤗",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "boast",
+        "praise"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "追问结论依据"
+    },
+    {
+      "id": "comment-f7cfaa42f1e491a0",
+      "text": "有没有课代表科普一下😌",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "correction",
+        "uncertainty"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "请求旁观者解释背景"
+    },
+    {
+      "id": "comment-f774f8d217dc768d",
+      "text": "你 全凭 一 张嘴",
+      "act": "rebut",
+      "tone": "heated",
+      "parentIntents": [
+        "boast",
+        "analysis",
+        "praise"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [
+        "parent_has_evidence"
+      ],
+      "family": "质疑对方只凭口头说法"
+    },
+    {
+      "id": "comment-fd2f064463fdc452",
+      "text": "你把俺问倒了",
+      "act": "admit",
+      "tone": "casual",
+      "parentIntents": [
+        "question",
+        "analysis",
+        "correction"
+      ],
+      "responseIntent": "admit",
+      "claimMode": "admit_error",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "承认回答不上来"
+    },
+    {
+      "id": "comment-ffa627d8f1fe1081",
+      "text": "这啥评判标准😓",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "correction",
+        "disagree"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "追问评判标准"
+    },
+    {
+      "id": "comment-003de5c1c92a7252",
+      "text": "何人信汝此言?😄",
+      "act": "ask",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "boast",
+        "analysis"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "performance"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "质疑可信度"
+    },
+    {
+      "id": "comment-02837f59c0a42c99",
+      "text": "顶你😁",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "praise",
+        "complaint"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "performance"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "简短赞同"
+    },
+    {
+      "id": "comment-029d89be0f601bf9",
+      "text": "撇开事实不谈😏",
+      "act": "sarcasm",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "analysis",
+        "boast",
+        "taunt"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "反事实讽刺"
+    },
+    {
+      "id": "comment-033d013f8c4f3a26",
+      "text": "你可真能吹牛😂",
+      "act": "rebut",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "boast",
+        "taunt"
+      ],
+      "responseIntent": "disagree",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "戳破夸口"
+    },
+    {
+      "id": "comment-0a04cc48952b27d4",
+      "text": "下次注意😏",
+      "act": "sarcasm",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "complaint",
+        "taunt"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "performance"
+      ],
+      "requires": [
+        "driver_error"
+      ],
+      "forbids": [],
+      "family": "事后讥讽提醒"
+    },
+    {
+      "id": "comment-1edb804647558176",
+      "text": "麻烦按事实讲话",
+      "act": "correct",
+      "tone": "calm",
+      "parentIntents": [
+        "analysis",
+        "boast",
+        "taunt"
+      ],
+      "responseIntent": "correction",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "要求基于事实"
+    },
+    {
+      "id": "comment-207cfad735652bbf",
+      "text": "你可以无惧失败",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "cope",
+        "self_mock",
+        "uncertainty"
+      ],
+      "responseIntent": "cope",
+      "claimMode": "echo_parent",
+      "topics": [
+        "performance"
+      ],
+      "requires": [
+        "bad_result"
+      ],
+      "forbids": [],
+      "family": "鼓励不怕失败"
+    },
+    {
+      "id": "comment-0269c863b004a728",
+      "text": "这还有什么可说的",
+      "act": "sarcasm",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "analysis",
+        "complaint",
+        "taunt"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_has_evidence"
+      ],
+      "forbids": [],
+      "family": "无话可说式嘲讽"
+    },
+    {
+      "id": "comment-027d5c56cdedc9c5",
+      "text": "闲得 闲得 蛋 疼",
+      "act": "troll",
+      "tone": "heated",
+      "parentIntents": [
+        "complaint",
+        "taunt"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_taunt"
+      ],
+      "forbids": [],
+      "family": "嫌人无聊挑衅"
+    },
+    {
+      "id": "comment-0524cae9d5e9a3f5",
+      "text": "这不巧了么",
+      "act": "joke",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "complaint",
+        "uncertainty"
+      ],
+      "responseIntent": "joke",
+      "claimMode": "none",
+      "topics": [
+        "incident"
+      ],
+      "requires": [
+        "uncertain_result"
+      ],
+      "forbids": [],
+      "family": "巧合调侃"
+    },
+    {
+      "id": "comment-0e5bfd5e71a24d92",
+      "text": "那完蛋了",
+      "act": "cope",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "uncertainty"
+      ],
+      "responseIntent": "cope",
+      "claimMode": "none",
+      "topics": [
+        "performance"
+      ],
+      "requires": [
+        "bad_result"
+      ],
+      "forbids": [],
+      "family": "坏结果口语感叹"
+    },
+    {
+      "id": "comment-0edb8eaebb6dac5e",
+      "text": "关我屁事🍉",
+      "act": "exit",
+      "tone": "heated",
+      "parentIntents": [
+        "taunt",
+        "complaint"
+      ],
+      "responseIntent": "exit",
+      "claimMode": "none",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "拒绝卷入争论"
+    },
+    {
+      "id": "comment-167f248fa861db36",
+      "text": "看跟谁比",
+      "act": "correct",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "boast"
+      ],
+      "responseIntent": "correction",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "performance",
+        "pace"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "比较需看对象"
+    },
+    {
+      "id": "comment-1884c7317fda2f22",
+      "text": "哪位科普一下",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "uncertainty"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "development",
+        "strategy"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "请求讲解"
+    },
+    {
+      "id": "comment-18bb7bb00c1807c6",
+      "text": "就该这样",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "praise",
+        "complaint"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "strategy",
+        "development"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "认同处置方式"
+    },
+    {
+      "id": "comment-18f71a0e447f9927",
+      "text": "不是，怎么离谱了，😔",
+      "act": "rebut",
+      "tone": "casual",
+      "parentIntents": [
+        "taunt",
+        "analysis"
+      ],
+      "responseIntent": "disagree",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_taunt"
+      ],
+      "forbids": [],
+      "family": "否认离谱指责"
+    },
+    {
+      "id": "comment-20c063456b71f669",
+      "text": "呵呵🧏",
+      "act": "sarcasm",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "boast",
+        "taunt",
+        "complaint"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "冷笑"
+    },
+    {
+      "id": "comment-25ddc8035e524171",
+      "text": "静观其变吧😊",
+      "act": "cope",
+      "tone": "calm",
+      "parentIntents": [
+        "analysis",
+        "uncertainty"
+      ],
+      "responseIntent": "cope",
+      "claimMode": "none",
+      "topics": [
+        "incident"
+      ],
+      "requires": [
+        "uncertain_result"
+      ],
+      "forbids": [],
+      "family": "等待后续再判断"
+    },
+    {
+      "id": "comment-2727b25a0343bd30",
+      "text": "别 扯淡 扯淡 了",
+      "act": "rebut",
+      "tone": "heated",
+      "parentIntents": [
+        "boast",
+        "taunt",
+        "analysis"
+      ],
+      "responseIntent": "disagree",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "斥为胡扯"
+    },
+    {
+      "id": "comment-2ed56d86d547297d",
+      "text": "应该尊重事实",
+      "act": "correct",
+      "tone": "calm",
+      "parentIntents": [
+        "analysis",
+        "boast",
+        "taunt"
+      ],
+      "responseIntent": "correction",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "呼吁尊重事实"
+    },
+    {
+      "id": "comment-30d780f1ad08515f",
+      "text": "你怎么看",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "uncertainty"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "strategy",
+        "development"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "征求判断"
+    },
+    {
+      "id": "comment-31340fd07e602913",
+      "text": "期待🙏",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "praise",
+        "uncertainty"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "development",
+        "performance"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "期待后续"
+    },
+    {
+      "id": "comment-32713a0ff31806f2",
+      "text": "我可以理解",
+      "act": "support",
+      "tone": "calm",
+      "parentIntents": [
+        "complaint",
+        "uncertainty",
+        "cope"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "表示理解"
+    },
+    {
+      "id": "comment-33217dc848fa3cc5",
+      "text": "写错 写错 了 改 就是 了",
+      "act": "correct",
+      "tone": "casual",
+      "parentIntents": [
+        "correction",
+        "complaint"
+      ],
+      "responseIntent": "correction",
+      "claimMode": "echo_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_corrected"
+      ],
+      "forbids": [],
+      "family": "接受并更正笔误"
+    },
+    {
+      "id": "comment-34be4488c9b95532",
+      "text": "说 没什么 好 说 的",
+      "act": "exit",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "complaint",
+        "taunt"
+      ],
+      "responseIntent": "exit",
+      "claimMode": "none",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "结束争论"
+    },
+    {
+      "id": "comment-3b8d9aef3ef5e3e5",
+      "text": "难评",
+      "act": "rebut",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "boast",
+        "complaint"
+      ],
+      "responseIntent": "uncertainty",
+      "claimMode": "none",
+      "topics": [
+        "performance"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "uncertain-evaluation"
+    },
+    {
+      "id": "comment-3d3a0d1c413da26c",
+      "text": "我 笑 死 我 了",
+      "act": "joke",
+      "tone": "casual",
+      "parentIntents": [
+        "joke",
+        "taunt",
+        "analysis"
+      ],
+      "responseIntent": "joke",
+      "claimMode": "none",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "laugh-reaction"
+    },
+    {
+      "id": "comment-3e7f2c2892d89405",
+      "text": "牛皮往大了吹，😏",
+      "act": "rebut",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "boast",
+        "analysis"
+      ],
+      "responseIntent": "expose",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "performance",
+        "fanwar"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [
+        "parent_has_evidence"
+      ],
+      "family": "call-out-exaggeration"
+    },
+    {
+      "id": "comment-40467c4d0ae6bf11",
+      "text": "真叫你给懂完了🤔️",
+      "act": "sarcasm",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "analysis",
+        "boast"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "performance",
+        "fanwar"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [
+        "parent_has_evidence"
+      ],
+      "family": "sarcastic-expertise-callout"
+    },
+    {
+      "id": "comment-43cc341d6a963069",
+      "text": "这么快哪来的数据",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "boast",
+        "correction"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "performance",
+        "development"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "ask-source-of-data"
+    },
+    {
+      "id": "comment-446005aafb2d7d32",
+      "text": "为什么啊",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "complaint",
+        "uncertainty"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "strategy",
+        "development"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "ask-why"
+    },
+    {
+      "id": "comment-49b86d1e7bfd2274",
+      "text": "我 笑 了",
+      "act": "joke",
+      "tone": "casual",
+      "parentIntents": [
+        "joke",
+        "taunt",
+        "analysis"
+      ],
+      "responseIntent": "joke",
+      "claimMode": "none",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "laugh-reaction"
+    },
+    {
+      "id": "comment-4a2ac2076b597bcf",
+      "text": "所以我好懵😂",
+      "act": "cope",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "correction",
+        "uncertainty"
+      ],
+      "responseIntent": "uncertainty",
+      "claimMode": "none",
+      "topics": [
+        "development"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "express-confusion"
+    },
+    {
+      "id": "comment-4b91f57261518f4f",
+      "text": "对 啊",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "praise",
+        "complaint",
+        "uncertainty"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "strategy"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "generic-agreement"
+    },
+    {
+      "id": "comment-4d926e97157527be",
+      "text": "你说得对",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "praise",
+        "complaint",
+        "uncertainty"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "performance"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "generic-agreement"
+    },
+    {
+      "id": "comment-4e8b4b034d0515b2",
+      "text": "看不懂",
+      "act": "cope",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "correction",
+        "uncertainty"
+      ],
+      "responseIntent": "uncertainty",
+      "claimMode": "none",
+      "topics": [
+        "development"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "express-confusion"
+    },
+    {
+      "id": "comment-4f3dbe3ac251caaf",
+      "text": "心疼😢😢😢",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "complaint",
+        "uncertainty"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "incident"
+      ],
+      "requires": [
+        "bad_result"
+      ],
+      "forbids": [],
+      "family": "empathize-after-setback"
+    },
+    {
+      "id": "comment-517e17139c7efa04",
+      "text": "你 自己 自己 开心 就 好",
+      "act": "exit",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "taunt",
+        "boast",
+        "complaint"
+      ],
+      "responseIntent": "exit",
+      "claimMode": "none",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_taunt"
+      ],
+      "forbids": [],
+      "family": "dismissive-exit"
+    },
+    {
+      "id": "comment-52d1c2b4ee52e30e",
+      "text": "我没理解",
+      "act": "cope",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "correction",
+        "uncertainty"
+      ],
+      "responseIntent": "uncertainty",
+      "claimMode": "none",
+      "topics": [
+        "development"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "express-confusion"
+    },
+    {
+      "id": "comment-568cca4898bd5110",
+      "text": "我就不说啥了😂😂😂",
+      "act": "exit",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "boast",
+        "taunt",
+        "analysis"
+      ],
+      "responseIntent": "exit",
+      "claimMode": "none",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "dismissive-exit"
+    },
+    {
+      "id": "comment-58a8e440049b2b65",
+      "text": "没 懂 你",
+      "act": "cope",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "correction",
+        "uncertainty"
+      ],
+      "responseIntent": "uncertainty",
+      "claimMode": "none",
+      "topics": [
+        "development"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "express-confusion"
+    },
+    {
+      "id": "comment-5b50105996892616",
+      "text": "不认同🐶🐶🐶",
+      "act": "rebut",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "praise",
+        "boast",
+        "complaint"
+      ],
+      "responseIntent": "disagree",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "performance",
+        "strategy"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "concise-disagreement"
+    },
+    {
+      "id": "comment-5c7acee45eb2be45",
+      "text": "勉强也说得通🍉",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "uncertainty"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "strategy",
+        "development"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "qualified-agreement"
+    },
+    {
+      "id": "comment-5e14b7ad8297121f",
+      "text": "这话没毛病",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "praise",
+        "complaint"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "performance",
+        "strategy"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "generic-agreement"
+    },
+    {
+      "id": "comment-5ef238f11fc317c5",
+      "text": "大佬就是大佬😏",
+      "act": "sarcasm",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "boast",
+        "analysis"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "performance",
+        "fanwar"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "sarcastic-expertise-callout"
+    },
+    {
+      "id": "comment-60aa912606353655",
+      "text": "能说说清楚吗",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "correction",
+        "uncertainty"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "development",
+        "strategy"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "request-clarification"
+    },
+    {
+      "id": "comment-63cce440f929d34d",
+      "text": "全凭 你 一 张嘴",
+      "act": "rebut",
+      "tone": "heated",
+      "parentIntents": [
+        "boast",
+        "analysis",
+        "correction"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "performance",
+        "development"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [
+        "parent_has_evidence"
+      ],
+      "family": "challenge-bare-assertion"
+    },
+    {
+      "id": "comment-66776545941fce87",
+      "text": "看着吧",
+      "act": "boast",
+      "tone": "casual",
+      "parentIntents": [
+        "uncertainty",
+        "disagree",
+        "complaint"
+      ],
+      "responseIntent": "boast",
+      "claimMode": "none",
+      "topics": [
+        "performance",
+        "development"
+      ],
+      "requires": [
+        "uncertain_result",
+        "self_previously_boasted"
+      ],
+      "forbids": [
+        "bad_result"
+      ],
+      "family": "watch-my-prediction"
+    },
+    {
+      "id": "comment-37e280e2c1851c7b",
+      "text": "不管你信不信~我反正不信的😏",
+      "act": "rebut",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "boast",
+        "analysis"
+      ],
+      "responseIntent": "disagree",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "直接表示不信"
+    },
+    {
+      "id": "comment-386db043ad745b5f",
+      "text": "怎么说呢",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "uncertainty"
+      ],
+      "responseIntent": "uncertainty",
+      "claimMode": "none",
+      "topics": [
+        "performance"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "犹豫起话"
+    },
+    {
+      "id": "comment-3ac243fadbcfc401",
+      "text": "说得好",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "praise",
+        "complaint"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "简短赞同"
+    },
+    {
+      "id": "comment-3b89ab3651302fac",
+      "text": "我很难评",
+      "act": "cope",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "uncertainty"
+      ],
+      "responseIntent": "uncertainty",
+      "claimMode": "none",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "难以评价"
+    },
+    {
+      "id": "comment-3c4c3a1492f310ed",
+      "text": "你又知道了",
+      "act": "sarcasm",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "boast",
+        "taunt",
+        "analysis"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "嘲讽自以为知情"
+    },
+    {
+      "id": "comment-3d7b3cbc11d3236b",
+      "text": "这个咋算",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "uncertainty"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "strategy",
+        "performance"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "追问计算方式"
+    },
+    {
+      "id": "comment-412f3ac25c130834",
+      "text": "这有什么好说的",
+      "act": "sarcasm",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "analysis",
+        "complaint",
+        "taunt"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_has_evidence"
+      ],
+      "forbids": [],
+      "family": "无话可说式嘲讽"
+    },
+    {
+      "id": "comment-42a6708947657406",
+      "text": "还能咋办😊",
+      "act": "cope",
+      "tone": "casual",
+      "parentIntents": [
+        "complaint",
+        "uncertainty"
+      ],
+      "responseIntent": "cope",
+      "claimMode": "none",
+      "topics": [
+        "strategy",
+        "performance"
+      ],
+      "requires": [
+        "no_action"
+      ],
+      "forbids": [],
+      "family": "无可奈何"
+    },
+    {
+      "id": "comment-45b31971262fc7a3",
+      "text": "支持呀",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "praise"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "strategy"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "简短支持"
+    },
+    {
+      "id": "comment-4ab6c1d9b2d264e9",
+      "text": "你这么说有点过分",
+      "act": "correct",
+      "tone": "calm",
+      "parentIntents": [
+        "taunt",
+        "complaint"
+      ],
+      "responseIntent": "correction",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_taunt"
+      ],
+      "forbids": [],
+      "family": "指出言辞过分"
+    },
+    {
+      "id": "comment-4b3f0b127eb1a41b",
+      "text": "懒得理你",
+      "act": "exit",
+      "tone": "heated",
+      "parentIntents": [
+        "taunt",
+        "complaint"
+      ],
+      "responseIntent": "exit",
+      "claimMode": "none",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_taunt"
+      ],
+      "forbids": [],
+      "family": "拒绝继续争论"
+    },
+    {
+      "id": "comment-3c77d02c2b2ce070",
+      "text": "先确认下",
+      "act": "ask",
+      "tone": "calm",
+      "parentIntents": [
+        "analysis",
+        "uncertainty"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "incident",
+        "strategy"
+      ],
+      "requires": [
+        "uncertain_result"
+      ],
+      "forbids": [],
+      "family": "先核实再判断"
+    },
+    {
+      "id": "comment-4ccacf431dbceb58",
+      "text": "所以先别下结论😂",
+      "act": "correct",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "boast",
+        "taunt"
+      ],
+      "responseIntent": "correction",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "incident",
+        "fanwar"
+      ],
+      "requires": [
+        "uncertain_result",
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "未核实前暂缓结论"
+    },
+    {
+      "id": "comment-47c4f0bc6cf47c93",
+      "text": "啊对对对😊",
+      "act": "sarcasm",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "boast",
+        "taunt",
+        "analysis"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "反讽式附和"
+    },
+    {
+      "id": "comment-48c9898ae9775dbb",
+      "text": "求教一下",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "uncertainty"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "strategy",
+        "development"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "请求指教"
+    },
+    {
+      "id": "comment-496954a2264525cc",
+      "text": "也谈不上",
+      "act": "rebut",
+      "tone": "calm",
+      "parentIntents": [
+        "analysis",
+        "boast"
+      ],
+      "responseIntent": "disagree",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "performance",
+        "pace"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "弱化程度判断"
+    },
+    {
+      "id": "comment-4e5d5b9b8807a700",
+      "text": "这是怎么发现的?",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "uncertainty"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "incident",
+        "development"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "追问发现依据"
+    },
+    {
+      "id": "comment-4ee0658374832b74",
+      "text": "笑 笑 死 我 了",
+      "act": "sarcasm",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "boast",
+        "taunt",
+        "analysis"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "嘲笑父帖观点"
+    },
+    {
+      "id": "comment-50f3c0f66b50e045",
+      "text": "鬼 都 不信",
+      "act": "rebut",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "boast",
+        "analysis"
+      ],
+      "responseIntent": "disagree",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "直接表示不信"
+    },
+    {
+      "id": "comment-56ee8ad2ba366e16",
+      "text": "愿闻其详",
+      "act": "ask",
+      "tone": "calm",
+      "parentIntents": [
+        "analysis",
+        "boast"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "strategy",
+        "development"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "请对方详细说明"
+    },
+    {
+      "id": "comment-6386d682a4002928",
+      "text": "看了两遍还是没看懂😌",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "uncertainty"
+      ],
+      "responseIntent": "uncertainty",
+      "claimMode": "none",
+      "topics": [
+        "development",
+        "strategy"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "表示没看懂"
+    },
+    {
+      "id": "comment-6358a7760b6bf400",
+      "text": "你说啥",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "taunt"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "请求重复说明"
+    },
+    {
+      "id": "comment-61c49edc4d9e3754",
+      "text": "我觉得挺好的",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "praise"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "strategy",
+        "development"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "表达认可"
+    },
+    {
+      "id": "comment-6b6a8262b17a2d13",
+      "text": "你 想 多 了",
+      "act": "rebut",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "uncertainty"
+      ],
+      "responseIntent": "disagree",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "认为对方想多"
+    },
+    {
+      "id": "comment-652d61acd83eca5b",
+      "text": "随便吧",
+      "act": "exit",
+      "tone": "casual",
+      "parentIntents": [
+        "taunt",
+        "complaint",
+        "analysis"
+      ],
+      "responseIntent": "exit",
+      "claimMode": "none",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "放弃争论"
+    },
+    {
+      "id": "comment-6ab0570406f2936b",
+      "text": "为啥",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "complaint"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "incident",
+        "strategy"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "追问原因"
+    },
+    {
+      "id": "comment-707aa2dca866dd4e",
+      "text": "可以考虑下下😂",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "uncertainty",
+        "complaint"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "strategy",
+        "development"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "tentative-suggestion"
+    },
+    {
+      "id": "comment-71b3e1ec6ef406fe",
+      "text": "你 今天 还怪 幽默 的",
+      "act": "sarcasm",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "joke",
+        "boast",
+        "taunt"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_taunt"
+      ],
+      "forbids": [],
+      "family": "sarcastic-humor-callout"
+    },
+    {
+      "id": "comment-7592714698f3db64",
+      "text": "加油💪",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "complaint",
+        "uncertainty",
+        "analysis"
+      ],
+      "responseIntent": "cope",
+      "claimMode": "none",
+      "topics": [
+        "performance",
+        "development"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "encouragement"
+    },
+    {
+      "id": "comment-7ac1f352376ad7a4",
+      "text": "你敢信😏",
+      "act": "sarcasm",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "analysis",
+        "boast",
+        "uncertainty"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "question_parent",
+      "topics": [
+        "performance",
+        "incident"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "rhetorical-unbelievable"
+    },
+    {
+      "id": "comment-7bb3decc300173b0",
+      "text": "啥意思",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "correction",
+        "uncertainty"
+      ],
+      "responseIntent": "question",
+      "claimMode": "question_parent",
+      "topics": [
+        "development",
+        "strategy"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "request-clarification"
+    },
+    {
+      "id": "comment-7e06a5d5748a4824",
+      "text": "真是一言难尽",
+      "act": "cope",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "complaint",
+        "uncertainty"
+      ],
+      "responseIntent": "uncertainty",
+      "claimMode": "none",
+      "topics": [
+        "incident"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "uncertain-evaluation"
+    },
+    {
+      "id": "comment-7ee496aa2d6f8ae4",
+      "text": "你 觉得 合理 吗",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "boast",
+        "complaint"
+      ],
+      "responseIntent": "question",
+      "claimMode": "question_parent",
+      "topics": [
+        "strategy",
+        "performance"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "ask-reasonableness"
+    },
+    {
+      "id": "comment-80465ed25dc214a3",
+      "text": "可不是 嘛",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "correction",
+        "complaint"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "strategy"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "affirming-agreement"
+    },
+    {
+      "id": "comment-80ee2044156f409b",
+      "text": "真的是这样",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "correction",
+        "complaint"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "performance"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "plain-agreement"
+    },
+    {
+      "id": "comment-81d6aab2ab8da308",
+      "text": "那岂不是无敌了",
+      "act": "sarcasm",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "analysis",
+        "boast"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "question_parent",
+      "topics": [
+        "strategy"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "rhetorical-overstatement"
+    },
+    {
+      "id": "comment-83e9b96436fe5bb8",
+      "text": "我没看错吧😱",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "boast",
+        "uncertainty"
+      ],
+      "responseIntent": "question",
+      "claimMode": "question_parent",
+      "topics": [
+        "incident"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "surprised-disbelief"
+    },
+    {
+      "id": "comment-8792c6a4bf8c6b62",
+      "text": "只希望都能平平安安",
+      "act": "cope",
+      "tone": "calm",
+      "parentIntents": [
+        "complaint",
+        "uncertainty",
+        "analysis"
+      ],
+      "responseIntent": "cope",
+      "claimMode": "none",
+      "topics": [
+        "incident"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "wish-safety"
+    },
+    {
+      "id": "comment-890cf29801d2afcb",
+      "text": "加油 ",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "complaint",
+        "uncertainty",
+        "boast"
+      ],
+      "responseIntent": "cope",
+      "claimMode": "none",
+      "topics": [
+        "performance"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "encouragement"
+    },
+    {
+      "id": "comment-8a8cd1a4b5daaa4c",
+      "text": "这个就不好说了",
+      "act": "cope",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "uncertainty",
+        "question"
+      ],
+      "responseIntent": "cope",
+      "claimMode": "none",
+      "topics": [
+        "strategy"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "uncertain-evaluation"
+    },
+    {
+      "id": "comment-8cffe9157b43280e",
+      "text": "你说的对",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "correction",
+        "complaint"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "strategy"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "plain-agreement"
+    },
+    {
+      "id": "comment-8dad92e6da64458a",
+      "text": "挺厉害嘛😂",
+      "act": "sarcasm",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "boast",
+        "analysis",
+        "taunt"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "none",
+      "topics": [
+        "performance"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "sarcastic-praise"
+    },
+    {
+      "id": "comment-905819e2e3a059a0",
+      "text": "同意",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "correction",
+        "complaint"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "strategy"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "plain-agreement"
+    },
+    {
+      "id": "comment-97fcf4fc1cf2aa62",
+      "text": "这咋处理",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "uncertainty",
+        "complaint"
+      ],
+      "responseIntent": "question",
+      "claimMode": "question_parent",
+      "topics": [
+        "strategy"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "request-next-step"
+    },
+    {
+      "id": "comment-9be8a7ec0416a34c",
+      "text": "我有点不大相信",
+      "act": "cope",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "boast",
+        "uncertainty"
+      ],
+      "responseIntent": "uncertainty",
+      "claimMode": "none",
+      "topics": [
+        "incident"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "express-disbelief"
+    },
+    {
+      "id": "comment-9cce1149cdf87ce4",
+      "text": "牛哇牛哇",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "boast",
+        "analysis",
+        "praise"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "performance"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "casual-approval"
+    },
+    {
+      "id": "comment-9fffd38fb050a08b",
+      "text": "？？？说出你的故事😱😱",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "uncertainty",
+        "boast"
+      ],
+      "responseIntent": "question",
+      "claimMode": "question_parent",
+      "topics": [
+        "incident"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "invite-explanation"
+    },
+    {
+      "id": "comment-a3f82fb326508dd5",
+      "text": "这话 你 信",
+      "act": "ask",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "boast",
+        "analysis",
+        "uncertainty"
+      ],
+      "responseIntent": "question",
+      "claimMode": "question_parent",
+      "topics": [
+        "incident"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "rhetorical-disbelief"
+    },
+    {
+      "id": "comment-a6bfc9199f158a4b",
+      "text": "我信",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "correction",
+        "uncertainty"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "incident"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "express-belief"
+    },
+    {
+      "id": "comment-6fedfc6cc43f89e2",
+      "text": "怕啥😁",
+      "act": "rebut",
+      "tone": "casual",
+      "parentIntents": [
+        "uncertainty",
+        "complaint",
+        "taunt"
+      ],
+      "responseIntent": "cope",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar",
+        "incident"
+      ],
+      "requires": [
+        "uncertain_result"
+      ],
+      "forbids": [
+        "bad_result",
+        "incident"
+      ],
+      "family": "轻描淡写反问怕什么"
+    },
+    {
+      "id": "comment-71350536e04952e5",
+      "text": "真的假的",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "boast",
+        "praise",
+        "complaint"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "fanwar",
+        "performance"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "惊讶质疑真假"
+    },
+    {
+      "id": "comment-72c98ac920868f3d",
+      "text": "拭目以待",
+      "act": "cope",
+      "tone": "calm",
+      "parentIntents": [
+        "analysis",
+        "boast",
+        "uncertainty"
+      ],
+      "responseIntent": "cope",
+      "claimMode": "none",
+      "topics": [
+        "performance",
+        "incident"
+      ],
+      "requires": [
+        "uncertain_result"
+      ],
+      "forbids": [
+        "good_result",
+        "bad_result"
+      ],
+      "family": "等待后续再看"
+    },
+    {
+      "id": "comment-731d9306a44c8556",
+      "text": "实际上是这样吗",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "boast",
+        "praise",
+        "complaint"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "fanwar",
+        "performance"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "追问观点是否属实"
+    },
+    {
+      "id": "comment-74536e73bd0e5b67",
+      "text": "你 这话 你 信",
+      "act": "ask",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "boast",
+        "analysis",
+        "praise"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "反问对方自己是否相信"
+    },
+    {
+      "id": "comment-74e17b29ceeba0bc",
+      "text": "能好好说话",
+      "act": "correct",
+      "tone": "heated",
+      "parentIntents": [
+        "taunt",
+        "mock",
+        "disagree"
+      ],
+      "responseIntent": "correction",
+      "claimMode": "none",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_taunt"
+      ],
+      "forbids": [],
+      "family": "要求对方好好说话"
+    },
+    {
+      "id": "comment-7515048c90c82cc2",
+      "text": "吓得我都不敢评论了🤔",
+      "act": "sarcasm",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "taunt",
+        "boast",
+        "analysis"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "none",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_taunt"
+      ],
+      "forbids": [],
+      "family": "反讽对方气势吓人"
+    },
+    {
+      "id": "comment-7a3df3ee6cdf531f",
+      "text": "赞同你的观点",
+      "act": "support",
+      "tone": "calm",
+      "parentIntents": [
+        "analysis",
+        "correction",
+        "complaint",
+        "uncertainty"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "fanwar",
+        "performance"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "明确表示赞同"
+    },
+    {
+      "id": "comment-7e39b7f3940803b5",
+      "text": "是这意思吗",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "correction",
+        "uncertainty"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "确认对方表达的意思"
+    },
+    {
+      "id": "comment-7f11e8780e86a733",
+      "text": "大家 信 么",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "boast",
+        "praise"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "询问旁观者是否相信"
+    },
+    {
+      "id": "comment-7f4bb726c670d4d0",
+      "text": "你猜为啥",
+      "act": "troll",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "question",
+        "analysis",
+        "complaint"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "none",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "用反问回避解释"
+    },
+    {
+      "id": "comment-8058ed8778cdbb56",
+      "text": "你 咋 知道",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "boast",
+        "analysis",
+        "praise"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "追问对方判断依据"
+    },
+    {
+      "id": "comment-817024d79ba213e3",
+      "text": "说说清楚呗",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "correction",
+        "uncertainty"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "请求对方说明清楚"
+    },
+    {
+      "id": "comment-83d08094d8daae09",
+      "text": "什么原因",
+      "act": "ask",
+      "tone": "calm",
+      "parentIntents": [
+        "analysis",
+        "correction",
+        "uncertainty"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "追问原因"
+    },
+    {
+      "id": "comment-87025e73d7d7bc0b",
+      "text": "你 能 滴 咋 滴",
+      "act": "troll",
+      "tone": "heated",
+      "parentIntents": [
+        "taunt",
+        "disagree",
+        "complaint"
+      ],
+      "responseIntent": "taunt",
+      "claimMode": "none",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_taunt"
+      ],
+      "forbids": [],
+      "family": "挑衅对方能怎样"
+    },
+    {
+      "id": "comment-8b6cf923434f2aca",
+      "text": "你自己相信就行",
+      "act": "sarcasm",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "boast",
+        "analysis",
+        "praise"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "none",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "让对方自己相信"
+    },
+    {
+      "id": "comment-91998a4cb325d233",
+      "text": "你 你 猜 我 信不信",
+      "act": "ask",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "boast",
+        "analysis",
+        "praise"
+      ],
+      "responseIntent": "disagree",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "反问自己是否相信父帖"
+    },
+    {
+      "id": "comment-9443f37ccfb60ed6",
+      "text": "就吹吧",
+      "act": "troll",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "boast",
+        "praise",
+        "analysis"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "嘲讽对方夸大吹嘘"
+    },
+    {
+      "id": "comment-a42b5208fe2b5ead",
+      "text": "你开心就好🥱",
+      "act": "sarcasm",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "boast",
+        "taunt",
+        "analysis"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "none",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "讽刺性结束争论"
+    },
+    {
+      "id": "comment-a3a8d462a201e6b0",
+      "text": "不会吧😂",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "boast",
+        "praise",
+        "complaint"
+      ],
+      "responseIntent": "uncertainty",
+      "claimMode": "question_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "惊讶表达不确定"
+    },
+    {
+      "id": "comment-a92d6219bcc585e6",
+      "text": "尊重他人不好吗😏",
+      "act": "rebut",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "taunt"
+      ],
+      "responseIntent": "disagree",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_taunt"
+      ],
+      "forbids": [],
+      "family": "respect_countertaunt"
+    },
+    {
+      "id": "comment-aaf6d75a316b8fc6",
+      "text": "有理有据",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "correction"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "strategy",
+        "incident",
+        "performance",
+        "development",
+        "pace",
+        "fanwar"
+      ],
+      "requires": [
+        "parent_has_evidence"
+      ],
+      "forbids": [],
+      "family": "evidence_based_approval"
+    },
+    {
+      "id": "comment-ab5d69e0c5a29008",
+      "text": "闻过即改",
+      "act": "support",
+      "tone": "calm",
+      "parentIntents": [
+        "correction"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "strategy",
+        "incident",
+        "performance",
+        "development",
+        "pace",
+        "fanwar"
+      ],
+      "requires": [
+        "parent_corrected"
+      ],
+      "forbids": [],
+      "family": "correction_welcomed"
+    },
+    {
+      "id": "comment-ade56f9c7cc865af",
+      "text": "这不是更让人费解麽",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "correction"
+      ],
+      "responseIntent": "uncertainty",
+      "claimMode": "question_parent",
+      "topics": [
+        "strategy",
+        "incident",
+        "performance",
+        "development",
+        "pace",
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "logic_more_confusing"
+    },
+    {
+      "id": "comment-ae048daadf6ccd97",
+      "text": "学到了❤❤",
+      "act": "admit",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "correction"
+      ],
+      "responseIntent": "admit",
+      "claimMode": "none",
+      "topics": [
+        "strategy",
+        "incident",
+        "performance",
+        "development",
+        "pace",
+        "fanwar"
+      ],
+      "requires": [
+        "parent_has_evidence"
+      ],
+      "forbids": [],
+      "family": "learning_acknowledgment"
+    },
+    {
+      "id": "comment-ae713ac062e9b4bb",
+      "text": "开玩笑 吧",
+      "act": "ask",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "boast",
+        "analysis"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "strategy",
+        "incident",
+        "performance",
+        "development",
+        "pace",
+        "fanwar"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "is_this_a_joke"
+    },
+    {
+      "id": "comment-b014400a0556171e",
+      "text": "讲的真好",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "correction"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "strategy",
+        "incident",
+        "performance",
+        "development",
+        "pace",
+        "fanwar"
+      ],
+      "requires": [
+        "parent_has_evidence"
+      ],
+      "forbids": [],
+      "family": "informative_explanation_praise"
+    },
+    {
+      "id": "comment-b01c0a185f33d353",
+      "text": "这 不 就是 吗",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "correction"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "strategy",
+        "incident",
+        "performance",
+        "development",
+        "pace",
+        "fanwar"
+      ],
+      "requires": [
+        "parent_has_evidence"
+      ],
+      "forbids": [],
+      "family": "evidence_confirmation"
+    },
+    {
+      "id": "comment-b3dfae347e952f46",
+      "text": "想知道后续",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "question"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "strategy",
+        "incident",
+        "performance"
+      ],
+      "requires": [
+        "uncertain_result"
+      ],
+      "forbids": [],
+      "family": "outcome_followup_interest"
+    },
+    {
+      "id": "comment-a8b8dc885aaff4db",
+      "text": "战斗力爆棚🤗",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "praise"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "performance",
+        "pace"
+      ],
+      "requires": [
+        "good_result"
+      ],
+      "forbids": [],
+      "family": "performance_praise"
+    },
+    {
+      "id": "comment-a9e754cdd5b99f2c",
+      "text": "牛逼牛逼",
+      "act": "support",
+      "tone": "heated",
+      "parentIntents": [
+        "analysis",
+        "praise"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "performance",
+        "strategy",
+        "pace"
+      ],
+      "requires": [
+        "good_result"
+      ],
+      "forbids": [],
+      "family": "performance_praise"
+    },
+    {
+      "id": "comment-aa24657b3226dbd5",
+      "text": "太难过了",
+      "act": "cope",
+      "tone": "casual",
+      "parentIntents": [
+        "complaint",
+        "analysis"
+      ],
+      "responseIntent": "cope",
+      "claimMode": "none",
+      "topics": [
+        "incident",
+        "performance"
+      ],
+      "requires": [
+        "bad_result"
+      ],
+      "forbids": [],
+      "family": "bad_result_sadness"
+    },
+    {
+      "id": "comment-ab6344cf34ceaa85",
+      "text": "脸皮好厚",
+      "act": "sarcasm",
+      "tone": "heated",
+      "parentIntents": [
+        "boast",
+        "taunt"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "overconfident_parent_mock"
+    },
+    {
+      "id": "comment-acc2263012e162bc",
+      "text": "希望人都没事",
+      "act": "cope",
+      "tone": "calm",
+      "parentIntents": [
+        "analysis",
+        "question",
+        "complaint"
+      ],
+      "responseIntent": "cope",
+      "claimMode": "none",
+      "topics": [
+        "incident"
+      ],
+      "requires": [
+        "incident"
+      ],
+      "forbids": [],
+      "family": "incident_safety_wish"
+    },
+    {
+      "id": "comment-ad859a730a0f576e",
+      "text": "我只能说无奈",
+      "act": "cope",
+      "tone": "casual",
+      "parentIntents": [
+        "complaint",
+        "analysis"
+      ],
+      "responseIntent": "cope",
+      "claimMode": "none",
+      "topics": [
+        "incident",
+        "performance",
+        "strategy"
+      ],
+      "requires": [
+        "bad_result"
+      ],
+      "forbids": [],
+      "family": "bad_result_resignation"
+    },
+    {
+      "id": "comment-b5e5c6385c030821",
+      "text": "希望好好查查吧",
+      "act": "ask",
+      "tone": "calm",
+      "parentIntents": [
+        "analysis",
+        "question"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "incident"
+      ],
+      "requires": [
+        "incident",
+        "penalty_pending"
+      ],
+      "forbids": [],
+      "family": "incident_request_investigation"
+    },
+    {
+      "id": "comment-b73fb26aded7b0ef",
+      "text": "坐等",
+      "act": "cope",
+      "tone": "casual",
+      "parentIntents": [
+        "question",
+        "analysis"
+      ],
+      "responseIntent": "uncertainty",
+      "claimMode": "none",
+      "topics": [
+        "incident",
+        "strategy",
+        "performance"
+      ],
+      "requires": [
+        "uncertain_result"
+      ],
+      "forbids": [],
+      "family": "await_uncertain_outcome"
+    },
+    {
+      "id": "comment-b84035925e474329",
+      "text": "排位战绩提升有望了！😢",
+      "act": "cope",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "praise"
+      ],
+      "responseIntent": "uncertainty",
+      "claimMode": "none",
+      "topics": [
+        "performance",
+        "pace"
+      ],
+      "requires": [
+        "uncertain_result"
+      ],
+      "forbids": [],
+      "family": "qualifying_improvement_hope"
+    },
+    {
+      "id": "comment-b853083cf470c3f8",
+      "text": "我羡慕了😂😂",
+      "act": "cope",
+      "tone": "casual",
+      "parentIntents": [
+        "praise",
+        "boast"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "none",
+      "topics": [
+        "performance",
+        "development"
+      ],
+      "requires": [
+        "good_result"
+      ],
+      "forbids": [],
+      "family": "success_envy_reaction"
+    },
+    {
+      "id": "comment-b885586749e6a1df",
+      "text": "差不多 差不多 得 了",
+      "act": "exit",
+      "tone": "heated",
+      "parentIntents": [
+        "taunt",
+        "complaint"
+      ],
+      "responseIntent": "exit",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_taunt"
+      ],
+      "forbids": [],
+      "family": "stop_escalating"
+    },
+    {
+      "id": "comment-bbac4f2d1ae37e06",
+      "text": "为什么看起来怪怪的😌",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "question"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "strategy",
+        "incident",
+        "performance",
+        "development",
+        "pace",
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "oddity_clarification"
+    },
+    {
+      "id": "comment-bbfa53423e0bec5e",
+      "text": "用不着戾气那么重吧",
+      "act": "rebut",
+      "tone": "calm",
+      "parentIntents": [
+        "taunt"
+      ],
+      "responseIntent": "disagree",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_taunt"
+      ],
+      "forbids": [],
+      "family": "deescalate_aggressive_reply"
+    },
+    {
+      "id": "comment-be29e962382138e7",
+      "text": "到底是什么情况呢🤔️🤔️🤔️",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "question"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "incident",
+        "strategy",
+        "performance"
+      ],
+      "requires": [
+        "uncertain_result"
+      ],
+      "forbids": [],
+      "family": "request_situation_explanation"
+    },
+    {
+      "id": "comment-be8986dcab6e8063",
+      "text": "没劲",
+      "act": "cope",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "complaint"
+      ],
+      "responseIntent": "cope",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "pace",
+        "performance"
+      ],
+      "requires": [
+        "slow_pace"
+      ],
+      "forbids": [],
+      "family": "slow_pace_boredom"
+    },
+    {
+      "id": "comment-bdab60d7f955637c",
+      "text": "太不容易了",
+      "act": "cope",
+      "tone": "calm",
+      "parentIntents": [
+        "complaint",
+        "analysis"
+      ],
+      "responseIntent": "cope",
+      "claimMode": "none",
+      "topics": [
+        "incident",
+        "performance",
+        "development"
+      ],
+      "requires": [
+        "bad_result"
+      ],
+      "forbids": [],
+      "family": "adversity_empathy"
+    },
+    {
+      "id": "comment-bf0201b97f604344",
+      "text": "你说啊",
+      "act": "ask",
+      "tone": "heated",
+      "parentIntents": [
+        "boast",
+        "analysis"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "strategy",
+        "incident",
+        "performance",
+        "development",
+        "pace",
+        "fanwar"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "demand_explanation"
+    },
+    {
+      "id": "comment-bf52d0e30df9dff2",
+      "text": "我觉得不合理啊",
+      "act": "rebut",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "boast",
+        "praise"
+      ],
+      "responseIntent": "disagree",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "strategy",
+        "incident",
+        "performance",
+        "development",
+        "pace",
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "reasonableness_disagreement"
+    },
+    {
+      "id": "comment-c142a1b679fe8dc8",
+      "text": "没那么难",
+      "act": "rebut",
+      "tone": "casual",
+      "parentIntents": [
+        "complaint"
+      ],
+      "responseIntent": "disagree",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "strategy",
+        "development"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "difficulty_reassurance"
+    },
+    {
+      "id": "comment-c4e5f13ca0c73349",
+      "text": "小命要紧啊",
+      "act": "cope",
+      "tone": "calm",
+      "parentIntents": [
+        "analysis",
+        "complaint"
+      ],
+      "responseIntent": "cope",
+      "claimMode": "none",
+      "topics": [
+        "incident"
+      ],
+      "requires": [
+        "incident"
+      ],
+      "forbids": [],
+      "family": "safety_over_risk"
+    },
+    {
+      "id": "comment-c591fd9c72d22cd2",
+      "text": "有问题嘛",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "taunt",
+        "complaint"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_taunt"
+      ],
+      "forbids": [],
+      "family": "is_there_a_problem_challenge"
+    },
+    {
+      "id": "comment-c7fe6db3eb0db64f",
+      "text": "坐等结果不行吗",
+      "act": "rebut",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "boast"
+      ],
+      "responseIntent": "uncertainty",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "incident",
+        "strategy",
+        "performance"
+      ],
+      "requires": [
+        "uncertain_result",
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "await_uncertain_outcome"
+    },
+    {
+      "id": "comment-cb73e82fd705335c",
+      "text": "请解释下",
+      "act": "ask",
+      "tone": "calm",
+      "parentIntents": [
+        "analysis",
+        "boast",
+        "question"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "strategy",
+        "incident",
+        "performance",
+        "development",
+        "pace",
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "request_situation_explanation"
+    },
+    {
+      "id": "comment-cb8f5a4764221561",
+      "text": "还有这事🤔️🤔️🤔️",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "question"
+      ],
+      "responseIntent": "uncertainty",
+      "claimMode": "question_parent",
+      "topics": [
+        "incident",
+        "development"
+      ],
+      "requires": [
+        "uncertain_result"
+      ],
+      "forbids": [],
+      "family": "surprised_discovery"
+    },
+    {
+      "id": "comment-cb296f63909f2187",
+      "text": "注意安全",
+      "act": "cope",
+      "tone": "calm",
+      "parentIntents": [
+        "analysis",
+        "complaint"
+      ],
+      "responseIntent": "cope",
+      "claimMode": "none",
+      "topics": [
+        "incident"
+      ],
+      "requires": [
+        "incident"
+      ],
+      "forbids": [],
+      "family": "safety_over_risk"
+    },
+    {
+      "id": "comment-cb5494af9dc4f730",
+      "text": "那然后呢",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "question"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "strategy",
+        "incident",
+        "performance",
+        "development",
+        "pace",
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "request_continuation"
+    },
+    {
+      "id": "comment-cf0b970c727fa116",
+      "text": "吓人",
+      "act": "cope",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "complaint",
+        "uncertainty"
+      ],
+      "responseIntent": "cope",
+      "claimMode": "echo_parent",
+      "topics": [
+        "incident",
+        "performance",
+        "pace"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "incident_alarm_reaction"
+    },
+    {
+      "id": "comment-cfb4cc5eed93fd8d",
+      "text": "太可惜了",
+      "act": "cope",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "complaint",
+        "uncertainty"
+      ],
+      "responseIntent": "cope",
+      "claimMode": "none",
+      "topics": [
+        "incident",
+        "performance",
+        "pace"
+      ],
+      "requires": [
+        "bad_result"
+      ],
+      "forbids": [],
+      "family": "bad_result_sadness"
+    },
+    {
+      "id": "comment-d21f41648b9e8be6",
+      "text": "太心酸了",
+      "act": "cope",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "complaint",
+        "uncertainty"
+      ],
+      "responseIntent": "cope",
+      "claimMode": "none",
+      "topics": [
+        "incident",
+        "performance",
+        "development"
+      ],
+      "requires": [
+        "bad_result"
+      ],
+      "forbids": [],
+      "family": "bad_result_sadness"
+    },
+    {
+      "id": "comment-d2b70268a654c56c",
+      "text": "挺牛逼",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "praise"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "performance",
+        "pace",
+        "development"
+      ],
+      "requires": [
+        "good_result"
+      ],
+      "forbids": [],
+      "family": "performance_praise"
+    },
+    {
+      "id": "comment-d3486247f9b13eec",
+      "text": "这样也可以",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "question",
+        "uncertainty"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "strategy",
+        "incident",
+        "performance",
+        "development",
+        "pace"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "explicit_support_reply"
+    },
+    {
+      "id": "comment-d5b5e118ac3a521b",
+      "text": "貌似没毛病吧",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "question",
+        "uncertainty"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "strategy",
+        "incident",
+        "performance",
+        "development",
+        "pace"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "evidence_based_approval"
+    },
+    {
+      "id": "comment-d5883a59cc8c6dd1",
+      "text": "太对了哥",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "praise",
+        "complaint"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "strategy",
+        "incident",
+        "performance",
+        "development",
+        "pace",
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "explicit_support_reply"
+    },
+    {
+      "id": "comment-d960aa8e5dc7bde7",
+      "text": "不理解😂😂😂😂😂😂😏😏😏",
+      "act": "admit",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "question",
+        "uncertainty"
+      ],
+      "responseIntent": "uncertainty",
+      "claimMode": "none",
+      "topics": [
+        "strategy",
+        "incident",
+        "performance",
+        "development",
+        "pace",
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "logic_more_confusing"
+    },
+    {
+      "id": "comment-a8e99ecb50e58988",
+      "text": "我就看看不说话",
+      "act": "exit",
+      "tone": "casual",
+      "parentIntents": [
+        "taunt",
+        "analysis",
+        "complaint",
+        "boast"
+      ],
+      "responseIntent": "exit",
+      "claimMode": "none",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "围观但不参与争论"
+    },
+    {
+      "id": "comment-abb7057b1750640c",
+      "text": "真的读不懂😂",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "correction",
+        "uncertainty"
+      ],
+      "responseIntent": "uncertainty",
+      "claimMode": "none",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "承认看不懂对方表达"
+    },
+    {
+      "id": "comment-d13a37c448af443c",
+      "text": "就这？就这？呵呵🧏",
+      "act": "sarcasm",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "boast",
+        "praise",
+        "analysis"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "fanwar"
+      ],
+      "requires": [
+        "parent_overconfident"
+      ],
+      "forbids": [],
+      "family": "嘲讽父帖表现不过如此"
+    },
+    {
+      "id": "comment-e04b9d2be1a9f394",
+      "text": "气死我了",
+      "act": "cope",
+      "tone": "heated",
+      "parentIntents": [
+        "taunt",
+        "complaint",
+        "analysis"
+      ],
+      "responseIntent": "cope",
+      "claimMode": "none",
+      "topics": [
+        "incident",
+        "performance",
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "anger_reaction"
+    },
+    {
+      "id": "comment-e0a7a6b2ea927a31",
+      "text": "这个厉害",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "praise"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "performance",
+        "development",
+        "pace"
+      ],
+      "requires": [
+        "good_result"
+      ],
+      "forbids": [],
+      "family": "performance_praise"
+    },
+    {
+      "id": "comment-e155ba1021efda02",
+      "text": "是 作用 是 啥",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "question",
+        "uncertainty"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "strategy",
+        "development",
+        "performance"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "request_situation_explanation"
+    },
+    {
+      "id": "comment-e339f772bc4bd4f0",
+      "text": "我觉得有问题",
+      "act": "rebut",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "question",
+        "uncertainty"
+      ],
+      "responseIntent": "disagree",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "strategy",
+        "incident",
+        "performance",
+        "development",
+        "pace"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "reasonableness_disagreement"
+    },
+    {
+      "id": "comment-e33bfdc3bbc1e913",
+      "text": "这也太酷了吧",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "praise"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "performance",
+        "development",
+        "pace"
+      ],
+      "requires": [
+        "good_result"
+      ],
+      "forbids": [],
+      "family": "performance_praise"
+    },
+    {
+      "id": "comment-e438d5dcde202f06",
+      "text": "这个 你 认为 我能 信",
+      "act": "sarcasm",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "analysis",
+        "boast",
+        "taunt"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "strategy",
+        "incident",
+        "development",
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "evidence_based_approval"
+    },
+    {
+      "id": "comment-e4d6bceaa9f9b1fe",
+      "text": "你这说不通吧",
+      "act": "rebut",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "question",
+        "uncertainty"
+      ],
+      "responseIntent": "disagree",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "strategy",
+        "incident",
+        "performance",
+        "development",
+        "pace",
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "reasonableness_disagreement"
+    },
+    {
+      "id": "comment-e6ac1976a7a4ab16",
+      "text": "注意安全呀",
+      "act": "cope",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "complaint",
+        "question"
+      ],
+      "responseIntent": "cope",
+      "claimMode": "none",
+      "topics": [
+        "incident",
+        "development"
+      ],
+      "requires": [
+        "incident"
+      ],
+      "forbids": [],
+      "family": "incident_safety_wish"
+    },
+    {
+      "id": "comment-eba6a5c3e5237487",
+      "text": "我特么服了真是",
+      "act": "cope",
+      "tone": "heated",
+      "parentIntents": [
+        "complaint",
+        "taunt",
+        "analysis"
+      ],
+      "responseIntent": "cope",
+      "claimMode": "none",
+      "topics": [
+        "incident",
+        "performance",
+        "development",
+        "pace",
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "frustration_reaction"
+    },
+    {
+      "id": "comment-ed4b0e64d789ba62",
+      "text": "中肯",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "correction",
+        "complaint"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "strategy",
+        "incident",
+        "performance",
+        "development",
+        "pace",
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "truthful_point_acknowledgment"
+    },
+    {
+      "id": "comment-fcb854442b5b5694",
+      "text": "是真的吗",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "question",
+        "uncertainty"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "strategy",
+        "incident",
+        "performance",
+        "development",
+        "pace",
+        "fanwar"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "evidence_confirmation"
+    },
+    {
+      "id": "ptt-car-development:c2",
+      "text": "一點都不好 車隊不能把所有資源全部壓在同一個人身上",
+      "act": "rebut",
+      "tone": "heated",
+      "parentIntents": [
+        "boast"
+      ],
+      "responseIntent": "disagree",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "development"
+      ],
+      "requires": [
+        "resource_concentrated",
+        "parent_advocates_single_driver_concentration"
+      ],
+      "forbids": [],
+      "family": "resource_concentration_rebuttal",
+      "sceneTexts": {
+        "development": "一點都不好 車隊不能把所有資源全部壓在同一個人身上"
+      }
+    },
+    {
+      "id": "ptt-car-development:c43",
+      "text": "你不如說讓一個人跑就好了",
+      "act": "sarcasm",
+      "tone": "sarcastic",
+      "parentIntents": [
+        "boast"
+      ],
+      "responseIntent": "mock",
+      "claimMode": "oppose_parent",
+      "topics": [
+        "development"
+      ],
+      "requires": [
+        "parent_advocates_single_driver_concentration"
+      ],
+      "forbids": [],
+      "family": "extreme_single_driver_strategy_mock",
+      "sceneTexts": {
+        "development": "你不如說讓一個人跑就好了"
+      }
+    },
+    {
+      "id": "ptt-car-development:c41",
+      "text": "对手车队 1有比对手车队 2好嗎？",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "question"
+      ],
+      "responseIntent": "ask_evidence",
+      "claimMode": "question_parent",
+      "topics": [
+        "performance"
+      ],
+      "requires": [
+        "parent_compares_two_teams"
+      ],
+      "forbids": [],
+      "family": "comparative_team_question",
+      "sceneTexts": {
+        "performance": "对手车队 1有比对手车队 2好嗎？",
+        "comparison": "对手车队 1有比对手车队 2好嗎？"
+      }
+    },
+    {
+      "id": "ptt-driver-comparison:c53",
+      "text": "苦了阿尔法",
+      "act": "cope",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "complaint",
+        "uncertainty"
+      ],
+      "responseIntent": "cope",
+      "claimMode": "none",
+      "topics": [
+        "performance"
+      ],
+      "requires": [
+        "bad_result"
+      ],
+      "forbids": [],
+      "family": "sympathy-after-setback",
+      "sceneTexts": {
+        "performance": "苦了阿尔法",
+        "comparison": "苦了阿尔法"
+      }
+    },
+    {
+      "id": "ptt-good-strategy:c2",
+      "text": "還不錯",
+      "act": "support",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis"
+      ],
+      "responseIntent": "agree",
+      "claimMode": "echo_parent",
+      "topics": [
+        "strategy"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "mild-approval",
+      "sceneTexts": {
+        "strategy": "還不錯"
+      }
+    },
+    {
+      "id": "ptt-good-strategy:c4",
+      "text": "不懂耶 求解",
+      "act": "ask",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis"
+      ],
+      "responseIntent": "question",
+      "claimMode": "question_parent",
+      "topics": [
+        "strategy"
+      ],
+      "requires": [],
+      "forbids": [],
+      "family": "request-explanation",
+      "sceneTexts": {
+        "strategy": "不懂耶 求解"
+      }
+    },
+    {
+      "id": "ptt-good-strategy:c5",
+      "text": "今天比慢不比快",
+      "act": "joke",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "complaint"
+      ],
+      "responseIntent": "joke",
+      "claimMode": "none",
+      "topics": [
+        "pace"
+      ],
+      "requires": [
+        "slow_pace"
+      ],
+      "forbids": [],
+      "family": "slow-pace-irony",
+      "sceneTexts": {
+        "pace": "今天比慢不比快",
+        "quiet": "今天比慢不比快"
+      }
+    },
+    {
+      "id": "ptt-second-stop:c14",
+      "text": "進站本來就該把出站時的風險和情況也算進去，",
+      "act": "correct",
+      "tone": "calm",
+      "parentIntents": [
+        "analysis",
+        "complaint"
+      ],
+      "responseIntent": "correction",
+      "claimMode": "none",
+      "topics": [
+        "strategy"
+      ],
+      "requires": [
+        "pit_risk"
+      ],
+      "forbids": [],
+      "family": "account-for-pit-exit-risk",
+      "sceneTexts": {
+        "strategy": "進站本來就該把出站時的風險和情況也算進去，"
+      }
+    },
+    {
+      "id": "ptt-second-stop:c23",
+      "text": "策略本來就都一直存在著風險！",
+      "act": "correct",
+      "tone": "casual",
+      "parentIntents": [
+        "analysis",
+        "complaint"
+      ],
+      "responseIntent": "correction",
+      "claimMode": "none",
+      "topics": [
+        "strategy"
+      ],
+      "requires": [
+        "pit_risk"
+      ],
+      "forbids": [],
+      "family": "strategy-entails-risk",
+      "sceneTexts": {
+        "strategy": "策略本來就都一直存在著風險！"
+      }
+    }
+  ],
+  "coverage": {
+    "read": 13756,
+    "candidates": 410,
+    "approved": 224,
+    "families": 180,
+    "acts": {
+      "support": 42,
+      "rebut": 24,
+      "ask": 57,
+      "correct": 10,
+      "joke": 7,
+      "sarcasm": 28,
+      "troll": 7,
+      "exposed_troll": 0,
+      "self_mock": 0,
+      "boast": 1,
+      "cope": 35,
+      "repeat": 0,
+      "admit": 3,
+      "exit": 10
+    },
+    "topics": {
+      "strategy": 71,
+      "incident": 59,
+      "performance": 96,
+      "development": 59,
+      "pace": 34,
+      "fanwar": 107
+    },
+    "shards": [
+      {
+        "shard": "shard-1",
+        "read": 1500,
+        "candidates": 82,
+        "approved": 34,
+        "audit": "current"
+      },
+      {
+        "shard": "shard-10",
+        "read": 878,
+        "candidates": 13,
+        "approved": 7,
+        "audit": "current"
+      },
+      {
+        "shard": "shard-2",
+        "read": 1500,
+        "candidates": 47,
+        "approved": 25,
+        "audit": "current"
+      },
+      {
+        "shard": "shard-3",
+        "read": 1500,
+        "candidates": 49,
+        "approved": 23,
+        "audit": "current"
+      },
+      {
+        "shard": "shard-4",
+        "read": 1500,
+        "candidates": 42,
+        "approved": 26,
+        "audit": "current"
+      },
+      {
+        "shard": "shard-5",
+        "read": 1500,
+        "candidates": 60,
+        "approved": 23,
+        "audit": "current"
+      },
+      {
+        "shard": "shard-6",
+        "read": 1500,
+        "candidates": 24,
+        "approved": 20,
+        "audit": "current"
+      },
+      {
+        "shard": "shard-7",
+        "read": 1500,
+        "candidates": 65,
+        "approved": 43,
+        "audit": "current"
+      },
+      {
+        "shard": "shard-8",
+        "read": 1500,
+        "candidates": 6,
+        "approved": 3,
+        "audit": "current"
+      },
+      {
+        "shard": "shard-9",
+        "read": 878,
+        "candidates": 22,
+        "approved": 11,
+        "audit": "current"
+      }
+    ],
+    "templates": {
+      "annotated": 493,
+      "expected": 493,
+      "batches": [
+        {
+          "batch": "ptt-car-development.jsonl",
+          "annotated": 44,
+          "entityApproved": 5,
+          "mapped": 3,
+          "mappingApproved": 3,
+          "compiled": 3
+        },
+        {
+          "batch": "ptt-driver-comparison.jsonl",
+          "annotated": 67,
+          "entityApproved": 1,
+          "mapped": 1,
+          "mappingApproved": 1,
+          "compiled": 1
+        },
+        {
+          "batch": "ptt-driver-error.jsonl",
+          "annotated": 91,
+          "entityApproved": 0,
+          "mapped": 0,
+          "mappingApproved": 0,
+          "compiled": 0
+        },
+        {
+          "batch": "ptt-fan-joke.jsonl",
+          "annotated": 32,
+          "entityApproved": 0,
+          "mapped": 0,
+          "mappingApproved": 0,
+          "compiled": 0
+        },
+        {
+          "batch": "ptt-fan-retrospective.jsonl",
+          "annotated": 25,
+          "entityApproved": 0,
+          "mapped": 0,
+          "mappingApproved": 0,
+          "compiled": 0
+        },
+        {
+          "batch": "ptt-good-strategy.jsonl",
+          "annotated": 35,
+          "entityApproved": 4,
+          "mapped": 3,
+          "mappingApproved": 3,
+          "compiled": 3
+        },
+        {
+          "batch": "ptt-incident-ruling.jsonl",
+          "annotated": 4,
+          "entityApproved": 0,
+          "mapped": 0,
+          "mappingApproved": 0,
+          "compiled": 0
+        },
+        {
+          "batch": "ptt-quiet-season.jsonl",
+          "annotated": 17,
+          "entityApproved": 0,
+          "mapped": 0,
+          "mappingApproved": 0,
+          "compiled": 0
+        },
+        {
+          "batch": "ptt-race-outcome.jsonl",
+          "annotated": 41,
+          "entityApproved": 0,
+          "mapped": 0,
+          "mappingApproved": 0,
+          "compiled": 0
+        },
+        {
+          "batch": "ptt-second-stop.jsonl",
+          "annotated": 91,
+          "entityApproved": 3,
+          "mapped": 2,
+          "mappingApproved": 2,
+          "compiled": 2
+        },
+        {
+          "batch": "ptt-strategy-review.jsonl",
+          "annotated": 46,
+          "entityApproved": 0,
+          "mapped": 0,
+          "mappingApproved": 0,
+          "compiled": 0
+        }
+      ],
+      "pending": []
+    }
+  },
+  "revision": "4b9958f00da44c0ea1246b555aaea97777abb76d1e306d49c2e46856eac322c9"
+}

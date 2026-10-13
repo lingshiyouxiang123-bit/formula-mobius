@@ -1,0 +1,26 @@
+{
+  "name": "f1-board-game",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "lint": "eslint .",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "latest",
+    "typescript": "^6.0.0",
+    "vitest": "latest"
+  },
+  "packageManager": "pnpm@10.8.1"
+}

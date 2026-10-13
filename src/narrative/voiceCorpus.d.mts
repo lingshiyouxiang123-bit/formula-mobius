@@ -1,0 +1,2 @@
+import type {VoiceTemplate} from './voiceRenderer.mjs';
+export function combineVoiceCorpus(dynamicPacks:Array<{templates:VoiceTemplate[]}>,downloaded:{expressions:Array<{id:string;text?:string;act:string;family:string}>},binding:{entries:Array<{sourceId:string;trigger:string;persona:string;requiredValues?:string[];when?:VoiceTemplate['when'];replyTo?:string|null}>},review?:{excludedIds?:string[];downloadedExcludedSourceIds?:string[]}):VoiceTemplate[];
