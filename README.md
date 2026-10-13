@@ -1,18 +1,19 @@
 # FORMULA: MOBIUS
 
 本页面为FORMULA: MOBIUS企划的游戏页面（单人版）（beta）
-纯娱乐用途，不声称除了游戏规则之外的任何版权，下略下略
+纯娱乐用途，不主张任何第三方材料的版权
+本项目的代码声明PolyForm Noncommercial
+原创内容声明CC BY-NC-SA
+如果你不知道FORMULA: MOBIUS企划是什么那你来错地方了
 
 ## AI使用声明
 
-本项目开发阶段使用 OpenAI Codex辅助代码理解、软件实现、界面设计、问题排查及文档整理；使用 gpt-6-luna 辅助语料标注、角色口吻模拟、补充文本生成及重复性文本审读。相关生成过程受到项目约束、既有材料和人工示例的引导。
-
-人工智能合成文本、外部来源文本与玩家输入在来源上予以区分。合成内容不作为真实用户发言或真实赛事记录。项目运行阶段采用本地语料、事件条件、标签、槽位及组合规则生成文本，不调用在线大语言模型。
+本项目开发阶段使用 OpenAI Codex辅助代码编写、问题排查及文档整理；使用 gpt-6-luna 进行语料标注和角色口吻模拟。相关生成过程受到项目约束、既有材料和人工示例的引导。
 人工智能辅助产出仍可能存在事实错误、重复表达及风格偏差；其使用不构成材料真实性或权利状态的证明。
 
 没有使用任何图片式生成功能，除了部分社交媒体部分的语料外，文本都是匠心手写的（Codex如果自主添加了什么可以举报给我，qq联系。而且Codex有的时候会自主给我润色，这些懒得改了）
 
-以及这个README.md的注释是Codex写的
+以及这个README.md的注释（大致）是Codex写的
 
 ## 材料来源与使用说明
 
@@ -32,31 +33,25 @@ Bilibili 评论采集项目中的示例文件[18]仅用于离线研究短句及�
 
 ### 界面与视觉材料
 
-社交界面的布局与交互组织参考 twitter-clone[21]及 The Flock[22]。赛车俯视结构参考 Motorsport 的赛车比较材料[23]；项目中对应图形由代码绘制，未直接分发该文图片。
+社交界面的布局与交互组织参考 twitter-clone[21]及 The Flock[22]。赛车俯视结构参考 Motorsport 的赛车比较材料[23]；项目中对应图形由代码绘制，未直接分发该文图片。<-这个技术性类似于jpg转矢量图
 
-GLSL 背景文件 `src/components/visual/ShaderRaceBackdrop.tsx` 记录了 Yohei Nishitsuji 的艺术参考[24]；具体原作、算法来源及许可信息尚未完整建立。
-
-项目作者提供的宣传图、海报及其他视觉参考，其作者与外部素材归属待补。宣传图所涉及的外部 3D 模型未作为当前网站的运行模型加载。
+GLSL 背景文件 `src/components/visual/ShaderRaceBackdrop.tsx` 作者Yohei Nishitsuji[24]；这位互联网菩萨的代码是MIT License（仅限X上发布）
 
 ### 字体与软件
 
-分发字体为 Archivo、Orbitron 与 Noto Sans SC[25–27]，包含字形子集或格式处理。软件组件包括 Next.js、React／React DOM、TypeScript、pnpm、ESLint 与 Vitest[28–33]；具体依赖版本由 [package.json](./package.json) 和 [pnpm-lock.yaml](./pnpm-lock.yaml) 记录。系统字体回退未作为字体文件分发。
+分发字体为 Archivo、Orbitron 与 Noto Sans SC[25–27]，包含字形子集或格式处理。软件组件包括 Next.js、React／React DOM、TypeScript、pnpm、ESLint 与 Vitest[28–33]；具体依赖版本由 [package.json](./package.json) 和 [pnpm-lock.yaml](./pnpm-lock.yaml) 记录。
 
 ## 权利与许可声明
 
-本项目自身代码及原创材料的许可：待项目作者确定。第三方软件、字体及文本材料的许可分别适用，不因本项目公开而转化为统一授权。
-
-Comment1000 随附许可为 CC BY-NC 4.0[34]，上游 README 另载 academic/research use only；该说明与本项目拟公开使用方式的适用关系尚待确认。项目保留其[来源说明](./research/text-generation/2026-10-08/raw/comment1000.README.md)及[许可文本](./research/text-generation/2026-10-08/raw/comment1000.LICENSE)。
-
-PTT 衍生表达的再分发许可尚未确认。Bilibili 采集项目的代码许可与示例评论本身的权利状态不作等同处理。GLSL 参考实现及宣传材料的具体来源与使用许可亦待补充。
+Comment1000 随附许可为 CC BY-NC 4.0[34]，
+项目保留其[来源说明](./research/text-generation/2026-10-08/raw/comment1000.README.md)及[许可文本](./research/text-generation/2026-10-08/raw/comment1000.LICENSE)。
 
 三种分发字体随附 SIL Open Font License 1.1。版权标识及本地许可文件如下：
-
 - Archivo：Copyright 2020 The Archivo Project Authors；[OFL-Archivo.txt](./public/fonts/OFL-Archivo.txt)。
 - Orbitron：Copyright 2018 The Orbitron Project Authors；Reserved Font Name: Orbitron；[OFL-Orbitron.txt](./public/fonts/OFL-Orbitron.txt)。
 - Noto Sans SC：随附许可记载 Copyright 2014–2021 Adobe；Reserved Font Name: Source；[OFL-NotoSansSC.txt](./public/fonts/OFL-NotoSansSC.txt)。
 
-字体修改与保留字体名条款以随附许可及 OFL 说明[35]为准。本文引文仅标识材料来源，不表示已经取得全部使用许可，亦不表示被引作者或机构认可本项目。
+字体修改与保留字体名条款以随附许可及 OFL 说明[35]为准。
 
 ## 参考文献与资源
 
