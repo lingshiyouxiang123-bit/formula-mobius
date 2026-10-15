@@ -1,55 +1,57 @@
 "use client";
 import {useEffect,useMemo,useState} from 'react';
 import type {NarrativeLine,RaceNarrative} from '@/narrative/types';
-import {responsesToPlayer} from '@/narrative/social/network';
 import {assignSocialBios,assignSocialHandles,playerHandle,socialProfile} from '@/narrative/social/accounts';
-import {reviewSocialLines} from '@/narrative/social/review';
-import {mergeSocialMemory,rememberSocialLines} from '@/narrative/social/society';
 import type {SocialMemory} from '@/narrative/social/types';
 import {assignSocialEngagement,socialEngagementCounts,type SocialEngagement} from '@/narrative/social/engagement';
 import {XIcon} from './XIcon';
 import {XComposeDialog} from './XComposeDialog';
 import {XProfileHeader} from './XProfileHeader';
+import {useSocialWorld} from './useSocialWorld';
+import {socialPersistenceUnavailable} from '@/narrative/social/worldStorage';
+import {worldNeedsSocialTick} from '@/narrative/social/worldPlanner';
 
 interface LocalPost extends NarrativeLine {raceId:string}
 interface SocialState {liked:string[];reposted:string[];bookmarked:string[];followed:string[];posts:LocalPost[];queue:LocalPost[];nextId:number;handles:Record<string,string|number>;bios:Record<string,string>;pinnedPostId:string|null;socialMemories:Record<string,SocialMemory>;engagement:Record<string,SocialEngagement>}
 const empty:SocialState={liked:[],reposted:[],bookmarked:[],followed:[],posts:[],queue:[],nextId:1,handles:{},bios:{},pinnedPostId:null,socialMemories:{},engagement:{}};
 const key='f1game.x-social-local-v1';
-export function XTimeline({race,view,playerName,composeRequest=0,onComposeHandled,navigationRequest=0}:{race?:RaceNarrative;view:string;playerName:string;composeRequest?:number;onComposeHandled?:()=>void;navigationRequest?:number}){
+const uiKey='f1game.x-social-ui-v2';
+const noRecords:Record<string,RaceNarrative>={};
+export function XTimeline({race,narratives=noRecords,raceScope,view,playerName,composeRequest=0,onComposeHandled,navigationRequest=0}:{race?:RaceNarrative;narratives?:Record<string,RaceNarrative>;raceScope?:string;view:string;playerName:string;composeRequest?:number;onComposeHandled?:()=>void;navigationRequest?:number}){
   const [state,setState]=useState<SocialState>(empty),[ready,setReady]=useState(false);
   const [flow,setFlow]=useState('for-you'),[query,setQuery]=useState(''),[detail,setDetail]=useState<string|null>(null);
   const [draft,setDraft]=useState(''),[reply,setReply]=useState(''),[quoteTarget,setQuoteTarget]=useState<string|null>(null);
-  const [released,setReleased]=useState<string[]>([]),[live,setLive]=useState(true);
+  const [live,setLive]=useState(true),[foreground,setForeground]=useState(true);
   const [profile,setProfile]=useState<string|null>(null),[profileTab,setProfileTab]=useState('posts');
   const [composeOpen,setComposeOpen]=useState(false),[replyTarget,setReplyTarget]=useState<string|null>(null),[searchOpen,setSearchOpen]=useState(false);
   const [postKind,setPostKind]=useState<'update'|'blog'>('update'),[topicPostId,setTopicPostId]=useState('');
   const [topicFilter,setTopicFilter]=useState('all');
-  useEffect(()=>{try{const saved=localStorage.getItem(key);if(saved)setState({...empty,...JSON.parse(saved)});}catch{}setReady(true);},[]);
-  useEffect(()=>{if(ready)try{localStorage.setItem(key,JSON.stringify(state));}catch{}},[state,ready]);
+  useEffect(()=>{try{const saved=localStorage.getItem(key),ui=localStorage.getItem(uiKey);setState({...empty,...(saved?JSON.parse(saved):{}),...(ui?JSON.parse(ui):{})});}catch{}setReady(true);},[]);
+  useEffect(()=>{if(ready)try{
+    // Keep the old player-writing key intact as a migration backup. Only small UI state is rewritten.
+    const {posts,queue,socialMemories,...ui}=state;
+    void posts;void queue;void socialMemories;
+    localStorage.setItem(uiKey,JSON.stringify(ui));
+  }catch{}},[state,ready]);
   useEffect(()=>{setDetail(null);setProfile(null);setProfileTab('posts');setReply('');setQuoteTarget(null);setReplyTarget(null);setComposeOpen(false);setQuery('');},[view,race?.raceId,navigationRequest]);
-  useEffect(()=>{setReleased([]);},[race?.raceId]);
   useEffect(()=>{setComposeOpen(false);setReplyTarget(null);setTopicPostId('');},[race?.raceId]);
   useEffect(()=>{if(composeRequest>0){setComposeOpen(true);setReplyTarget(null);onComposeHandled?.();}},[composeRequest,onComposeHandled]);
-  const published=useMemo(()=>[...(race?.social??[]),...reviewSocialLines(state.posts.filter(p=>p.raceId===race?.raceId))],[race,state.posts]);
-  const queue=useMemo(()=>[...(race?.socialQueue??[]).map(p=>p.line),...reviewSocialLines(state.queue.filter(p=>p.raceId===race?.raceId))]
-    .filter(p=>!published.some(post=>post.id===p.id)),[race,published,state.queue]);
+  const {world,advance,publish:publishWorld}=useSocialWorld(race,narratives,state,ready);
+  const published=useMemo(()=>world?world.posts.filter(p=>!raceScope||p.raceId===raceScope):race?.social??[],[world,race,raceScope]);
+  const queue=useMemo(()=>world?.queue.map(q=>q.line).filter(p=>!raceScope||p.raceId===raceScope)??[],[world,raceScope]);
   const knownPosts=useMemo(()=>[...published,...queue],[published,queue]);
-  const posts=useMemo(()=>[...published,...queue.filter(p=>released.includes(p.id))],[published,queue,released]);
-  const pending=queue.filter(p=>!released.includes(p.id));
-  const releaseBatch=(limit=3)=>setReleased(current=>{
-    const available=new Set([...published.map(p=>p.id),...current]);
-    const next:string[]=[];
-    for(const post of queue){
-      const parent=post.replyToId??post.repostOfId;
-      if(!available.has(post.id)&&(!parent||available.has(parent))){next.push(post.id);available.add(post.id);if(next.length===limit)break;}
-    }
-    return next.length?[...current,...next]:current;
-  });
+  const posts=published,pending=queue;
+  const releaseBatch=(limit=3)=>{void advance(limit);};
   useEffect(()=>{
-    if(!live||!pending.length||!ready)return;
+    const update=()=>setForeground(document.visibilityState!=='hidden');
+    update();document.addEventListener('visibilitychange',update);
+    return ()=>document.removeEventListener('visibilitychange',update);
+  },[]);
+  useEffect(()=>{
+    if(!live||!foreground||raceScope||!ready||!world||!worldNeedsSocialTick(world))return;
     const timer=setTimeout(()=>releaseBatch(),8000);
     return ()=>clearTimeout(timer);
-  },[live,ready,pending.length,published,queue,released]); // Display only; this clock never writes localStorage.
+  },[live,foreground,raceScope,ready,pending.length,world]); // One foreground publication batch; no background/offline catch-up loop.
   const accounts=useMemo(()=>[...new Set(posts.map(p=>p.speaker).filter(name=>name!==playerName))],[posts,playerName]);
   useEffect(()=>{
     if(!ready)return;
@@ -59,30 +61,22 @@ export function XTimeline({race,view,playerName,composeRequest=0,onComposeHandle
       const bios=assignSocialBios(s.bios,knownPosts,playerName);
       return handles===s.handles&&engagement===s.engagement&&bios===s.bios?s:{...s,handles,engagement,bios};
     });
-  },[ready,knownPosts,playerName]); // Queue is prepared once; display-only releases don't redraw counts or save.
+  },[ready,knownPosts,playerName]); // Assign engagement once per post, not on each render.
   const handle=(name:string)=>name===playerName?playerHandle:typeof state.handles[name]==='string'?state.handles[name] as string:'@lap_notes';
   const openAccount=(name:string)=>{setProfile(name);setProfileTab('posts');setDetail(null);setQuery('');};
   const profileName=profile??(view==='profile'?playerName:null),ownProfile=profileName===playerName;
   const profileInfo=profileName?socialProfile(posts,profileName,playerName,state.bios):undefined;
   const toggle=(field:'liked'|'reposted'|'bookmarked'|'followed',id:string)=>setState(s=>({...s,[field]:s[field].includes(id)?s[field].filter(v=>v!==id):[...s[field],id]}));
+  const accountId=(name:string)=>posts.find(p=>p.speaker===name)?.account?.id??name;
+  const follows=(name:string)=>state.followed.includes(accountId(name))||state.followed.includes(name);
+  const follow=(name:string)=>setState(s=>({...s,followed:follows(name)?s.followed.filter(id=>id!==name&&id!==accountId(name)):[...s.followed,accountId(name)]}));
+  const worldTopics=Object.values(world?.topics??{}).filter(t=>!raceScope||t.raceId===raceScope).sort((a,b)=>b.updatedTick-a.updatedTick);
   const selected=posts.find(p=>p.id===detail);
   const publish=(text:string,parent?:NarrativeLine,quote=false)=>{
-    if(!race||!text.trim())return;
-    setState(s=>{
-      const topic=posts.find(p=>p.id===topicPostId);
-      const selection=race.socialTopics?.find(t=>`topic:${t.id}`===topicPostId);
-      const context=parent?.socialContext??selection?.context??topic?.socialContext??posts.slice().reverse().find(p=>p.socialContext&&text.includes(String(p.socialContext.slots.driver??'\u0000')))?.socialContext;
-      const post:LocalPost={raceId:race.raceId,id:`local-post-${s.nextId}`,round:race.events.at(-1)?.round??parent?.round??0,
-        speaker:playerName,text:text.trim(),kind:'opinion',factIds:parent?.factIds??topic?.factIds??[],eventIds:parent?.eventIds??topic?.eventIds??[],templateId:'player.actual-input',provenance:'player',
-        ...(!parent?{socialKind:postKind,...(topic||selection?.postId?{topicPostId:topic?.id??selection?.postId}:{})}:{}),
-        account:{id:'driver:player',role:'driver'},socialContext:context,...(parent?quote?{quoteOfId:parent.id}:{replyToId:parent.id}:{})};
-      const society=race.socialMemory?mergeSocialMemory(race.socialMemory,s.socialMemories[race.socialMemory.worldId]):undefined;
-      if(society)rememberSocialLines(society,race.raceId,posts);
-      const responses=responsesToPlayer(post,context,[...posts,...s.queue.filter(p=>p.raceId===race.raceId)],s.nextId*137,society).map(line=>({...line,raceId:race.raceId}));
-      if(society)rememberSocialLines(society,race.raceId,[post]);
-      return {...s,nextId:s.nextId+1,posts:[...s.posts,post].slice(-200),queue:[...s.queue,...responses].slice(-80),
-        socialMemories:society?{...s.socialMemories,[society.worldId]:society}:s.socialMemories};
-    });
+    if(!world||!text.trim())return;
+    const legacyTopic=race?.socialTopics?.find(old=>`topic:${old.id}`===topicPostId);
+    const selected=world.topics[topicPostId]??Object.values(world.topics).find(t=>t.sourcePostId===topicPostId||legacyTopic?.postId===t.sourcePostId);
+    void publishWorld({text,parentId:parent?.id,quote,topicId:selected?.id,kind:postKind});
     setReply('');setDraft('');setQuoteTarget(null);setComposeOpen(false);setReplyTarget(null);
   };
   const quotePost=(id:string)=>{setQuoteTarget(id);setComposeOpen(true);setReplyTarget(null);};
@@ -98,7 +92,7 @@ export function XTimeline({race,view,playerName,composeRequest=0,onComposeHandle
         {ownProfile&&post.speaker!==playerName&&state.reposted.includes(post.id)&&<small>⇄ {playerName} 转帖</small>}
         {ownProfile&&state.pinnedPostId===post.id&&<small>置顶</small>}
         {post.repostOfId&&<small>⇄ {post.speaker} 转帖</small>}
-        <header><div className="x-post-author"><button className="x-account-link" onClick={()=>openAccount(post.speaker)}>{post.speaker}</button>{['event','team'].includes(post.account?.role??'')&&<span className="x-account-badge" aria-label={post.account?.role==='event'?'赛事账号':'车队账号'}>✓</span>}<span className="x-handle">{handle(post.speaker)}</span><span className="x-post-time">· R{post.round}</span></div>
+        <header><div className="x-post-author"><button className="x-account-link" onClick={()=>openAccount(post.speaker)}>{post.speaker}</button>{['event','team'].includes(post.account?.role??'')&&<span className="x-account-badge" aria-label={post.account?.role==='event'?'赛事账号':'车队账号'}>✓</span>}<span className="x-handle">{handle(post.speaker)}</span><span className="x-post-time" title={post.raceId?world?.races[post.raceId]?.track:race?.track}>· {post.raceId&&world?.races[post.raceId]?.seasonRound?`第${world.races[post.raceId].seasonRound}站 · `:''}R{post.round}</span></div>
           <details className="x-more-menu"><summary aria-label="帖子选项"><XIcon name="more"/></summary><div>
             <button onClick={()=>quotePost(post.id)}><XIcon name="quote"/>引用帖子</button>
             <button onClick={()=>toggle('bookmarked',post.id)}><XIcon name="bookmark"/>{state.bookmarked.includes(post.id)?'移除书签':'加入书签'}</button>
@@ -126,14 +120,14 @@ export function XTimeline({race,view,playerName,composeRequest=0,onComposeHandle
   let visible=posts;
   if(profileName)visible=profileTab==='media'?[]:profileTab==='replies'?posts.filter(p=>p.speaker===profileName&&p.replyToId):posts.filter(p=>!p.replyToId&&(p.speaker===profileName||(ownProfile&&state.reposted.includes(p.id))));
   else if(view==='bookmarks')visible=visible.filter(p=>state.bookmarked.includes(p.id));
-  else if(view==='notifications')visible=visible.filter(p=>p.replyToId&&state.posts.some(own=>own.id===p.replyToId));
+  else if(view==='notifications')visible=visible.filter(p=>p.replyToId&&posts.some(own=>own.id===p.replyToId&&own.provenance==='player'));
   else{
     if(view==='blog')visible=visible.filter(p=>p.account?.role==='team'||p.socialKind==='blog');
     if(view==='news')visible=visible.filter(p=>p.account?.role==='event');
-    if(flow==='following'&&view==='live')visible=visible.filter(p=>state.followed.includes(p.speaker)||p.speaker===playerName);
+    if(flow==='following'&&view==='live')visible=visible.filter(p=>state.followed.includes(p.account?.id??p.speaker)||state.followed.includes(p.speaker)||p.speaker===playerName);
     if(!query&&flow!=='discussion'&&topicFilter!=='emotion')visible=visible.filter(p=>!p.replyToId);
   }
-  if(!profileName&&!selected&&topicFilter!=='all')visible=visible.filter(p=>topicFilter==='emotion'
+  if(!profileName&&!selected&&topicFilter!=='all')visible=visible.filter(p=>topicFilter.startsWith('topic:')?p.topicId===topicFilter.slice(6):topicFilter==='emotion'
     ?p.socialContext?.tags.some(t=>t.startsWith('emotion_'))||p.plan?.expresses?.some(t=>t.startsWith('emotion_'))
     :p.socialContext?.tags.includes(topicFilter==='result'?'race_result':topicFilter==='qualifying'?'qualifying_result':'contact'));
   if(query)visible=visible.filter(p=>(p.text+' '+p.speaker).includes(query));
@@ -156,11 +150,11 @@ export function XTimeline({race,view,playerName,composeRequest=0,onComposeHandle
   const composer=<form className="x-composer" onSubmit={event=>{event.preventDefault();publish(draft,posts.find(p=>p.id===quoteTarget),!!quoteTarget);}}>
     <span className="x-avatar x-avatar-driver">{playerName.slice(0,1)}</span><div>
       <span className="x-compose-audience">所有人</span>
-      {!quoteTarget&&<div className="x-compose-context"><label>类型<select aria-label="帖子类型" value={postKind} onChange={e=>setPostKind(e.target.value as 'update'|'blog')}><option value="update">动态</option><option value="blog">车手博客</option></select></label><label>话题 / 态度<select aria-label="本场帖子话题" value={topicPostId} onChange={e=>setTopicPostId(e.target.value)}><option value="">不关联话题</option><optgroup label="本场比赛与情绪">{race?.socialTopics?.map(t=><option key={t.id} value={`topic:${t.id}`}>{t.label}</option>)}</optgroup><optgroup label="具体帖子">{posts.filter(p=>!p.replyToId&&p.socialContext).slice(-20).reverse().map(p=><option key={p.id} value={p.id}>{p.speaker} · {p.card?.title??p.text.slice(0,26)}</option>)}</optgroup></select></label></div>}
+      {!quoteTarget&&<div className="x-compose-context"><label>类型<select aria-label="帖子类型" value={postKind} onChange={e=>setPostKind(e.target.value as 'update'|'blog')}><option value="update">动态</option><option value="blog">车手博客</option></select></label><label>话题 / 态度<select aria-label="本场帖子话题" value={topicPostId} onChange={e=>setTopicPostId(e.target.value)}><option value="">不关联话题</option><optgroup label="围场正在聊">{worldTopics.filter(t=>t.context).slice(0,24).map(t=><option key={t.id} value={t.id}>{t.label} · {t.context?.slots.driver??world?.races[t.raceId]?.track}</option>)}</optgroup><optgroup label="本场比赛与情绪">{race?.socialTopics?.map(t=><option key={t.id} value={`topic:${t.id}`}>{t.label}</option>)}</optgroup><optgroup label="具体帖子">{posts.filter(p=>!p.replyToId&&p.socialContext).slice(-20).reverse().map(p=><option key={p.id} value={p.id}>{p.speaker} · {p.card?.title??p.text.slice(0,26)}</option>)}</optgroup></select></label></div>}
       <textarea aria-label="你的帖子" placeholder={race?'有什么新鲜事？':'跑一场比赛，围场就会热闹起来。'} maxLength={280} value={draft} onChange={e=>setDraft(e.target.value)} autoFocus={composeOpen}/>
       {quoteTarget&&<button type="button" className="x-parent-quote" onClick={()=>setQuoteTarget(null)}>{posts.find(p=>p.id===quoteTarget)?.text} · 取消引用</button>}
       <p className="x-compose-permission"><XIcon name="globe"/>所有人都可以回复</p>
-      <div className="x-compose-bottom"><span className="x-compose-counter" aria-label={`已输入${draft.length}字，最多280字`}>{draft.length>0?`${draft.length} / 280`:''}</span><button className="x-publish" disabled={!ready||!race||!draft.trim()}>发布</button></div>
+      <div className="x-compose-bottom"><span className="x-compose-counter" aria-label={`已输入${draft.length}字，最多280字`}>{draft.length>0?`${draft.length} / 280`:''}</span><button className="x-publish" disabled={!ready||!world||!draft.trim()}>发布</button></div>
     </div>
   </form>;
   return <div className="x-timeline-layout">
@@ -174,12 +168,14 @@ export function XTimeline({race,view,playerName,composeRequest=0,onComposeHandle
         </header>
         {(searchOpen||query)&&<form className="x-search-bar" onSubmit={event=>event.preventDefault()}><XIcon name="search"/><input type="search" aria-label="搜索帖子" placeholder="搜索帖子或围场账号" value={query} onChange={e=>{setQuery(e.target.value);setDetail(null);setProfile(null);}} autoFocus={searchOpen}/><button type="button" className="x-icon-button" aria-label="关闭搜索" onClick={()=>{setQuery('');setSearchOpen(false);}}><XIcon name="close"/></button></form>}
         {!profileName&&!selected&&view==='live'&&<div className="x-flow-tabs"><button aria-pressed={flow==='for-you'} onClick={()=>setFlow('for-you')}>为你推荐</button><button aria-pressed={flow==='following'} onClick={()=>setFlow('following')}>正在关注</button><button aria-pressed={flow==='discussion'} onClick={()=>setFlow('discussion')}>讨论 / 回复</button></div>}
-        {!profileName&&!selected&&['live','forum','blog','news'].includes(view)&&<div className="x-topic-filter"><label>话题 <select aria-label="筛选本场话题" value={topicFilter} onChange={event=>setTopicFilter(event.target.value)}><option value="all">全部</option><option value="result">本站结果</option><option value="qualifying">排位 / 发车位</option><option value="emotion">情绪 / 看台反应</option><option value="contact">碰撞争论</option></select></label></div>}
+        {!profileName&&!selected&&['live','forum','blog','news'].includes(view)&&<div className="x-topic-filter"><label>话题 <select aria-label="筛选本场话题" value={topicFilter} onChange={event=>setTopicFilter(event.target.value)}><option value="all">全部</option><option value="result">比赛结果</option><option value="qualifying">排位 / 发车位</option><option value="emotion">情绪 / 看台反应</option><option value="contact">碰撞争论</option>{worldTopics.slice(0,24).map(t=><option key={t.id} value={`topic:${t.id}`}>{t.label} · {t.context?.slots.driver??world?.races[t.raceId]?.track}</option>)}</select></label></div>}
       </div>
-      {profileName&&!selected&&<><XProfileHeader name={profileName} handle={handle(profileName)} info={profileInfo!} own={ownProfile} count={posts.filter(p=>p.speaker===profileName).length} followingCount={state.followed.length} isFollowing={state.followed.includes(profileName)} onFollow={()=>toggle('followed',profileName)}/>
+      {profileName&&!selected&&<><XProfileHeader name={profileName} handle={handle(profileName)} info={profileInfo!} own={ownProfile} count={posts.filter(p=>p.speaker===profileName).length} followingCount={state.followed.length} isFollowing={follows(profileName)} onFollow={()=>follow(profileName)}/>
         <div className="x-flow-tabs">{[['posts','动态'],['replies','回复'],['media','媒体']].map(([id,label])=><button key={id} aria-pressed={profileTab===id} onClick={()=>setProfileTab(id)}>{label}</button>)}</div></>}
       {!profileName&&!selected&&['live','blog'].includes(view)&&!composeOpen&&composer}
       {view==='forum'&&!selected&&!profileName&&<p className="x-empty">本场讨论按回复与转帖活动排序；点进帖子继续接话。</p>}
+      {world&&socialPersistenceUnavailable()&&<p className="x-empty" role="status">浏览器的社交存储暂不可用，本次新活动可能无法在刷新后保留。</p>}
+      {raceScope&&world?.races[raceScope]?.archived&&<p className="x-empty">较早讨论已归档；这里保留玩家内容、书签与相关上下文，赛果和转播可在比赛档案查看。</p>}
       {pending.length>0&&<div className="x-pending-controls"><button className="x-new-posts" onClick={()=>releaseBatch()}><span className="x-new-avatars">{[...new Set(pending.map(p=>p.speaker))].slice(0,3).map(name=><span className="x-avatar" key={name}>{name.slice(0,1)}</span>)}</span>显示下一批 · {pending.length} 条新活动</button><button className="x-release-all" onClick={()=>releaseBatch(queue.length)}>展开全部新活动</button></div>}
       {selected?<>
         {ancestorId&&!posts.some(p=>p.id===ancestorId)&&<p className="x-empty">较早的父帖未保留在这份比赛记录中。</p>}
@@ -190,9 +186,9 @@ export function XTimeline({race,view,playerName,composeRequest=0,onComposeHandle
     </section>
     <aside className="x-sidebar"><label className="x-sidebar-search"><XIcon name="search"/><input type="search" aria-label="搜索围场" placeholder="搜索" value={query} onChange={e=>{setQuery(e.target.value);setDetail(null);setProfile(null);}}/></label>
       <section><h3>正在发生</h3><div className="x-sidebar-race"><small>围场 · 本场比赛</small><strong>{race?.track??'等待发车'}</strong><p>{posts.length} 条帖子与回复</p></div>
-        {posts.some(p=>p.socialContext?.tags.includes('contact'))&&<button className="x-trend" onClick={()=>setDetail(posts.findLast(p=>p.account?.role==='event'&&p.socialContext?.tags.includes('contact'))?.id??null)}><small>赛车 · 讨论中</small><strong>两车接触</strong><span>{posts.filter(p=>p.socialContext?.tags.includes('contact')).length} 条相关动态</span></button>}
+        {worldTopics.filter(t=>t.postCount>0).sort((a,b)=>(b.participants.length*2+b.updatedTick)-(a.participants.length*2+a.updatedTick)).slice(0,5).map(t=><button className="x-trend" key={t.id} onClick={()=>{setTopicFilter(`topic:${t.id}`);setFlow('discussion');setProfile(null);setDetail(null);}}><small>{world?.races[t.raceId]?.track} · {t.status==='cooling'||t.status==='dormant'?'话题回顾':'讨论中'}</small><strong>{t.label}</strong><span>{t.postCount} 条相关动态 · {t.participants.length} 个账号</span></button>)}
       </section>
-      <section><h3>推荐关注</h3>{accounts.slice(0,5).map(name=><div className="x-follow-row" key={name}><button className="x-avatar" onClick={()=>openAccount(name)} aria-label={`查看${name}的主页`}>{name.slice(0,1)}</button><button className="x-account-link" onClick={()=>openAccount(name)}><strong>{name}</strong><small>{handle(name)}</small></button><button aria-pressed={state.followed.includes(name)} onClick={()=>toggle('followed',name)}>{state.followed.includes(name)?'已关注':'关注'}</button></div>)}{!accounts.length&&<p className="x-sidebar-race">比赛开始后会有观众出现。</p>}</section>
+      <section><h3>推荐关注</h3>{accounts.slice(0,5).map(name=><div className="x-follow-row" key={name}><button className="x-avatar" onClick={()=>openAccount(name)} aria-label={`查看${name}的主页`}>{name.slice(0,1)}</button><button className="x-account-link" onClick={()=>openAccount(name)}><strong>{name}</strong><small>{handle(name)}</small></button><button aria-pressed={follows(name)} onClick={()=>follow(name)}>{follows(name)?'已关注':'关注'}</button></div>)}{!accounts.length&&<p className="x-sidebar-race">比赛开始后会有观众出现。</p>}</section>
       <p className="x-sidebar-footer">本地虚构围场 · 热度含模拟观众<br/>没有外部社交账号连接</p>
     </aside>
     {(composeOpen||replyParent)&&<XComposeDialog title={replyParent?'回复帖子':'发布帖子'} onClose={()=>{setComposeOpen(false);setReplyTarget(null);}}>

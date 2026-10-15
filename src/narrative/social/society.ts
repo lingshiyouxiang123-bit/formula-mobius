@@ -97,7 +97,8 @@ export function controversyAge(lines: NarrativeLine[], round: number): number {
 
 export function canSpeak(actor: SpectatorProfile, line: NarrativeLine, recent: NarrativeLine[], seed: number, interactive=false): boolean {
   if(interactive)return !recent.some(p=>p.replyToId===line.replyToId&&p.account?.id===actor.id);
-  const own=recent.filter(p=>p.account?.id===actor.id&&p.round===line.round);
+  const own=recent.filter(p=>p.account?.id===actor.id&&(!line.raceId||!p.raceId||p.raceId===line.raceId)
+    && (line.socialTick!==undefined?p.socialTick!==undefined&&line.socialTick-p.socialTick<3:p.round===line.round));
   const hot=controversyAge([...recent,line],line.round)<=1;
   // The last lap may use up the normal chatter budget before classification arrives.
   // Reserve one reaction to the newly published result, not unlimited post-race chatter.
@@ -132,7 +133,7 @@ export function rememberSocialLines(memory: SocialMemory, raceId: string, lines:
     seen.add(line.id);memory.revision++;
     const actorId=line.account?.id;
     if(!actorId||!line.plan)continue;
-    const opinion={revision:memory.revision,lineId:line.id,raceId,round:line.round,subjectIds:line.plan.subjectIds,act:line.plan.act,stance:line.plan.stance,
+    const opinion={revision:memory.revision,lineId:line.id,raceId:line.raceId??raceId,round:line.round,subjectIds:line.plan.subjectIds,act:line.plan.act,stance:line.plan.stance,
       tags:line.plan.expresses??[],text:line.text,sourceId:line.replyToId??line.quoteOfId??line.repostOfId};
     memory.opinions[actorId]=[...(memory.opinions[actorId]??[]),opinion].slice(-8);
     const parent=byId.get(line.replyToId??'');
@@ -154,7 +155,9 @@ export function mergeSocialMemory(base: SocialMemory, local?: SocialMemory): Soc
     const combined=[...(result.opinions[id]??[]),...opinions];
     result.opinions[id]=[...new Map(combined.map(o=>[o.lineId,o])).values()].sort((a,b)=>(a.revision??0)-(b.revision??0)).slice(-8);
   }
-  result.relations={...result.relations,...local.relations};
+  result.relations=local.revision>=base.revision?{...result.relations,...local.relations}:{...local.relations,...result.relations};
   result.revision=Math.max(result.revision,local.revision);
+  result.observedIds=[...new Set([...result.observedIds,...local.observedIds])].slice(-1200);
+  result.profiles={...result.profiles,...local.profiles};
   return result;
 }

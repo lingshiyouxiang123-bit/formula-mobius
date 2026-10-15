@@ -30,6 +30,8 @@ coverage/
 !/research/text-generation/rp/2026-10-10/
 !/research/text-generation/rp/2026-10-11/
 !/research/text-generation/rp/2026-10-13/
+!/research/text-generation/rp/2026-10-14/
+!/research/text-generation/rp/2026-10-15/
 /research/text-generation/rp/2026-10-10/*
 !/research/text-generation/rp/2026-10-10/dynamic-voice-templates-1.json
 !/research/text-generation/rp/2026-10-10/dynamic-voice-templates-2.json
@@ -47,6 +49,14 @@ coverage/
 /research/text-generation/rp/2026-10-13/*
 !/research/text-generation/rp/2026-10-13/drs-fragments.json
 !/research/text-generation/rp/2026-10-13/social-profile-bios.json
+/research/text-generation/rp/2026-10-14/*
+!/research/text-generation/rp/2026-10-14/downloaded-world-fragments.json
+!/research/text-generation/rp/2026-10-14/world-thread-fragments.json
+/research/text-generation/rp/2026-10-15/*
+!/research/text-generation/rp/2026-10-15/world-social-batch-01.json
+!/research/text-generation/rp/2026-10-15/world-social-paddock-bulk.json
+!/research/text-generation/rp/2026-10-15/world-social-racing-extra.json
+!/research/text-generation/rp/2026-10-15/world-social-race-core.json
 /research/text-generation/expansion/*
 !/research/text-generation/expansion/build/
 /research/text-generation/expansion/build/*

@@ -53,6 +53,7 @@ import { SocialMediaPage } from "@/components/media/SocialMediaPage";
 import { syncNarrative } from "@/narrative/engine";
 import type { RaceNarrative } from "@/narrative/engine";
 import { loadNarratives, saveNarrative, loadSocialHistory } from "@/narrative/storage";
+import {initializeSocialWorlds} from '@/narrative/social/worldStorage';
 import { MediaHub } from "@/components/media/MediaHub";
 import { LandingPage, type AppSection } from "@/components/shell/LandingPage";
 import { bindDriverToTeam, DriverCenter, RaceCenter, TeamCenter } from "@/components/shell/GarageCenters";
@@ -151,8 +152,9 @@ export function GameApp() {
       } else setSeason(null);
       const hashSection = window.location.hash.slice(1) as AppSection;
       if (["races", "drivers", "teams", "social"].includes(hashSection)) setSection(hashSection);
-      setHydrated(true);
-      setNarratives(loadNarratives());
+      const records=loadNarratives();
+      setNarratives(records);
+      void initializeSocialWorlds(records).then(()=>{setNarratives(loadNarratives());setHydrated(true);});
     });
   }, []);
 
@@ -175,11 +177,11 @@ export function GameApp() {
     if (hydrated && game) {
       saveMatch(game);
       const records=loadNarratives();
-      const next = syncNarrative(records[game.id], game, season??undefined,loadSocialHistory(game,records));
+      const next = syncNarrative(records[game.id], game, season??undefined,loadSocialHistory(game,records),{profiles,teams});
       saveNarrative(next);
       queueMicrotask(() => setNarratives(loadNarratives()));
     }
-  }, [game, hydrated, season]);
+  }, [game, hydrated, season, profiles, teams]);
 
   const dispatch = (command: GameCommand) => {
     if (!game) return;
@@ -467,7 +469,7 @@ export function GameApp() {
     if (nextSection === "social") {
       const records=loadNarratives(),snapshot=game??loadMatch();
       if(snapshot) {
-        const updated=syncNarrative(records[snapshot.id],snapshot,season??undefined,loadSocialHistory(snapshot,records));
+        const updated=syncNarrative(records[snapshot.id],snapshot,season??undefined,loadSocialHistory(snapshot,records),{profiles,teams});
         saveNarrative(updated); records[snapshot.id]=updated;
       }
       setNarratives(records);

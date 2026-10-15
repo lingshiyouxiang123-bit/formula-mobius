@@ -43,7 +43,7 @@ export function SocialMediaPage({ narratives, season, savedMatch, onNavigate, on
         <select className="x-mobile-menu" aria-label="更多社交页面" value={channel} onChange={e=>e.target.value==='game'?onNavigate('landing'):e.target.value==='resume'?onResume():setChannel(e.target.value)}>{channels.map(([id,label])=><option key={id} value={id}>{label}</option>)}<option value="game">返回游戏</option>{savedMatch&&<option value="resume">继续比赛</option>}</select>
         <button className="x-nav-compose" onClick={compose} aria-label="发布帖子"><XIcon name="compose"/><span>发布</span></button>
         <label>比赛档案<select value={selected} onChange={e => setSelected(e.target.value)}>
-          <option value="">最近比赛</option>
+          <option value="">整个围场 · 最近比赛</option>
           {Array.from(new Set([...races.map(r => r.raceId), ...bundles.map(b => b.raceId)])).map(id =>
             <option value={id} key={id}>{races.find(r => r.raceId === id)?.track ?? bundles.find(b => b.raceId === id)?.stats.trackName} · {id.slice(-6)}</option>
           )}
@@ -53,7 +53,7 @@ export function SocialMediaPage({ narratives, season, savedMatch, onNavigate, on
       </aside>
       <main className="social-feed">
         {!["live","news","blog","notifications","bookmarks","profile","forum"].includes(channel)&&<header><span>PADDOCK FEED</span><h2>{name}</h2><p>{race?.track ?? bundle?.stats.trackName ?? "围场"} · 车迷评论和官方动态随比赛记录更新。</p></header>}
-        {(["live","news","blog","notifications","bookmarks","profile"].includes(channel)||channel==='forum'&&race)&&<XTimeline race={race} view={channel} playerName={playerName} composeRequest={composeRequest} onComposeHandled={composeHandled} navigationRequest={navigationRequest}/>}
+        {(["live","news","blog","notifications","bookmarks","profile"].includes(channel)||channel==='forum'&&race)&&<XTimeline race={race} narratives={narratives} raceScope={selected||undefined} view={channel} playerName={playerName} composeRequest={composeRequest} onComposeHandled={composeHandled} navigationRequest={navigationRequest}/>}
         {channel==='forum'&&!race&&!bundle&&<div className="empty-state">还没有比赛讨论。</div>}
         {(channel==='archive'||channel==='forum'&&!race) && bundle && season && <MediaHub
           key={`${bundle.raceId}:${channel}`} bundle={bundle} settings={season.mediaSettings} defaultOpen

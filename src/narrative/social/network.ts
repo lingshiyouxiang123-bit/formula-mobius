@@ -33,16 +33,17 @@ function newsText(game: GameState, event: NarrativeEvent): string | undefined {
   const log = game.logs.find(l => l.id === event.eventIds[0]);
   const input = log?.details?.input ?? {};
   const names = event.subjects.map(id => game.drivers.find(d => d.id === id)?.profile.name).filter(Boolean);
-  if (log?.details?.result === 'drs_used') return `${names[0]}启用 DRS。`;
-  if (log?.details?.result?.startsWith('blue_flag_')) return event.text;
+  // Routine observable actions can seed viewer topics without each becoming official news.
+  if (log?.details?.result === 'drs_used') return undefined;
+  if (log?.details?.result?.startsWith('blue_flag_')) return undefined;
   if (log?.code === 'incident.contact') return `${names.slice(0, 2).join(' 与 ')}发生接触。`;
   if (log?.code === 'incident.race_control') return ({vsc_deployed:'赛会部署 VSC。',sc_deployed:'安全车出动。',red_flag:'红旗，比赛暂停。',green:'恢复绿旗，比赛继续。'} as Record<string,string>)[log.details?.result??''];
   if (log?.code === 'incident.yellow') return '赛道出现局部黄旗，事故赛段禁止超车。';
-  if (log?.code === 'weather.transition') return `赛道天气更新：${WEATHER_LABELS[log.details?.result as keyof typeof WEATHER_LABELS]??'天气变化'}。`;
+  if (log?.code === 'weather.transition') return log.details?.input?.from===log.details?.result?undefined:`赛道天气更新：${WEATHER_LABELS[log.details?.result as keyof typeof WEATHER_LABELS]??'天气变化'}。`;
   if (log?.code === 'classification.result' && log.details?.result==='retired') return `${names[0]}退赛。`;
   if (log?.code === 'team.order') return undefined; // Crew decisions and relationship values aren't official race news.
   if (log?.code === 'movement.step') return log.details?.result === 'overtake'
-    ? `${names[0]}超过${names[1]}。` : `${names[0]}与${names[1]}的攻防暂告一段落。`;
+    ? `${names[0]}超过${names[1]}。` : undefined;
   if (log?.code === 'pit.service') return `${names[0]}${log.details?.result === 'exited' ? '离开维修区。' : input.service ? '进入维修区换胎。' : '进入维修通道。'}`;
   if (log?.code === 'incident.damage') {
     if (/判罚|扣.*VP|须通过维修/.test(event.text)) return event.text.replace(/判罚骰为\s*\d+，/g, '');
@@ -197,16 +198,8 @@ export function syncSocialNetwork(state: RaceNarrative, game: GameState, fresh: 
       }
     }
   }
-  // Parent first, even when different events are queued together.
-  const waiting = state.socialQueue;
-  state.socialQueue = [];
-  const available = new Set(state.social.map(p => p.id));
-  for (const item of waiting) {
-    const parent = item.line.replyToId ?? item.line.repostOfId;
-    if (item.dueRound <= game.round && (!parent || available.has(parent))) {
-      state.social.push(item.line); available.add(item.line.id);
-    } else state.socialQueue.push(item);
-  }
+  // Compatibility producers propose replies here; only SocialWorld publishes them.
+  // dueRound remains readable for old saves, but racing no longer runs a second social clock.
   if(state.socialMemory)rememberSocialLines(state.socialMemory,game.id,state.social);
   const queuedIds = new Set(retainSocialThreads(state.socialQueue.map(item=>item.line), 70).map(line=>line.id));
   state.socialQueue = state.socialQueue.filter(item=>queuedIds.has(item.line.id));
@@ -218,12 +211,12 @@ export function responsesToPlayer(post: NarrativeLine, context: SpeakerView | un
   const text = post.text;
   const named = [context.slots.driver,context.slots.otherDriver].some(name=>typeof name==='string'&&name.length>0&&text.includes(name));
   const emotion = context.situation.focus.startsWith('emotion_') ? context.situation.focus : undefined;
-  const racing = /让|空间|关门|接触|撞|挤|责|五五|赛会|罚|角度|队友|车|攻防|比赛|洗|P\d|SC|DNF|轮胎|积分|进站|赛季|完赛|退赛|排位|杆位|结果/i.test(text);
+  const racing = /让|空间|关门|接触|撞|挤|责|五五|赛会|罚|角度|队友|车|攻防|比赛|洗|P\d|SC|DNF|轮胎|积分|进站|赛季|完赛|退赛|排位|杆位|结果|策略|升级|研发|训练|节奏|box|stint/i.test(text);
   if(!named&&!racing&&!emotion&&!/^(加油|不错|漂亮|支持|真不错|好耶)[！!。]*$/.test(text))return [];
   const act = /谁.*错|谁.*责|该.*让|故意|全责|乱撞|离谱|凭啥|胡扯|关门|挤|空间|五五|没事|罚/.test(text) ? 'challenge'
     : /支持|加油|不错|漂亮|不差|我站/.test(text) ? 'support'
     : /[?？]|怎么|为什么|多少|什么情况/.test(text) ? 'ask'
-    : emotion || context.situation.topic==='paddock'&&/积分|拿分|没分|退赛|DNF|进步|往前|往后|下滑|完赛|进站|赛季|可惜|失望|排位|杆位|结果|P\d/i.test(text)?'report':undefined;
+    : emotion || context.situation.topic==='paddock'&&/积分|拿分|没分|退赛|DNF|进步|往前|往后|下滑|完赛|进站|赛季|可惜|失望|排位|杆位|结果|P\d|策略|升级|研发|训练|节奏|box|stint/i.test(text)?'report':undefined;
   if (!act) return [];
   const tags = [
     ...(/让|消失|白送/.test(text)?['claim_space']:[]), ...(/挤|关门|空间/.test(text)?['cramped']:[]),
@@ -237,13 +230,16 @@ export function responsesToPlayer(post: NarrativeLine, context: SpeakerView | un
       ...(/退赛|DNF/i.test(text)?['retirement_disappointment']:[]),...(/双车|两台.*回来|两台.*完赛/.test(text)?['double_finish_support']:[]),
       ...(/失望|可惜|没分/.test(text)?['result_disappointment']:[]),...(/进站|换胎/.test(text)?['pit_execution']:[]),...(/接触|撞|车况/.test(text)?['team_risk']:[]),
       ...(/赛季|积分榜/.test(text)?['season_outlook']:[]),...(/排位|杆位/.test(text)?['qualifying_position']:[]),...(/结果|P\d/.test(text)?['race_classification']:[]),
-      ...(emotion?[emotion]:[]),...(act==='support'?['result_support']:[]),...(act==='ask'||act==='challenge'?['team_question']:[])];
+      ...(emotion?[emotion]:[]),...(act==='support'?['result_support']:[]),...(act==='ask'||act==='challenge'?['team_question']:[]),
+      ...(/策略|进站|box|stint/i.test(text)?[act==='ask'?'strategy_question':'strategy_talk']:[]),
+      ...(/节奏|圈速|回合/.test(text)?['pace_observation']:[]),...(/队友|比较/.test(text)?['comparison_talk']:[]),
+      ...(/升级|研发|训练/.test(text)?['development_talk']:[]),...(/赛季|积分/.test(text)?['season_outlook']:[])];
     tags.splice(0,tags.length,...paddockTags);
   }
   // Metadata describes the actual input recognised above, never authors words/actions for the player.
   post.plan ??= {topic:context.situation.topic,act,stance:act==='support'?'support':act==='ask'?'curious':'critical',
     subjectIds:context.situation.subjectIds,fragmentIds:[],expresses:tags};
-  const choices = [['fan','agree','support'],['ordinary_viewer','challenge','critical'],['technical_fan','ask','curious'],['fan','support','support'],['ordinary_viewer','agree','support'],['blogger','ask','curious'],['troll','agree','support']];
+  const choices = [['fan','agree','support'],['ordinary_viewer','challenge','critical'],['technical_fan','ask','curious'],['fan','support','support'],['ordinary_viewer','agree','support'],['blogger','ask','curious'],['troll','agree','support'],['fan','defend','support'],['troll','tease','critical'],['ordinary_viewer','comment','neutral']];
   const addressed=recent.find(p=>p.id===post.replyToId)?.account?.profile;
   if(addressed)choices.sort((a,b)=>Number(b[0]===addressed.persona)-Number(a[0]===addressed.persona));
   const result: NarrativeLine[] = [];

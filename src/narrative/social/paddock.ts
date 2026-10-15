@@ -4,6 +4,7 @@ import { composeMessage } from '../situations/composer';
 import type { MessagePlan, SpeakerView, Stance, WorldFact } from '../situations/types';
 import {applySocialVoice,actorAccount} from './society';
 import type {SocialMemory} from './types';
+import {worldSceneCondition} from './corpusContract';
 
 /** Stable identities, not a new simulated character system. Fans follow a game entity ID. */
 export function spectatorIdentity(persona: string, driverId?: string, driverName?: string) {
@@ -43,7 +44,7 @@ export function paddockView(game: GameState, members: DriverState[], tags: strin
     const constructor = season.constructors.find(s=>s.teamId===driver.profile.teamId);
     if (constructor) slots.teamPoints = constructor.championshipPoints;
   }
-  const allTags = [...new Set([...tags,...outcomeTags,...qualifyingTags])];
+  const allTags = [...new Set([...tags,...outcomeTags,...qualifyingTags,worldSceneCondition(game.phase)])];
   const facts: WorldFact[] = [ ...allTags.map(predicate=>({id:`${game.id}:paddock:${driver.id}:${game.round}:${predicate}`,subjectId:driver.id,predicate,value:true,
     round:game.round,source:'state' as const,visibility:'public' as const,eventIds})),
     ...Object.entries(slots).map(([predicate,value])=>({id:`${game.id}:paddock:${driver.id}:${game.round}:${predicate}`,subjectId:driver.id,predicate,value,

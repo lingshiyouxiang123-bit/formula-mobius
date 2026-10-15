@@ -1,0 +1,4601 @@
+{
+  "schemaVersion": 1,
+  "contractVersion": 3,
+  "generatedBy": "gpt-6-luna",
+  "provenance": "luna_rp",
+  "fragments": [
+    {
+      "id": "wpb-dev-01",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "world_development",
+        "development_upgrade"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "development_talk"
+      ],
+      "text": "{team} 这次交付的是 {upgradeStat}，你们觉得能改善哪块？",
+      "family": "wpb-dev-1",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-02",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_development",
+        "development_upgrade"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "development_talk"
+      ],
+      "when": [
+        {
+          "field": "upgradeFrom",
+          "op": "present"
+        },
+        {
+          "field": "upgradeTo",
+          "op": "present"
+        }
+      ],
+      "text": "{upgradeStat} 从 {upgradeFrom} 到 {upgradeTo}，至少方向看得见",
+      "family": "wpb-dev-1",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-03",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_development",
+        "development_upgrade"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "欸升级消息来了，{upgradeStat} 这次动了",
+      "family": "wpb-dev-1",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-04",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "world_development",
+        "development_upgrade"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "这回动的是 {upgradeStat}，别急着吹成脱胎换骨",
+      "family": "wpb-dev-2",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-05",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_development",
+        "facility_upgrade"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "{facilityName} 升到 {facilityLevel} 级了，感觉要等一阵才看得出差别",
+      "family": "wpb-dev-2",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-06",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "world_development",
+        "facility_upgrade"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "development_talk"
+      ],
+      "text": "设施升级完成，车间里的进度条总算往前挪了",
+      "family": "wpb-dev-2",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-07",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "world_development",
+        "driver_training"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "development_talk"
+      ],
+      "text": "{driver} 还做了 {trainingLabel} 啊，挺认真",
+      "family": "wpb-dev-3",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-08",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_development",
+        "driver_training"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "训练项目听着挺细，做完再看能不能转成稳定表现",
+      "family": "wpb-dev-3",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-09",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "support",
+      "stance": "support",
+      "requires": [
+        "world_development",
+        "driver_training"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "练 {trainingLabel} 啊，辛苦了，先给个加油",
+      "family": "wpb-dev-3",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-10",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_development",
+        "team_activity"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "when": [{"field":"activityLabel","op":"ne","value":"休息"}],
+      "text": "{team} 安排了 {activityLabel}，有人去看吗？",
+      "family": "wpb-dev-4",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-11",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_development",
+        "team_activity"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "development_talk"
+      ],
+      "text": "围场活动安排上了，评论区先别替车手写感想哈",
+      "family": "wpb-dev-4",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-12",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "praise",
+      "stance": "support",
+      "requires": [
+        "world_development",
+        "team_activity"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "development_talk"
+      ],
+      "when": [{"field":"activityLabel","op":"ne","value":"休息"}],
+      "text": "{activityLabel} 听着不错，我今天就想看点轻松的",
+      "family": "wpb-dev-4",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-13",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "concern",
+      "stance": "critical",
+      "requires": [
+        "world_development",
+        "development_project"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "text": "项目状态是 {projectStatus}，这下不是只停在计划里了",
+      "family": "wpb-dev-5",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-14",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "correct",
+      "stance": "neutral",
+      "requires": [
+        "world_development",
+        "development_project"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "项目交付啦！这就值得高兴一下 👍",
+      "family": "wpb-dev-5",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-15",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_development",
+        "development_project"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "{team} 这项研发交付了，问效果比先开香槟实在",
+      "family": "wpb-dev-5",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-16",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "concern",
+      "stance": "critical",
+      "requires": [
+        "world_development",
+        "development_delayed"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "development_talk"
+      ],
+      "text": "延期了啊……我还想知道是卡在哪儿了",
+      "family": "wpb-dev-6",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-17",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "world_development",
+        "development_delayed"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "development_talk"
+      ],
+      "text": "项目延期写得很清楚，具体影响先别脑补",
+      "family": "wpb-dev-6",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-18",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "complain",
+      "stance": "critical",
+      "requires": [
+        "world_development",
+        "development_delayed"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "延期了……真希望下次更新能说清楚原因",
+      "family": "wpb-dev-6",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-19",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "world_development",
+        "development_failed"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "text": "这次项目没做成，挺可惜的，唉",
+      "family": "wpb-dev-7",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-20",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_development",
+        "development_failed"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "失败记录出来了，先复盘吧，别直接说谁不行",
+      "family": "wpb-dev-7",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-21",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "concern",
+      "stance": "critical",
+      "requires": [
+        "world_development",
+        "development_failed"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "development_talk"
+      ],
+      "text": "没做成……这种消息看着确实泄气",
+      "family": "wpb-dev-7",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-22",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "world_development",
+        "press_response"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "development_talk"
+      ],
+      "text": "媒体问题处理方式是 {responseKind}，这风格挺明确",
+      "family": "wpb-dev-8",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-23",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_development",
+        "press_response"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "这次媒体环节选了 {responseKind}，先把边界放这儿",
+      "family": "wpb-dev-8",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-24",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_development",
+        "press_response"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "选择 {responseKind} 我能理解，至少态度摆出来了",
+      "family": "wpb-dev-8",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-25",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "praise",
+      "stance": "support",
+      "requires": [
+        "world_development",
+        "entertainment_event"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "{eventTitle} 这个活动挺有意思，围场也需要点轻松内容",
+      "family": "wpb-dev-9",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-26",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_development",
+        "entertainment_event"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "development_talk"
+      ],
+      "text": "看到 {eventTitle}，先存着，空下来再补",
+      "family": "wpb-dev-9",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-27",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "tease",
+      "stance": "neutral",
+      "requires": [
+        "world_development",
+        "entertainment_event"
+      ],
+      "personas": [
+        "troll"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "development_talk"
+      ],
+      "text": "这个活动突然出现在时间线里，我先点进去看看",
+      "family": "wpb-dev-9",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-28",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "world_development",
+        "appeal_unchanged"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "text": "申诉结果没改判，原判维持；不满意也得先看依据",
+      "family": "wpb-dev-10",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-29",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "correct",
+      "stance": "neutral",
+      "requires": [
+        "world_development",
+        "appeal_unchanged"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "没改判就到这儿吧，别把猜测说成新证据",
+      "family": "wpb-dev-10",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-30",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "concern",
+      "stance": "critical",
+      "requires": [
+        "world_development",
+        "appeal_unchanged"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "申诉没动结果，有点遗憾，但流程至少走完了",
+      "family": "wpb-dev-10",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-31",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "world_development",
+        "audit_clear"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "development_talk"
+      ],
+      "text": "审查结论是没有违规，别再拿旧猜测当实锤了",
+      "family": "wpb-dev-11",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-32",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_development",
+        "audit_clear"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "development_talk"
+      ],
+      "text": "这轮审查是无违规结论，好吧，先收工了",
+      "family": "wpb-dev-11",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-33",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "correct",
+      "stance": "neutral",
+      "requires": [
+        "world_development",
+        "audit_clear"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "审查通过了，差不多可以把这事放下了",
+      "family": "wpb-dev-11",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-34",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "world_development",
+        "audit_points_penalty"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "text": "核算审查扣了 {penaltyPoints} 个车队积分，这账得算清楚",
+      "family": "wpb-dev-12",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-35",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_development",
+        "audit_points_penalty"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "扣分已经落地，规则先看清楚再吵",
+      "family": "wpb-dev-12",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-36",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "concern",
+      "stance": "critical",
+      "requires": [
+        "world_development",
+        "audit_points_penalty"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "development_talk"
+      ],
+      "text": "扣了 {penaltyPoints} 个车队积分……头大",
+      "family": "wpb-dev-12",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-37",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "support",
+      "stance": "support",
+      "requires": [
+        "world_development",
+        "development_upgrade"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "development_talk"
+      ],
+      "text": "我看见升级完成就开心一下，具体快多少还真说不准",
+      "family": "wpb-dev-13",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-38",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_development",
+        "facility_upgrade"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "{facilityName} 升级了，车迷中心也算有新话题",
+      "family": "wpb-dev-13",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-39",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "praise",
+      "stance": "support",
+      "requires": [
+        "world_development",
+        "driver_training"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "{driver} 去做 {trainingLabel}，这种日常消息还挺亲切",
+      "family": "wpb-dev-13",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-dev-40",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [
+        "world_development",
+        "team_activity"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "when": [{"field":"activityLabel","op":"ne","value":"休息"}],
+      "text": "{team} 的 {activityLabel} 看着蛮有烟火气，想看现场片段",
+      "family": "wpb-dev-14",
+      "provenance": "luna_rp",
+      "expresses": [
+        "development_talk"
+      ]
+    },
+    {
+      "id": "wpb-season-01",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "world_season",
+        "standings_update"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "season_outlook"
+      ],
+      "text": "积分榜更新：{driver} 目前第 {championshipPosition}，拿到 {driverPoints} 分",
+      "family": "wpb-season-1",
+      "provenance": "luna_rp",
+      "expresses": [
+        "season_outlook"
+      ]
+    },
+    {
+      "id": "wpb-season-02",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_season",
+        "standings_update"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "{driver} 现在第 {championshipPosition}，我还真没想到",
+      "family": "wpb-season-1",
+      "provenance": "luna_rp",
+      "expresses": [
+        "season_outlook"
+      ]
+    },
+    {
+      "id": "wpb-season-03",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "correct",
+      "stance": "neutral",
+      "requires": [
+        "world_season",
+        "standings_update"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "榜上写的是 {driverPoints} 分，先以这个数字为准",
+      "family": "wpb-season-1",
+      "provenance": "luna_rp",
+      "expresses": [
+        "season_outlook"
+      ]
+    },
+    {
+      "id": "wpb-season-04",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_season",
+        "standings_update"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "when": [{"field":"leaderGap","op":"gt","value":0},{"field":"roundsRemaining","op":"gt","value":0}],
+      "text": "{driver} 在积分榜第 {championshipPosition}，后面还有得追",
+      "family": "wpb-season-2",
+      "provenance": "luna_rp",
+      "expresses": [
+        "season_outlook"
+      ]
+    },
+    {
+      "id": "wpb-season-05",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "concern",
+      "stance": "critical",
+      "requires": [
+        "world_season",
+        "standings_update"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "season_outlook"
+      ],
+      "when": [
+        {
+          "field": "leaderGap",
+          "op": "gt",
+          "value": 0
+        },
+        {
+          "field": "roundsRemaining",
+          "op": "gt",
+          "value": 0
+        }
+      ],
+      "text": "和榜首差 {leaderGap} 分，想追就得少丢分了",
+      "family": "wpb-season-2",
+      "provenance": "luna_rp",
+      "expresses": [
+        "season_outlook"
+      ]
+    },
+    {
+      "id": "wpb-season-06",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "world_season",
+        "standings_update"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "season_outlook"
+      ],
+      "when": [{"field":"leaderGap","op":"gt","value":0},{"field":"roundsRemaining","op":"gt","value":0}],
+      "text": "还差 {leaderGap} 分？行，那就一站一站追",
+      "family": "wpb-season-2",
+      "provenance": "luna_rp",
+      "expresses": [
+        "season_outlook"
+      ]
+    },
+    {
+      "id": "wpb-season-07",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "world_season",
+        "standings_update"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "when": [
+        {
+          "field": "leaderGap",
+          "op": "present"
+        }
+      ],
+      "text": "榜首差距是 {leaderGap} 分，至少数字摆在这儿",
+      "family": "wpb-season-3",
+      "provenance": "luna_rp",
+      "expresses": [
+        "season_outlook"
+      ]
+    },
+    {
+      "id": "wpb-season-08",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "praise",
+      "stance": "support",
+      "requires": [
+        "world_season",
+        "standings_update"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "when": [
+        {
+          "field": "championshipPosition",
+          "op": "eq",
+          "value": 1
+        }
+      ],
+      "text": "{driver} 现在榜首！可以开心会儿",
+      "family": "wpb-season-3",
+      "provenance": "luna_rp",
+      "expresses": [
+        "season_outlook"
+      ]
+    },
+    {
+      "id": "wpb-season-09",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "support",
+      "stance": "support",
+      "requires": [
+        "world_season",
+        "standings_update"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "when": [
+        {
+          "field": "roundsRemaining",
+          "op": "gt",
+          "value": 0
+        }
+      ],
+      "text": "第 {championshipPosition}，后面还有 {roundsRemaining} 站，慢慢来",
+      "family": "wpb-season-3",
+      "provenance": "luna_rp",
+      "expresses": [
+        "season_outlook"
+      ]
+    },
+    {
+      "id": "wpb-season-10",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_season",
+        "standings_update"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "season_outlook"
+      ],
+      "when": [
+        {
+          "field": "roundsRemaining",
+          "op": "gt",
+          "value": 0
+        }
+      ],
+      "text": "还剩 {roundsRemaining} 站，每站的分都得算清楚",
+      "family": "wpb-season-4",
+      "provenance": "luna_rp",
+      "expresses": [
+        "season_outlook"
+      ]
+    },
+    {
+      "id": "wpb-season-11",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "concern",
+      "stance": "critical",
+      "requires": [
+        "world_season",
+        "standings_update"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "season_outlook"
+      ],
+      "when": [{"field":"roundsRemaining","op":"lte","value":2},{"field":"roundsRemaining","op":"gt","value":0}],
+      "text": "只剩 {roundsRemaining} 站了，积分压力一下就具体了",
+      "family": "wpb-season-4",
+      "provenance": "luna_rp",
+      "expresses": [
+        "season_outlook"
+      ]
+    },
+    {
+      "id": "wpb-season-12",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "world_season",
+        "has_next_track"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "下一站去 {nextTrack}，赛历切得真快",
+      "family": "wpb-season-4",
+      "provenance": "luna_rp",
+      "expresses": [
+        "season_outlook"
+      ]
+    },
+    {
+      "id": "wpb-season-13",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [
+        "world_season",
+        "has_next_track"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "下站 {nextTrack}，有人熟那条赛道吗？",
+      "family": "wpb-season-5",
+      "provenance": "luna_rp",
+      "expresses": [
+        "season_outlook"
+      ]
+    },
+    {
+      "id": "wpb-season-14",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_season",
+        "has_next_track"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "text": "接下来是 {nextTrack}，先看看这周末信息什么时候出",
+      "family": "wpb-season-5",
+      "provenance": "luna_rp",
+      "expresses": [
+        "season_outlook"
+      ]
+    },
+    {
+      "id": "wpb-season-15",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "support",
+      "stance": "support",
+      "requires": [
+        "world_season",
+        "has_next_track"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "season_outlook"
+      ],
+      "text": "{nextTrack} 我还没怎么看过，期待一下",
+      "family": "wpb-season-5",
+      "provenance": "luna_rp",
+      "expresses": [
+        "season_outlook"
+      ]
+    },
+    {
+      "id": "wpb-season-16",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_season",
+        "standings_update"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "season_outlook"
+      ],
+      "when": [
+        {
+          "field": "leaderGap",
+          "op": "present"
+        }
+      ],
+      "text": "积分差 {leaderGap} 分，算起来比看排名更有感觉",
+      "family": "wpb-season-6",
+      "provenance": "luna_rp",
+      "expresses": [
+        "season_outlook"
+      ]
+    },
+    {
+      "id": "wpb-season-17",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "support",
+      "stance": "support",
+      "requires": [
+        "world_season",
+        "standings_update"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "when": [{"field":"leaderGap","op":"gt","value":0},{"field":"roundsRemaining","op":"gt","value":0}],
+      "text": "{driver} 拿着 {driverPoints} 分，追分节奏得保持住",
+      "family": "wpb-season-6",
+      "provenance": "luna_rp",
+      "expresses": [
+        "season_outlook"
+      ]
+    },
+    {
+      "id": "wpb-season-18",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "world_season",
+        "standings_update"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "when": [{"field":"roundsRemaining","op":"gt","value":0}],
+      "text": "排名第 {championshipPosition} 不是结论，后面每轮都可能变",
+      "family": "wpb-season-6",
+      "provenance": "luna_rp",
+      "expresses": [
+        "season_outlook"
+      ]
+    },
+    {
+      "id": "wpb-season-19",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [
+        "world_season",
+        "standings_update"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "积分榜看得我头大，{driverPoints} 分到底算多还是少啊",
+      "family": "wpb-season-7",
+      "provenance": "luna_rp",
+      "expresses": [
+        "season_outlook"
+      ]
+    },
+    {
+      "id": "wpb-season-20",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_season",
+        "has_next_track"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "season_outlook"
+      ],
+      "text": "下站 {nextTrack}，希望能看到一场干净的比赛",
+      "family": "wpb-season-7",
+      "provenance": "luna_rp",
+      "expresses": [
+        "season_outlook"
+      ]
+    },
+    {
+      "id": "wpb-season-21",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "world_season",
+        "season_finished"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "season_outlook"
+      ],
+      "text": "赛季结束了，{driver} 最终第 {championshipPosition}，积分 {driverPoints}",
+      "family": "wpb-season-7",
+      "provenance": "luna_rp",
+      "expresses": [
+        "season_outlook"
+      ]
+    },
+    {
+      "id": "wpb-season-22",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_season",
+        "season_finished"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "这一季跑完啦，最后这个名次我先记住",
+      "family": "wpb-season-8",
+      "provenance": "luna_rp",
+      "expresses": [
+        "season_outlook"
+      ]
+    },
+    {
+      "id": "wpb-season-23",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_season",
+        "season_finished"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "收官之后再看积分，{driverPoints} 分的来路挺值得复盘",
+      "family": "wpb-season-8",
+      "provenance": "luna_rp",
+      "expresses": [
+        "season_outlook"
+      ]
+    },
+    {
+      "id": "wpb-season-24",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "praise",
+      "stance": "support",
+      "requires": [
+        "world_season",
+        "season_finished"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "赛季落幕，第 {championshipPosition}，辛苦了！",
+      "family": "wpb-season-8",
+      "provenance": "luna_rp",
+      "expresses": [
+        "season_outlook"
+      ]
+    },
+    {
+      "id": "wpb-season-25",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "tease",
+      "stance": "neutral",
+      "requires": [
+        "world_season",
+        "season_finished"
+      ],
+      "personas": [
+        "troll"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "season_outlook"
+      ],
+      "text": "收官啦，不用每站算积分了",
+      "family": "wpb-season-9",
+      "provenance": "luna_rp",
+      "expresses": [
+        "season_outlook"
+      ]
+    },
+    {
+      "id": "wpb-season-26",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_season",
+        "standings_update"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "season_outlook"
+      ],
+      "text": "我看积分榜总怕把名次看反，有人也这样吗",
+      "family": "wpb-season-9",
+      "provenance": "luna_rp",
+      "expresses": [
+        "season_outlook"
+      ]
+    },
+    {
+      "id": "wpb-season-27",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_season",
+        "has_next_track"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "下站是 {nextTrack}，这名字我得记住",
+      "family": "wpb-season-9",
+      "provenance": "luna_rp",
+      "expresses": [
+        "season_outlook"
+      ]
+    },
+    {
+      "id": "wpb-season-28",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_season",
+        "standings_update"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "when": [
+        {
+          "field": "leaderGap",
+          "op": "gt",
+          "value": 0
+        }
+      ],
+      "text": "差 {leaderGap} 分，嘴上说不急，心里还是会算",
+      "family": "wpb-season-10",
+      "provenance": "luna_rp",
+      "expresses": [
+        "season_outlook"
+      ]
+    },
+    {
+      "id": "wpb-season-29",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "world_season",
+        "standings_update"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "when": [
+        {
+          "field": "roundsRemaining",
+          "op": "gt",
+          "value": 0
+        }
+      ],
+      "text": "第 {championshipPosition}，还有 {roundsRemaining} 站，我先不算结局",
+      "family": "wpb-season-10",
+      "provenance": "luna_rp",
+      "expresses": [
+        "season_outlook"
+      ]
+    },
+    {
+      "id": "wpb-season-30",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "support",
+      "stance": "support",
+      "requires": [
+        "world_season",
+        "season_finished"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "season_outlook"
+      ],
+      "text": "总算跑到终点了，{driver} 这一季拿下 {driverPoints} 分",
+      "family": "wpb-season-10",
+      "provenance": "luna_rp",
+      "expresses": [
+        "season_outlook"
+      ]
+    },
+    {
+      "id": "wpb-quiet-01",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [
+        "world_quiet",
+        "has_next_track"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "下站是 {nextTrack}，大家最近都在聊什么？",
+      "family": "wpb-quiet-1",
+      "provenance": "luna_rp",
+      "expresses": [
+        "quiet_chat"
+      ]
+    },
+    {
+      "id": "wpb-quiet-02",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_quiet",
+        "has_next_track"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "下站去 {nextTrack}，有人去过吗？",
+      "family": "wpb-quiet-1",
+      "provenance": "luna_rp",
+      "expresses": [
+        "quiet_chat"
+      ]
+    },
+    {
+      "id": "wpb-quiet-03",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [
+        "world_quiet",
+        "has_next_track"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "有人也在等 {nextTrack} 吗，我已经有点坐不住了",
+      "family": "wpb-quiet-1",
+      "provenance": "luna_rp",
+      "expresses": [
+        "quiet_chat"
+      ]
+    },
+    {
+      "id": "wpb-quiet-04",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_quiet",
+        "has_next_track"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "quiet_chat"
+      ],
+      "text": "我把 {nextTrack} 的地图翻出来了，先认认弯道",
+      "family": "wpb-quiet-2",
+      "provenance": "luna_rp",
+      "expresses": [
+        "quiet_chat"
+      ]
+    },
+    {
+      "id": "wpb-quiet-05",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "support",
+      "stance": "support",
+      "requires": [
+        "world_quiet",
+        "has_next_track"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "quiet_chat"
+      ],
+      "text": "想到要去 {nextTrack} 就有点期待，具体看比赛吧",
+      "family": "wpb-quiet-2",
+      "provenance": "luna_rp",
+      "expresses": [
+        "quiet_chat"
+      ]
+    },
+    {
+      "id": "wpb-quiet-06",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [
+        "world_quiet",
+        "has_next_track"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "有人熟 {nextTrack} 吗，有没有赛道入门攻略？",
+      "family": "wpb-quiet-2",
+      "provenance": "luna_rp",
+      "expresses": [
+        "quiet_chat"
+      ]
+    },
+    {
+      "id": "wpb-quiet-07",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_quiet",
+        "has_next_track"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "text": "我来打个卡，等下一站的消息",
+      "family": "wpb-quiet-3",
+      "provenance": "luna_rp",
+      "expresses": [
+        "quiet_chat"
+      ]
+    },
+    {
+      "id": "wpb-quiet-08",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "complain",
+      "stance": "critical",
+      "requires": [
+        "world_quiet",
+        "has_next_track"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "{nextTrack} 的比赛什么时候来啊，我已经坐不住了",
+      "family": "wpb-quiet-3",
+      "provenance": "luna_rp",
+      "expresses": [
+        "quiet_chat"
+      ]
+    },
+    {
+      "id": "wpb-quiet-09",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [
+        "world_quiet",
+        "has_next_track"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "quiet_chat"
+      ],
+      "text": "有人下班路上也在听比赛播客吗",
+      "family": "wpb-quiet-3",
+      "provenance": "luna_rp",
+      "expresses": [
+        "quiet_chat"
+      ]
+    },
+    {
+      "id": "wpb-quiet-10",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_quiet",
+        "has_next_track"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "quiet_chat"
+      ],
+      "text": "比赛播客开着当背景音，结果我居然认真听完了",
+      "family": "wpb-quiet-4",
+      "provenance": "luna_rp",
+      "expresses": [
+        "quiet_chat"
+      ]
+    },
+    {
+      "id": "wpb-quiet-11",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_quiet",
+        "has_next_track"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "text": "我喜欢赛前这种空档，能慢慢看完采访",
+      "family": "wpb-quiet-4",
+      "provenance": "luna_rp",
+      "expresses": [
+        "quiet_chat"
+      ]
+    },
+    {
+      "id": "wpb-quiet-12",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [
+        "world_quiet",
+        "has_next_track"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "大家聊聊看比赛最常备什么零食，我先投薯片",
+      "family": "wpb-quiet-4",
+      "provenance": "luna_rp",
+      "expresses": [
+        "quiet_chat"
+      ]
+    },
+    {
+      "id": "wpb-quiet-13",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_quiet",
+        "has_next_track"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "耳机找回来了，开着比赛播客当背景音刚好",
+      "family": "wpb-quiet-5",
+      "provenance": "luna_rp",
+      "expresses": [
+        "quiet_chat"
+      ]
+    },
+    {
+      "id": "wpb-quiet-14",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_quiet",
+        "has_next_track"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "quiet_chat"
+      ],
+      "text": "手机空间快满了，比赛录像留着还是删掉啊",
+      "family": "wpb-quiet-5",
+      "provenance": "luna_rp",
+      "expresses": [
+        "quiet_chat"
+      ]
+    },
+    {
+      "id": "wpb-quiet-15",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [
+        "world_quiet",
+        "has_next_track"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "quiet_chat"
+      ],
+      "text": "不看比赛的时候你们也会刷赛车新闻吗",
+      "family": "wpb-quiet-5",
+      "provenance": "luna_rp",
+      "expresses": [
+        "quiet_chat"
+      ]
+    },
+    {
+      "id": "wpb-quiet-16",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_quiet",
+        "has_next_track"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "今天想看点轻松的，不做数据题了",
+      "family": "wpb-quiet-6",
+      "provenance": "luna_rp",
+      "expresses": [
+        "quiet_chat"
+      ]
+    },
+    {
+      "id": "wpb-quiet-17",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_quiet",
+        "has_next_track"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "下站前先看看赛道图，至少别把弯认错",
+      "family": "wpb-quiet-6",
+      "provenance": "luna_rp",
+      "expresses": [
+        "quiet_chat"
+      ]
+    },
+    {
+      "id": "wpb-quiet-18",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "complain",
+      "stance": "critical",
+      "requires": [
+        "world_quiet",
+        "has_next_track"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "我只想找人聊聊比赛，不想把每句话都变辩论赛",
+      "family": "wpb-quiet-6",
+      "provenance": "luna_rp",
+      "expresses": [
+        "quiet_chat"
+      ]
+    },
+    {
+      "id": "wpb-quiet-19",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_quiet",
+        "has_next_track"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "quiet_chat"
+      ],
+      "text": "买完菜就想往沙发上一瘫，比赛日快来吧",
+      "family": "wpb-quiet-7",
+      "provenance": "luna_rp",
+      "expresses": [
+        "quiet_chat"
+      ]
+    },
+    {
+      "id": "wpb-quiet-20",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "praise",
+      "stance": "support",
+      "requires": [
+        "world_quiet",
+        "has_next_track"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "quiet_chat"
+      ],
+      "text": "比赛录播还是得找个完整时间看，不然总被打断",
+      "family": "wpb-quiet-7",
+      "provenance": "luna_rp",
+      "expresses": [
+        "quiet_chat"
+      ]
+    },
+    {
+      "id": "wpb-quiet-21",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_quiet",
+        "has_next_track"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "下站 {nextTrack}，这回想试试完整看完练习赛",
+      "family": "wpb-quiet-7",
+      "provenance": "luna_rp",
+      "expresses": [
+        "quiet_chat"
+      ]
+    },
+    {
+      "id": "wpb-quiet-22",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_quiet",
+        "has_next_track"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "咖啡都快凉了，我先去热一下",
+      "family": "wpb-quiet-8",
+      "provenance": "luna_rp",
+      "expresses": [
+        "quiet_chat"
+      ]
+    },
+    {
+      "id": "wpb-quiet-23",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [
+        "world_quiet",
+        "has_next_track"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "谁有适合入门看的比赛回放？想拉朋友一起看",
+      "family": "wpb-quiet-8",
+      "provenance": "luna_rp",
+      "expresses": [
+        "quiet_chat"
+      ]
+    },
+    {
+      "id": "wpb-quiet-24",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_quiet",
+        "has_next_track"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "quiet_chat"
+      ],
+      "text": "下站前先收拾下桌面，东西快没地方放了",
+      "family": "wpb-quiet-8",
+      "provenance": "luna_rp",
+      "expresses": [
+        "quiet_chat"
+      ]
+    },
+    {
+      "id": "wpb-quiet-25",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "tease",
+      "stance": "neutral",
+      "requires": [
+        "world_quiet",
+        "has_next_track"
+      ],
+      "personas": [
+        "troll"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "quiet_chat"
+      ],
+      "text": "路过打个卡，有人最近在看什么？",
+      "family": "wpb-quiet-9",
+      "provenance": "luna_rp",
+      "expresses": [
+        "quiet_chat"
+      ]
+    },
+    {
+      "id": "wpb-weather-01",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "world_weather",
+        "wet_weather"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "{track} 现在是 {weather}，雨天看得我有点紧张",
+      "family": "wpb-weather-1",
+      "provenance": "luna_rp",
+      "expresses": [
+        "weather_talk"
+      ]
+    },
+    {
+      "id": "wpb-weather-02",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_weather",
+        "wet_weather"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "{track} 下雨了，隔着屏幕都替他们捏把汗",
+      "family": "wpb-weather-1",
+      "provenance": "luna_rp",
+      "expresses": [
+        "weather_talk"
+      ]
+    },
+    {
+      "id": "wpb-weather-03",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_weather",
+        "wet_weather"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "weather_talk"
+      ],
+      "text": "{weather} 啊，我先把雨衣准备上，别急着猜结果",
+      "family": "wpb-weather-1",
+      "provenance": "luna_rp",
+      "expresses": [
+        "weather_talk"
+      ]
+    },
+    {
+      "id": "wpb-weather-04",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_weather",
+        "wet_weather"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "weather_talk"
+      ],
+      "text": "地面湿着，隔着屏幕看都替他们捏把汗",
+      "family": "wpb-weather-2",
+      "provenance": "luna_rp",
+      "expresses": [
+        "weather_talk"
+      ]
+    },
+    {
+      "id": "wpb-weather-05",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "concern",
+      "stance": "critical",
+      "requires": [
+        "world_weather",
+        "wet_weather"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "下雨就开始替他们捏汗了，雨战真刺激",
+      "family": "wpb-weather-2",
+      "provenance": "luna_rp",
+      "expresses": [
+        "weather_talk"
+      ]
+    },
+    {
+      "id": "wpb-weather-06",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "world_weather",
+        "wet_weather"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "text": "{track} 下雨这事已确认，雨会不会持续不知道",
+      "family": "wpb-weather-2",
+      "provenance": "luna_rp",
+      "expresses": [
+        "weather_talk"
+      ]
+    },
+    {
+      "id": "wpb-weather-07",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "correct",
+      "stance": "neutral",
+      "requires": [
+        "world_weather",
+        "wet_weather"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "湿地里一个小失误都够吓人的",
+      "family": "wpb-weather-3",
+      "provenance": "luna_rp",
+      "expresses": [
+        "weather_talk"
+      ]
+    },
+    {
+      "id": "wpb-weather-08",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [
+        "world_weather",
+        "wet_weather"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "weather_talk"
+      ],
+      "text": "有人喜欢雨战吗？我看着都不敢眨眼",
+      "family": "wpb-weather-3",
+      "provenance": "luna_rp",
+      "expresses": [
+        "weather_talk"
+      ]
+    },
+    {
+      "id": "wpb-weather-09",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "world_weather",
+        "dry_weather"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "weather_talk"
+      ],
+      "text": "{track} 目前是 {weather}，至少是干地",
+      "family": "wpb-weather-3",
+      "provenance": "luna_rp",
+      "expresses": [
+        "weather_talk"
+      ]
+    },
+    {
+      "id": "wpb-weather-10",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "praise",
+      "stance": "support",
+      "requires": [
+        "world_weather",
+        "dry_weather"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "干地啦，画面看着清爽多了",
+      "family": "wpb-weather-4",
+      "provenance": "luna_rp",
+      "expresses": [
+        "weather_talk"
+      ]
+    },
+    {
+      "id": "wpb-weather-11",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_weather",
+        "dry_weather"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "干地能认真看轮胎怎么选了",
+      "family": "wpb-weather-4",
+      "provenance": "luna_rp",
+      "expresses": [
+        "weather_talk"
+      ]
+    },
+    {
+      "id": "wpb-weather-12",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_weather",
+        "dry_weather"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "今天是 {weather}，我这边看直播都觉得舒服",
+      "family": "wpb-weather-4",
+      "provenance": "luna_rp",
+      "expresses": [
+        "weather_talk"
+      ]
+    },
+    {
+      "id": "wpb-weather-13",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_weather",
+        "dry_weather"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "weather_talk"
+      ],
+      "text": "干地比赛对我这种只看热闹的友好一点",
+      "family": "wpb-weather-5",
+      "provenance": "luna_rp",
+      "expresses": [
+        "weather_talk"
+      ]
+    },
+    {
+      "id": "wpb-weather-14",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "world_weather",
+        "weather_changed"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "weather_talk"
+      ],
+      "when": [{"field":"oldWeather","op":"present"}],
+      "text": "天气从 {oldWeather} 变成 {weather} 了，变化挺明显",
+      "family": "wpb-weather-5",
+      "provenance": "luna_rp",
+      "expresses": [
+        "weather_talk"
+      ]
+    },
+    {
+      "id": "wpb-weather-15",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_weather",
+        "weather_changed"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "{track} 的天气切到 {weather}，看着计划得重新评估",
+      "family": "wpb-weather-5",
+      "provenance": "luna_rp",
+      "expresses": [
+        "weather_talk"
+      ]
+    },
+    {
+      "id": "wpb-weather-16",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_weather",
+        "weather_changed"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "when": [{"field":"oldWeather","op":"present"}],
+      "text": "从 {oldWeather} 切到 {weather}，这变化真快",
+      "family": "wpb-weather-6",
+      "provenance": "luna_rp",
+      "expresses": [
+        "weather_talk"
+      ]
+    },
+    {
+      "id": "wpb-weather-17",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "correct",
+      "stance": "neutral",
+      "requires": [
+        "world_weather",
+        "weather_changed"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "天气确实变了，后面还会不会继续变化我不知道",
+      "family": "wpb-weather-6",
+      "provenance": "luna_rp",
+      "expresses": [
+        "weather_talk"
+      ]
+    },
+    {
+      "id": "wpb-weather-18",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "world_weather",
+        "weather_changed"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "weather_talk"
+      ],
+      "when": [{"field":"oldWeather","op":"present"}],
+      "text": "我刚看还是 {oldWeather}，现在已经是 {weather} 了",
+      "family": "wpb-weather-6",
+      "provenance": "luna_rp",
+      "expresses": [
+        "weather_talk"
+      ]
+    },
+    {
+      "id": "wpb-weather-19",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "world_weather",
+        "weather_changed"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "weather_talk"
+      ],
+      "when": [{"field":"oldWeather","op":"present"}],
+      "text": "{oldWeather} 换到 {weather} 了，后面真不知道",
+      "family": "wpb-weather-7",
+      "provenance": "luna_rp",
+      "expresses": [
+        "weather_talk"
+      ]
+    },
+    {
+      "id": "wpb-weather-20",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_weather",
+        "wet_weather"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "雨声听着好舒服，比赛画面就不一定轻松了",
+      "family": "wpb-weather-7",
+      "provenance": "luna_rp",
+      "expresses": [
+        "weather_talk"
+      ]
+    },
+    {
+      "id": "wpb-weather-21",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_weather",
+        "dry_weather"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "干地看着舒服多了，雨战还是太刺激",
+      "family": "wpb-weather-7",
+      "provenance": "luna_rp",
+      "expresses": [
+        "weather_talk"
+      ]
+    },
+    {
+      "id": "wpb-weather-22",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_weather",
+        "weather_changed"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "天气切换了，刚才那套节奏估计要重新看",
+      "family": "wpb-weather-8",
+      "provenance": "luna_rp",
+      "expresses": [
+        "weather_talk"
+      ]
+    },
+    {
+      "id": "wpb-weather-23",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "world_weather",
+        "wet_weather"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "weather_talk"
+      ],
+      "text": "{weather} 下的 {track}，这雨战看着真紧张",
+      "family": "wpb-weather-8",
+      "provenance": "luna_rp",
+      "expresses": [
+        "weather_talk"
+      ]
+    },
+    {
+      "id": "wpb-weather-24",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "correct",
+      "stance": "neutral",
+      "requires": [
+        "world_weather",
+        "dry_weather"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "weather_talk"
+      ],
+      "text": "现在干地，后面怎样还真不知道",
+      "family": "wpb-weather-8",
+      "provenance": "luna_rp",
+      "expresses": [
+        "weather_talk"
+      ]
+    },
+    {
+      "id": "wpb-weather-25",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_weather",
+        "weather_changed"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "变成 {weather} 了？这下比赛又多点变数",
+      "family": "wpb-weather-9",
+      "provenance": "luna_rp",
+      "expresses": [
+        "weather_talk"
+      ]
+    },
+    {
+      "id": "wpb-control-01",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "world_control",
+        "control_sc"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "text": "{track} 出安全车，节奏要重新排了",
+      "family": "wpb-control-1",
+      "provenance": "luna_rp",
+      "expresses": [
+        "control_talk"
+      ]
+    },
+    {
+      "id": "wpb-control-02",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_control",
+        "control_sc"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "control_talk"
+      ],
+      "text": "SC出来了，车距会有限收拢，别按原间隔想太多",
+      "family": "wpb-control-1",
+      "provenance": "luna_rp",
+      "expresses": [
+        "control_talk"
+      ]
+    },
+    {
+      "id": "wpb-control-03",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "correct",
+      "stance": "neutral",
+      "requires": [
+        "world_control",
+        "control_sc"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "control_talk"
+      ],
+      "text": "SC只会有限收拢车距，别当所有人都贴一起了",
+      "family": "wpb-control-1",
+      "provenance": "luna_rp",
+      "expresses": [
+        "control_talk"
+      ]
+    },
+    {
+      "id": "wpb-control-04",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [
+        "world_control",
+        "control_sc"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "安全车一出我就开始紧张，后面要怎么重启啊",
+      "family": "wpb-control-2",
+      "provenance": "luna_rp",
+      "expresses": [
+        "control_talk"
+      ]
+    },
+    {
+      "id": "wpb-control-05",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_control",
+        "control_sc"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "text": "安全车把比赛节奏打断了，等官方恢复信息",
+      "family": "wpb-control-2",
+      "provenance": "luna_rp",
+      "expresses": [
+        "control_talk"
+      ]
+    },
+    {
+      "id": "wpb-control-06",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "world_control",
+        "control_vsc"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "现在是 VSC，超车先别想，节奏全被压住",
+      "family": "wpb-control-2",
+      "provenance": "luna_rp",
+      "expresses": [
+        "control_talk"
+      ]
+    },
+    {
+      "id": "wpb-control-07",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "correct",
+      "stance": "neutral",
+      "requires": [
+        "world_control",
+        "control_vsc"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "control_talk"
+      ],
+      "text": "VSC期间禁超，别急着算谁赚了",
+      "family": "wpb-control-3",
+      "provenance": "luna_rp",
+      "expresses": [
+        "control_talk"
+      ]
+    },
+    {
+      "id": "wpb-control-08",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_control",
+        "control_vsc"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "control_talk"
+      ],
+      "text": "VSC期间不能超车？这下只能干等了",
+      "family": "wpb-control-3",
+      "provenance": "luna_rp",
+      "expresses": [
+        "control_talk"
+      ]
+    },
+    {
+      "id": "wpb-control-09",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_control",
+        "control_vsc"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "短暂慢下来，我趁机去倒了杯水",
+      "family": "wpb-control-3",
+      "provenance": "luna_rp",
+      "expresses": [
+        "control_talk"
+      ]
+    },
+    {
+      "id": "wpb-control-10",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "challenge",
+      "stance": "critical",
+      "requires": [
+        "world_control",
+        "control_vsc"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "text": "VSC 期间先别说谁赚了，得看后面情况",
+      "family": "wpb-control-4",
+      "provenance": "luna_rp",
+      "expresses": [
+        "control_talk"
+      ]
+    },
+    {
+      "id": "wpb-control-11",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "world_control",
+        "control_red_flag"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "text": "红旗了，比赛暂停，等赛会后续安排",
+      "family": "wpb-control-4",
+      "provenance": "luna_rp",
+      "expresses": [
+        "control_talk"
+      ]
+    },
+    {
+      "id": "wpb-control-12",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "concern",
+      "stance": "critical",
+      "requires": [
+        "world_control",
+        "control_red_flag"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "control_talk"
+      ],
+      "text": "红旗停下来了，刚才那段看得我心跳好快",
+      "family": "wpb-control-4",
+      "provenance": "luna_rp",
+      "expresses": [
+        "control_talk"
+      ]
+    },
+    {
+      "id": "wpb-control-13",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "correct",
+      "stance": "neutral",
+      "requires": [
+        "world_control",
+        "control_red_flag"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "control_talk"
+      ],
+      "text": "红旗了……这要等多久啊，有消息了吗？",
+      "family": "wpb-control-5",
+      "provenance": "luna_rp",
+      "expresses": [
+        "control_talk"
+      ]
+    },
+    {
+      "id": "wpb-control-14",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "correct",
+      "stance": "neutral",
+      "requires": [
+        "world_control",
+        "control_red_flag"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "红旗之后大家先等等，别自己编重启时间",
+      "family": "wpb-control-5",
+      "provenance": "luna_rp",
+      "expresses": [
+        "control_talk"
+      ]
+    },
+    {
+      "id": "wpb-control-15",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_control",
+        "control_red_flag"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "暂停了我去拿点吃的，回来继续看",
+      "family": "wpb-control-5",
+      "provenance": "luna_rp",
+      "expresses": [
+        "control_talk"
+      ]
+    },
+    {
+      "id": "wpb-control-16",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "world_control",
+        "control_restored"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "text": "绿旗恢复，比赛又开始跑起来了",
+      "family": "wpb-control-6",
+      "provenance": "luna_rp",
+      "expresses": [
+        "control_talk"
+      ]
+    },
+    {
+      "id": "wpb-control-17",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_control",
+        "control_restored"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "control_talk"
+      ],
+      "text": "恢复绿旗啦，注意看第一圈谁抓住机会",
+      "family": "wpb-control-6",
+      "provenance": "luna_rp",
+      "expresses": [
+        "control_talk"
+      ]
+    },
+    {
+      "id": "wpb-control-18",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_control",
+        "control_restored"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "control_talk"
+      ],
+      "text": "又见绿旗，刚刚停顿完我差点忘记在看哪圈",
+      "family": "wpb-control-6",
+      "provenance": "luna_rp",
+      "expresses": [
+        "control_talk"
+      ]
+    },
+    {
+      "id": "wpb-control-19",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "praise",
+      "stance": "support",
+      "requires": [
+        "world_control",
+        "control_restored"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "绿旗恢复了，我最喜欢这种重新进入节奏的几圈",
+      "family": "wpb-control-7",
+      "provenance": "luna_rp",
+      "expresses": [
+        "control_talk"
+      ]
+    },
+    {
+      "id": "wpb-control-20",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_control",
+        "control_restored"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "既然恢复绿旗就继续看，前面发生什么别漏掉",
+      "family": "wpb-control-7",
+      "provenance": "luna_rp",
+      "expresses": [
+        "control_talk"
+      ]
+    },
+    {
+      "id": "wpb-control-21",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "world_control",
+        "standing_restart"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "站立重启安排了，起步这一下又要紧张",
+      "family": "wpb-control-7",
+      "provenance": "luna_rp",
+      "expresses": [
+        "control_talk"
+      ]
+    },
+    {
+      "id": "wpb-control-22",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "praise",
+      "stance": "support",
+      "requires": [
+        "world_control",
+        "standing_restart"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "control_talk"
+      ],
+      "text": "站立重启！我已经坐直了",
+      "family": "wpb-control-8",
+      "provenance": "luna_rp",
+      "expresses": [
+        "control_talk"
+      ]
+    },
+    {
+      "id": "wpb-control-23",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "correct",
+      "stance": "neutral",
+      "requires": [
+        "world_control",
+        "standing_restart"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "control_talk"
+      ],
+      "text": "站立重启怎么排还得看现场信息，先别猜名次",
+      "family": "wpb-control-8",
+      "provenance": "luna_rp",
+      "expresses": [
+        "control_talk"
+      ]
+    },
+    {
+      "id": "wpb-control-24",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_control",
+        "standing_restart"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "text": "要站立重启了，起步控制真的关键",
+      "family": "wpb-control-8",
+      "provenance": "luna_rp",
+      "expresses": [
+        "control_talk"
+      ]
+    },
+    {
+      "id": "wpb-control-25",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_control",
+        "standing_restart"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "重新发车啦，刚才去拿水的我冲回来了",
+      "family": "wpb-control-9",
+      "provenance": "luna_rp",
+      "expresses": [
+        "control_talk"
+      ]
+    },
+    {
+      "id": "wpb-order-01",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "world_team_order",
+        "order_executed"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "team_order_talk"
+      ],
+      "text": "{team} 的换位安排实际执行了，{driver} 得到位置",
+      "family": "wpb-order-1",
+      "provenance": "luna_rp",
+      "expresses": [
+        "team_order_talk"
+      ]
+    },
+    {
+      "id": "wpb-order-02",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "report",
+      "stance": "neutral",
+      "requires": [
+        "world_team_order",
+        "order_executed"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "team_order_talk"
+      ],
+      "text": "{driver} 受益、{otherDriver} 让位，这次换位已经发生",
+      "family": "wpb-order-1",
+      "provenance": "luna_rp",
+      "expresses": [
+        "team_order_talk"
+      ]
+    },
+    {
+      "id": "wpb-order-03",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_team_order",
+        "order_executed"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "看到 {otherDriver} 给 {driver} 让了位置，队内安排落地了",
+      "family": "wpb-order-1",
+      "provenance": "luna_rp",
+      "expresses": [
+        "team_order_talk"
+      ]
+    },
+    {
+      "id": "wpb-order-04",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_team_order",
+        "order_executed"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "text": "换位真执行了，理由是什么还得看更多上下文",
+      "family": "wpb-order-2",
+      "provenance": "luna_rp",
+      "expresses": [
+        "team_order_talk"
+      ]
+    },
+    {
+      "id": "wpb-order-05",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_team_order",
+        "order_executed"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "{driver} 得到了位置，{otherDriver} 让开了，赛道上挺清楚",
+      "family": "wpb-order-2",
+      "provenance": "luna_rp",
+      "expresses": [
+        "team_order_talk"
+      ]
+    },
+    {
+      "id": "wpb-order-06",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_team_order",
+        "order_executed"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+        "replyToActs": [
+          "rumor",
+          "challenge",
+          "complain"
+        ],
+      "replyToTags": [
+        "team_order_talk"
+      ],
+      "text": "这条只看得出换位执行了，其他内部沟通可没说",
+      "family": "wpb-order-2",
+      "provenance": "luna_rp",
+      "expresses": [
+        "team_order_talk"
+      ]
+    },
+    {
+      "id": "wpb-order-07",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "correct",
+      "stance": "neutral",
+      "requires": [
+        "world_team_order",
+        "order_executed"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "replyToActs": [
+        "rumor",
+        "challenge",
+        "complain"
+      ],
+      "replyToTags": [
+        "team_order_talk"
+      ],
+      "text": "这次 {otherDriver} 让位有记录，其他站可没说",
+      "family": "wpb-order-3",
+      "provenance": "luna_rp",
+      "expresses": [
+        "team_order_talk"
+      ]
+    },
+    {
+      "id": "wpb-order-08",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "correct",
+      "stance": "neutral",
+      "requires": [
+        "world_team_order",
+        "order_executed"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "text": "这次让位的是 {otherDriver}，原因这条记录没说",
+      "family": "wpb-order-3",
+      "provenance": "luna_rp",
+      "expresses": [
+        "team_order_talk"
+      ]
+    },
+    {
+      "id": "wpb-order-09",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "tease",
+      "stance": "neutral",
+      "requires": [
+        "world_team_order",
+        "order_executed"
+      ],
+      "personas": [
+        "troll"
+      ],
+      "text": "{otherDriver} 让了位置，{driver} 受益，评论区估计要热闹",
+      "family": "wpb-order-3",
+      "provenance": "luna_rp",
+      "expresses": [
+        "team_order_talk"
+      ]
+    },
+    {
+      "id": "wpb-order-10",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [
+        "world_team_order",
+        "order_executed"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "安排执行了，我还是想知道赛道上当时差距多大",
+      "family": "wpb-order-4",
+      "provenance": "luna_rp",
+      "expresses": [
+        "team_order_talk"
+      ]
+    },
+    {
+      "id": "wpb-order-11",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_team_order",
+        "order_executed"
+      ],
+      "personas": [
+        "technical_fan"
+      ],
+      "replyToActs": [
+        "rumor",
+        "challenge",
+        "complain"
+      ],
+      "replyToTags": [
+        "team_order_talk"
+      ],
+      "text": "换位结束，先看 {driver} 能不能把这个位置跑住",
+      "family": "wpb-order-4",
+      "provenance": "luna_rp",
+      "expresses": [
+        "team_order_talk"
+      ]
+    },
+    {
+      "id": "wpb-order-12",
+      "role": "reply",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_team_order",
+        "order_executed"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "replyToActs": [
+        "report",
+        "comment",
+        "ask"
+      ],
+      "replyToTags": [
+        "team_order_talk"
+      ],
+      "text": "实际交换了位置，讨论时把两位车手都算进去吧",
+      "family": "wpb-order-4",
+      "provenance": "luna_rp",
+      "expresses": [
+        "team_order_talk"
+      ]
+    },
+    {
+      "id": "wpb-order-13",
+      "role": "reaction",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "correct",
+      "stance": "neutral",
+      "requires": [
+        "world_team_order",
+        "order_executed"
+      ],
+      "personas": [
+        "blogger"
+      ],
+      "text": "让位这事确实发生了，至于背后动机别替人编",
+      "family": "wpb-order-5",
+      "provenance": "luna_rp",
+      "expresses": [
+        "team_order_talk"
+      ]
+    },
+    {
+      "id": "wpb-order-14",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "comment",
+      "stance": "neutral",
+      "requires": [
+        "world_team_order",
+        "order_executed"
+      ],
+      "personas": [
+        "fan"
+      ],
+      "text": "{team} 执行换位，支持谁都可以，别把另一位说成工具人",
+      "family": "wpb-order-5",
+      "provenance": "luna_rp",
+      "expresses": [
+        "team_order_talk"
+      ]
+    },
+    {
+      "id": "wpb-order-15",
+      "role": "claim",
+      "topics": [
+        "paddock"
+      ],
+      "channels": [
+        "social"
+      ],
+      "act": "ask",
+      "stance": "curious",
+      "requires": [
+        "world_team_order",
+        "order_executed"
+      ],
+      "personas": [
+        "ordinary_viewer"
+      ],
+      "text": "{otherDriver} 让位了，车队当时怎么沟通的啊",
+      "family": "wpb-order-5",
+      "provenance": "luna_rp",
+      "expresses": [
+        "team_order_talk"
+      ]
+    }
+  ]
+}

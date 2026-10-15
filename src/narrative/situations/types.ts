@@ -64,6 +64,7 @@ export interface MessagePlan extends SpeakerView {
   stance: Stance;
   persona: string;
   standaloneOnly?: boolean;
+  oneUtterance?: boolean;
   preferredTags: string[];
   actor?: SpectatorProfile;
   recalls?: {self:string[];parent:string[]};
@@ -89,6 +90,8 @@ export interface Fragment {
   styles?: SpectatorProfile['style'][];
   knowledge?: SpectatorProfile['knowledge'][];
   recalls?: {by:'self'|'parent';tags:string[]};
+  /** Executable slot conditions. Writer notes/LLM 'knows' strings are not runtime predicates. */
+  when?: Array<{field:string;op:'present'|'eq'|'ne'|'gt'|'gte'|'lt'|'lte';value?:string|number;otherField?:string}>;
 }
 export interface ComposedMessage {
   text: string;

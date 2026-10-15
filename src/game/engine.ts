@@ -865,7 +865,7 @@ function startRace(
   state.phase = "strategy";
   state.broadcast = sprint ? undefined : { active: true, stage: 0 };
   maybeCreateTeamOrder(state);
-  addLog(state, "info", `${sprint ? "冲刺赛" : "正赛"}开始，共 ${state.sessionLaps} 圈。所有策略将在移动前锁定。`, sprint ? { code: "weekend.sprint", details: { result: "started" } } : undefined);
+  addLog(state, "info", `${sprint ? "冲刺赛" : "正赛"}开始，共 ${state.sessionLaps} 圈。所有策略将在移动前锁定。`, { code: sprint ? "weekend.sprint" : "race.info", details: { input: { session: sprint ? "sprint" : "race" }, result: "started" } });
   return null;
 }
 

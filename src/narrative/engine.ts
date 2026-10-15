@@ -9,7 +9,8 @@ import {dynamicVoiceLines} from './dynamicVoices';
 import { syncSituations } from './situations/runtime';
 import { syncSocialNetwork, retainSocialThreads } from './social/network';
 import {reviewRaceNarrative} from './social/review';
-import {prepareSocialMemory,mergeSocialMemory} from './social/society';
+import {prepareSocialMemory,mergeSocialMemory,socialWorldId} from './social/society';
+import {buildWorldTopics,type SocialSourceArchives} from './social/sources';
 import type {SocialMemory} from './social/types';
 import type { RaceNarrative } from "./types";
 export type { NarrativeEvent, NarrativeLine, RaceNarrative } from "./types";
@@ -18,7 +19,7 @@ export { engineerAdvice, askEngineer } from "./radio/engineer";
 
 export function createNarrative(game: GameState): RaceNarrative { return { version: 1, raceId: game.id, track: game.track.name, events: [], commentary: [], radio: [], social: [], processed: 0, alerts: {}, dialogue: createDialogueSession("engineer", game.initialSeed ?? 905) }; }
 
-export function syncNarrative(input: RaceNarrative | undefined, game: GameState, season?: SeasonState, previousSocialMemory?:SocialMemory): RaceNarrative {
+export function syncNarrative(input: RaceNarrative | undefined, game: GameState, season?: SeasonState, previousSocialMemory?:SocialMemory,archives:SocialSourceArchives={}): RaceNarrative {
   const state = reviewRaceNarrative(structuredClone(input?.raceId === game.id ? input : createNarrative(game)));
   state.socialMemory=prepareSocialMemory(game,state.socialMemory?mergeSocialMemory(state.socialMemory,previousSocialMemory):previousSocialMemory);
   if (state.raceSession !== (game.raceSession ?? "race")) state.alerts = {};
@@ -68,6 +69,17 @@ export function syncNarrative(input: RaceNarrative | undefined, game: GameState,
     }
   }
   syncSocialNetwork(state, game, fresh, previousSocialIds, season);
+  const worldTopics=buildWorldTopics(game,season,archives);
+  const knownSocialIds=new Set([...state.social.map(p=>p.id),...(state.socialQueue??[]).map(q=>q.line.id)]);
+  for(const topic of worldTopics)if(topic.sourcePost&&!knownSocialIds.has(topic.sourcePost.id)) {
+    state.social.push(topic.sourcePost);knownSocialIds.add(topic.sourcePost.id);
+  }
+  state.socialSource={worldId:socialWorldId(game),playerId:game.humanDriverId,
+    playerName:game.drivers.find(d=>d.id===game.humanDriverId)!.profile.name,session:game.raceSession??'race',round:game.round,
+    finished:game.phase==='finished',...(season?{seasonRound:game.seasonRound??season.rounds.find(r=>r.raceId===game.id)?.round??season.currentRound}:{}),
+    evidenceRevision:worldTopics.map(t=>`${t.context.situation.id}:${Object.values(t.context.slots).join(',')}`).join('|'),
+    topics:[...(state.socialTopics??[]).filter(t=>t.group!=='emotion'&&!worldTopics.some(source=>source.group===t.group
+      &&source.context.situation.subjectIds.join(',')===t.context.situation.subjectIds.join(','))),...worldTopics]};
   state.commentary = deduplicateBroadcasts(game, state.commentary);
   state.processed = Math.max(state.processed, ...game.logs.map(e => e.id), 0);
   state.events = state.events.slice(-300); state.commentary = state.commentary.slice(-120); state.radio = state.radio.slice(-100); state.social = retainSocialThreads(state.social,220,state.socialQueue?.map(item=>item.line));

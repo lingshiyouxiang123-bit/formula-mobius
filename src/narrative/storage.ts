@@ -3,9 +3,12 @@ import {reviewRaceNarrative} from './social/review';
 import type {GameState} from '../game/types';
 import {latestSocialMemory,mergeSocialMemory,socialWorldId} from './social/society';
 import type {SocialMemory} from './social/types';
+import {narrativeWorldId,reconcileWorldNarrative} from './social/world';
+import {importNarrativeWorld,peekSocialWorld} from './social/worldStorage';
 const KEY = "f1game.narrative.v1";
 export function loadSocialHistory(game:GameState,records:Record<string,RaceNarrative>):SocialMemory|undefined {
-  const base=latestSocialMemory(records,game);
+  const stored=latestSocialMemory(records,game),world=peekSocialWorld(socialWorldId(game))?.memory;
+  const base=stored&&world?mergeSocialMemory(stored,world):world??stored;
   if(typeof window==='undefined')return base;
   try {
     const local=JSON.parse(localStorage.getItem('f1game.x-social-local-v1')??'{}').socialMemories?.[socialWorldId(game)] as SocialMemory|undefined;
@@ -20,7 +23,10 @@ export function loadNarratives(): Record<string, RaceNarrative> {
       if (!v || typeof v !== "object") return false;
       const record = v as RaceNarrative;
       return record.version === 1 && typeof record.raceId === "string" && Number.isFinite(record.processed) && !!record.alerts && !!record.dialogue && Array.isArray(record.dialogue.turns) && [record.events, record.commentary, record.radio, record.social].every(Array.isArray);
-    }).map(([id,record])=>[id,reviewRaceNarrative(record as RaceNarrative)])) as Record<string, RaceNarrative>;
+    }).map(([id,record])=>{
+      const race=record as RaceNarrative;
+      return [id,reconcileWorldNarrative(reviewRaceNarrative(race),peekSocialWorld(narrativeWorldId(race)))];
+    })) as Record<string, RaceNarrative>;
   } catch { return {}; }
 }
 export function saveNarrative(value: RaceNarrative): void {
@@ -28,4 +34,5 @@ export function saveNarrative(value: RaceNarrative): void {
   const all = loadNarratives(); all[value.raceId] = value;
   const entries = Object.entries(all).slice(-12);
   localStorage.setItem(KEY, JSON.stringify(Object.fromEntries(entries)));
+  void importNarrativeWorld(value);
 }
